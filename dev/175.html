@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>[总结]可以在中国大陆境内使用的境外手机卡资料整理 | 皮皮凛の小窝</title><meta name="description" content="众所周知，中国大陆+86手机卡需要实名认证，因此造成许多奇奇怪怪的麻烦。此文章总结了可以在中国大陆境内使用的境外实体手机卡，供大家参考。"><meta name="keywords" content="实体手机卡"><meta name="author" content="绫川星凛"><meta name="copyright" content="绫川星凛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/favicon.webp"><link rel="canonical" href="https://owomoe.net/dev/175.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="[总结]可以在中国大陆境内使用的境外手机卡资料整理"><meta property="og:url" content="https://owomoe.net/dev/175.html"><meta property="og:site_name" content="皮皮凛の小窝"><meta property="og:description" content="众所周知，中国大陆+86手机卡需要实名认证，因此造成许多奇奇怪怪的麻烦。此文章总结了可以在中国大陆境内使用的境外实体手机卡，供大家参考。"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><meta property="article:published_time" content="2020-04-23T06:02:01.000Z"><meta property="article:modified_time" content="2021-09-19T11:44:28.249Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '1'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-162013750-3"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162013750-3');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.0',
+  algolia: {"appId":"1WJL87ATUH","apiKey":"04ed05f9a001ea3a733c0fb3fa5a9666","indexName":"Blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#F79BBA","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-09-19 19:44:28'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/seirin.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/feed/index.xml" title="皮皮凛の小窝" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/logo.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">46</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">78</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%99%E6%B8%AF%E7%A7%BB%E5%8A%A8%E4%B8%87%E4%BC%97%E5%8D%A1-CMHK-852"><span class="toc-number">1.</span> <span class="toc-text">香港移动万众卡(CMHK)(+852)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#giffgaff%E8%8B%B1%E5%9B%BD%E5%8D%A1-44-%E6%8E%A5%E7%A0%81%E6%8E%A8%E8%8D%90"><span class="toc-number">2.</span> <span class="toc-text">giffgaff英国卡(+44)(接码推荐)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8F%B2%E5%BE%8B%E5%AE%BESmart%E5%8D%A1-63-%E6%8E%A5%E7%A0%81%E6%8E%A8%E8%8D%90"><span class="toc-number">3.</span> <span class="toc-text">菲律宾Smart卡(+63)(接码推荐)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%85%E7%94%B8MPT%E5%8D%A1-95"><span class="toc-number">4.</span> <span class="toc-text">缅甸MPT卡(+95)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#knowroaming%E5%85%A8%E7%90%83%E5%8D%A1%E7%BE%8E%E5%9B%BD%E5%8F%B7-1"><span class="toc-number">5.</span> <span class="toc-text">knowroaming全球卡美国号(+1)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8F%B2%E5%BE%8B%E5%AE%BEGlobe%E5%8D%A1-63-%E5%BE%85%E5%AE%8C%E5%96%84"><span class="toc-number">6.</span> <span class="toc-text">菲律宾Globe卡(+63)(待完善)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%99%E6%B8%AF%E8%81%94%E9%80%9A-CUNIQ-852-%E5%BE%85%E5%AE%8C%E5%96%84"><span class="toc-number">7.</span> <span class="toc-text">香港联通(CUNIQ)(+852)(待完善)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E8%8B%B1%E5%9B%BD%E5%8D%A1-CMLinkUK-44-%E5%BE%85%E5%AE%8C%E5%96%84"><span class="toc-number">8.</span> <span class="toc-text">中国移动英国卡(CMLinkUK)(+44)(待完善)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BE%B3%E9%97%A8%E7%94%B5%E4%BF%A11%E5%8D%A12%E5%8F%B7-853-86"><span class="toc-number">9.</span> <span class="toc-text">澳门电信1卡2号(+853,+86)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E5%9C%A8%E5%BE%81%E9%9B%86%E6%9B%B4%E5%A4%9A%E7%9A%84%E8%B5%84%E6%96%99"><span class="toc-number">10.</span> <span class="toc-text">正在征集更多的资料</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">皮皮凛の小窝</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">[总结]可以在中国大陆境内使用的境外手机卡资料整理</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-23T06:02:01.000Z" title="发表于 2020-04-23 14:02:01">2020-04-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-19T11:44:28.249Z" title="更新于 2021-09-19 19:44:28">2021-09-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/dev/">dev</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>众所周知，中国大陆+86手机卡需要实名认证，因此造成许多奇奇怪怪的麻烦。<br>此文章总结了可以在中国大陆境内使用的境外实体手机卡，供大家参考。</p>
+<a id="more"></a>
+<p>如果您有文章未提及的资料，欢迎分享~<br>本文章纯内容分享，无任何推广内容！<br>本文章只注重用境外实体手机卡收短信，仅用于注册境外平台账号使用，所以介绍的侧重点主要是收短信方面，而不是流量漫游。</p>
+<h2 id="香港移动万众卡-CMHK-852"><a href="#香港移动万众卡-CMHK-852" class="headerlink" title="香港移动万众卡(CMHK)(+852)"></a>香港移动万众卡(CMHK)(+852)</h2><p>介绍：香港移动万众卡，在大陆境内为中国移动的信号。<br>资费情况：48元内含48港币，服务费2港币，月租2港币。<br>保号条件：定期充值话费即可，会有有效期提示。<br>设备要求：需配备支持TDD-LTE制式和FDD-LTE制式的手机。<br>SIM卡型：三合一。<br>官网介绍地址：<a target="_blank" rel="noopener" href="https://www.hk.chinamobile.com/tc/corporate_information/Prepaid_SIM/local_users/prepaid-services-4g3g-localtalk.html">https://www.hk.chinamobile.com/tc/corporate_information/Prepaid_SIM/local_users/prepaid-services-4g3g-localtalk.html</a><br>大陆信号：中国移动。<br>申办方式：某宝搜索即可，有不少。<br><strong>踩坑提醒：基本上都是回收号，号码被滥用过的可能性很大，比如我的号码已经被注册过微信、QQ、支付宝且账号处于封号冻结状态。</strong></p>
+<h2 id="giffgaff英国卡-44-接码推荐"><a href="#giffgaff英国卡-44-接码推荐" class="headerlink" title="giffgaff英国卡(+44)(接码推荐)"></a>giffgaff英国卡(+44)(接码推荐)</h2><p>介绍：英国giffgaff卡，在大陆境内可以正常收短信。<br><strong>详细的申请办理激活攻略：<a href="https://owomoe.net/sim/177.html">https://owomoe.net/sim/177.html</a></strong><br>资费情况：激活时首充10英镑，无月租。<br>保号条件：6个月内使用一次即可保号。<br>大陆信号：中国移动。<br>申办方式：在官网申办，从英国直邮包邮寄送到大陆境内，可能需要较长时间。<br><a target="_blank" rel="noopener" href="http://www.giffgaff.com/orders/affiliate/seiri82_1587610982804">申办地址</a>←从这里申办，激活后送5英镑余额。</p>
+<h2 id="菲律宾Smart卡-63-接码推荐"><a href="#菲律宾Smart卡-63-接码推荐" class="headerlink" title="菲律宾Smart卡(+63)(接码推荐)"></a>菲律宾Smart卡(+63)(接码推荐)</h2><p>介绍：保号成本低，适合于接码。不适合电话或流量，费用很贵。需要在三个月内回菲律宾否则SIM卡作废。有人可以提供已经在菲律宾激活过的卡，可以在大陆一直正常使用。<br>资费情况：一年充值1.7人民币即可，某些微信公众号可以代充值。<br>大陆信号：中国移动。<br>官网：<a target="_blank" rel="noopener" href="https://smart.com.ph/corporate">https://smart.com.ph/corporate</a></p>
+<h2 id="缅甸MPT卡-95"><a href="#缅甸MPT卡-95" class="headerlink" title="缅甸MPT卡(+95)"></a>缅甸MPT卡(+95)</h2><p>介绍：保号成本低，适合用于接码。<br>有人提供已激活的卡，即插即用。<br>资费情况：一年充值1美元即可保号。<br>大陆信号：中国移动或中国联通。<br><strong>踩坑提醒：曾被广泛用于电信诈骗，所以滥用情况较严重，封禁较严重。很大概率是回收号，号码被滥用过的可能性很大。</strong></p>
+<h2 id="knowroaming全球卡美国号-1"><a href="#knowroaming全球卡美国号-1" class="headerlink" title="knowroaming全球卡美国号(+1)"></a>knowroaming全球卡美国号(+1)</h2><p>资费情况：无月租。<br>保号条件：15个月登录过官方APP即可保号。<br>大陆信号：中国移动。<br>申办方式：官网<a target="_blank" rel="noopener" href="https://www.knowroaming.com/">https://www.knowroaming.com/</a>，直邮寄送到国内。<br><strong>踩坑提醒：开出虚拟号段的可能性很大。如果是虚拟号段，在部分使用场景可能会有所限制。</strong></p>
+<h2 id="菲律宾Globe卡-63-待完善"><a href="#菲律宾Globe卡-63-待完善" class="headerlink" title="菲律宾Globe卡(+63)(待完善)"></a>菲律宾Globe卡(+63)(待完善)</h2><p>介绍：不适合电话或流量，费用很贵。</p>
+<h2 id="香港联通-CUNIQ-852-待完善"><a href="#香港联通-CUNIQ-852-待完善" class="headerlink" title="香港联通(CUNIQ)(+852)(待完善)"></a>香港联通(CUNIQ)(+852)(待完善)</h2><p>详细资料待补充。<br>官网：<a target="_blank" rel="noopener" href="https://www.cuniq.com/global/">https://www.cuniq.com/global/</a></p>
+<h2 id="中国移动英国卡-CMLinkUK-44-待完善"><a href="#中国移动英国卡-CMLinkUK-44-待完善" class="headerlink" title="中国移动英国卡(CMLinkUK)(+44)(待完善)"></a>中国移动英国卡(CMLinkUK)(+44)(待完善)</h2><p>介绍：目前申办需要提交护照。</p>
+<h2 id="澳门电信1卡2号-853-86"><a href="#澳门电信1卡2号-853-86" class="headerlink" title="澳门电信1卡2号(+853,+86)"></a>澳门电信1卡2号(+853,+86)</h2><p><strong>2020.5.9更新：已经没车了</strong><br>介绍：一张卡可以申请两个号码，一个+853澳门卡，一个+86大陆卡，大陆号码可以不申请。大陆境内为中国电信的信号。<br>资费情况：85元内含100澳币，无月租。<br>保号条件：申请后10天内可以自由使用，10天后必须实名认证否则无法使用。澳门手机号需要sfz或通行证照片实名认证，大陆手机号需要人脸识别实名认证。<br>申办方式：某宝搜索即可，有不少。</p>
+<h2 id="正在征集更多的资料"><a href="#正在征集更多的资料" class="headerlink" title="正在征集更多的资料"></a>正在征集更多的资料</h2><p>如果您有更多的资料，可以在评论区分享给大家~</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">绫川星凛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://owomoe.net/dev/175.html">https://owomoe.net/dev/175.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明来自 <a href="https://owomoe.net" target="_blank">皮皮凛の小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AE%9E%E4%BD%93%E6%89%8B%E6%9C%BA%E5%8D%A1/">实体手机卡</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://afdian.net/@seirin" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/afdian.webp" alt="爱发电：微信支付宝扫码"/></a><div class="post-qr-code-desc">爱发电：微信支付宝扫码</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/life/176.html"><img class="prev-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">天国初见</div></div></a></div><div class="next-post pull-right"><a href="/dev/174.html"><img class="next-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">[踩坑记录]国内纯IPv6服务器试玩+宝塔面板建站指南</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/sim/177.html" title="Giffgaff英国手机卡申请办理激活攻略"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-14</div><div class="relatedPosts_title">Giffgaff英国手机卡申请办理激活攻略</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2021 By 绫川星凛</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">你好，再见</div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><span>鲁ICP备20020678号</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/tw_cn.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'RimuW5sTDoBQq76cpqtFxS6a-gzGzoHsz',
+      appKey: 'VrDSkBwEiw7br1m6PPEEbwIs',
+      placeholder: '快来和大家一起讨论吧~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/@imaegoo/valine@1.4.1-4.1/valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/live2dw/lib/L2Dwidget.min.js"></script><script src="/js/seirin.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/click_heart.min.js" async="async"></script></div></body></html>

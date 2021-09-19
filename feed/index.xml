@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>皮皮凛の小窝</title>
+  
+  <subtitle>其生若浮，其死若休</subtitle>
+  <link href="/feed/index.xml" rel="self"/>
+  
+  <link href="https://owomoe.net/"/>
+  <updated>2021-09-19T11:44:28.237Z</updated>
+  <id>https://owomoe.net/</id>
+  
+  <author>
+    <name>绫川星凛</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IP段可用IP范围表</title>
+    <link href="https://owomoe.net/dev/181.html"/>
+    <id>https://owomoe.net/dev/181.html</id>
+    <published>2021-08-05T14:46:59.000Z</published>
+    <updated>2021-09-19T11:44:28.237Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="16-30位子网前缀信息"><a href="#16-30位子网前缀信息" class="headerlink" title="16~30位子网前缀信息"></a>16~30位子网前缀信息</h1><table><thead><tr><th>子网前缀</th><th>IP总数</th><th>子网掩码</th><th>C段个数</th></tr></thead><tbody><tr><td>/30</td><td>4</td><td>255.255.255.252</td><td>1/64</td></tr><tr><td>/29</td><td>8</td><td>255.255.255.248</td><td>1/32</td></tr><tr><td>/28</td><td>16</td><td>255.255.255.240</td><td>1/16</td></tr><tr><td>/27</td><td>32</td><td>255.255.255.224</td><td>1/8</td></tr><tr><td>/26</td><td>64</td><td>255.255.255.192</td><td>1/4</td></tr><tr><td>/24</td><td>256</td><td>255.255.255.0</td><td>1</td></tr><tr><td>/23</td><td>512</td><td>255.255.254.0</td><td>2</td></tr><tr><td>/22</td><td>1024</td><td>255.255.252.0</td><td>4</td></tr><tr><td>/21</td><td>2048</td><td>255.255.248.0</td><td>8</td></tr><tr><td>/20</td><td>4096</td><td>255.255.240.0</td><td>16</td></tr><tr><td>/19</td><td>8192</td><td>255.255.224.0</td><td>32</td></tr><tr><td>/18</td><td>16384</td><td>255.255.192.0</td><td>64</td></tr><tr><td>/17</td><td>32768</td><td>255.255.128.0</td><td>128</td></tr><tr><td>/16</td><td>65536</td><td>255.255.0.0</td><td>256</td></tr></tbody></table><h1 id="各个子网前缀的信息"><a href="#各个子网前缀的信息" class="headerlink" title="各个子网前缀的信息"></a>各个子网前缀的信息</h1><h2 id="24"><a href="#24" class="headerlink" title="/24"></a>/24</h2><p>1个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.254</td><td>.255</td></tr></tbody></table><h2 id="25"><a href="#25" class="headerlink" title="/25"></a>/25</h2><p>2个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.126</td><td>.127</td></tr><tr><td>.128</td><td>.129-.254</td><td>.255</td></tr></tbody></table><h2 id="26"><a href="#26" class="headerlink" title="26"></a>26</h2><p>4个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.62</td><td>.63</td></tr><tr><td>.64</td><td>.65-.126</td><td>.127</td></tr><tr><td>.128</td><td>.129-.190</td><td>.191</td></tr><tr><td>.192</td><td>.193-.254</td><td>.255</td></tr></tbody></table><h2 id="27"><a href="#27" class="headerlink" title="/27"></a>/27</h2><p>8个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.30</td><td>.31</td></tr><tr><td>.32</td><td>.33-.62</td><td>.63</td></tr><tr><td>.64</td><td>.65-.94</td><td>.95</td></tr><tr><td>.96</td><td>.97-.126</td><td>.127</td></tr><tr><td>.128</td><td>.129-.158</td><td>.159</td></tr><tr><td>.160</td><td>.161-.190</td><td>.191</td></tr><tr><td>.192</td><td>.193-.222</td><td>.223</td></tr><tr><td>.224</td><td>.225-.254</td><td>.255</td></tr></tbody></table><h2 id="28"><a href="#28" class="headerlink" title="/28"></a>/28</h2><p>16个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.14</td><td>.15</td></tr><tr><td>.16</td><td>.17-.30</td><td>.31</td></tr><tr><td>.32</td><td>.33-.46</td><td>.47</td></tr><tr><td>.48</td><td>.49-.62</td><td>.63</td></tr><tr><td>.64</td><td>.65-.78</td><td>.79</td></tr><tr><td>.80</td><td>.81-.94</td><td>.95</td></tr><tr><td>.96</td><td>.97-.110</td><td>.111</td></tr><tr><td>.112</td><td>.113-.126</td><td>.127</td></tr><tr><td>.128</td><td>.129-.142</td><td>.143</td></tr><tr><td>.144</td><td>.145-.158</td><td>.159</td></tr><tr><td>.160</td><td>.161-.174</td><td>.175</td></tr><tr><td>.176</td><td>.177-.190</td><td>.191</td></tr><tr><td>.192</td><td>.193-.206</td><td>.207</td></tr><tr><td>.208</td><td>.209-.222</td><td>.223</td></tr><tr><td>.224</td><td>.225-.238</td><td>.239</td></tr><tr><td>.240</td><td>.241-.254</td><td>.255</td></tr></tbody></table><h2 id="29"><a href="#29" class="headerlink" title="/29"></a>/29</h2><p>32个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.6</td><td>.7</td></tr><tr><td>.8</td><td>.9-.14</td><td>.15</td></tr><tr><td>.16</td><td>.17-.22</td><td>.23</td></tr><tr><td>.24</td><td>.25-.30</td><td>.31</td></tr><tr><td>.32</td><td>.33-.38</td><td>.39</td></tr><tr><td>.40</td><td>.41-.46</td><td>.47</td></tr><tr><td>.48</td><td>.49-.54</td><td>.55</td></tr><tr><td>.56</td><td>.57-.62</td><td>.63</td></tr><tr><td>.64</td><td>.65-.70</td><td>.71</td></tr><tr><td>.72</td><td>.73-.78</td><td>.79</td></tr><tr><td>.80</td><td>.81-.86</td><td>.87</td></tr><tr><td>.88</td><td>.89-.94</td><td>.95</td></tr><tr><td>.96</td><td>.97-.102</td><td>.103</td></tr><tr><td>.104</td><td>.105-.110</td><td>.111</td></tr><tr><td>.112</td><td>.113-.118</td><td>.119</td></tr><tr><td>.120</td><td>.121-.126</td><td>.127</td></tr><tr><td>.128</td><td>.129-.134</td><td>.135</td></tr><tr><td>.136</td><td>.137-.142</td><td>.143</td></tr><tr><td>.144</td><td>.145-.150</td><td>.151</td></tr><tr><td>.152</td><td>.153-.158</td><td>.159</td></tr><tr><td>.160</td><td>.161-.166</td><td>.167</td></tr><tr><td>.168</td><td>.169-.174</td><td>.175</td></tr><tr><td>.176</td><td>.177-.182</td><td>.183</td></tr><tr><td>.184</td><td>.185-.190</td><td>.191</td></tr><tr><td>.192</td><td>.193-.198</td><td>.199</td></tr><tr><td>.200</td><td>.201-.206</td><td>.207</td></tr><tr><td>.208</td><td>.209-.214</td><td>.215</td></tr><tr><td>.216</td><td>.217-.222</td><td>.223</td></tr><tr><td>.224</td><td>.225-.230</td><td>.231</td></tr><tr><td>.232</td><td>.233-.238</td><td>.239</td></tr><tr><td>.240</td><td>.241-.246</td><td>.247</td></tr><tr><td>.248</td><td>.249-.254</td><td>.255</td></tr></tbody></table><h2 id="30"><a href="#30" class="headerlink" title="/30"></a>/30</h2><p>64个子网</p><table><thead><tr><th>网络地址</th><th>可用IP范围</th><th>广播地址</th></tr></thead><tbody><tr><td>.0</td><td>.1-.2</td><td>.3</td></tr><tr><td>.4</td><td>.5-.6</td><td>.7</td></tr><tr><td>.8</td><td>.9-.10</td><td>.11</td></tr><tr><td>.12</td><td>.13-.14</td><td>.15</td></tr><tr><td>.16</td><td>.17-.18</td><td>.19</td></tr><tr><td>.20</td><td>.21-.22</td><td>.23</td></tr><tr><td>.24</td><td>.25-.26</td><td>.27</td></tr><tr><td>.28</td><td>.29-.30</td><td>.31</td></tr><tr><td>.32</td><td>.33-.34</td><td>.35</td></tr><tr><td>.36</td><td>.37-.38</td><td>.39</td></tr><tr><td>.40</td><td>.41-.42</td><td>.43</td></tr><tr><td>.44</td><td>.45-.46</td><td>.47</td></tr><tr><td>.48</td><td>.49-.50</td><td>.51</td></tr><tr><td>.52</td><td>.53-.54</td><td>.55</td></tr><tr><td>.56</td><td>.57-.58</td><td>.59</td></tr><tr><td>.60</td><td>.61-.62</td><td>.63</td></tr><tr><td>.64</td><td>.65-.66</td><td>.67</td></tr><tr><td>.68</td><td>.69-.70</td><td>.71</td></tr><tr><td>.72</td><td>.73-.74</td><td>.75</td></tr><tr><td>.76</td><td>.77-.78</td><td>.79</td></tr><tr><td>.80</td><td>.81-.82</td><td>.83</td></tr><tr><td>.84</td><td>.85-.86</td><td>.87</td></tr><tr><td>.88</td><td>.89-.90</td><td>.91</td></tr><tr><td>.92</td><td>.93-.94</td><td>.95</td></tr><tr><td>.96</td><td>.97-.98</td><td>.99</td></tr><tr><td>.100</td><td>.101-.102</td><td>.103</td></tr><tr><td>.104</td><td>.105-.106</td><td>.107</td></tr><tr><td>.108</td><td>.109-.110</td><td>.111</td></tr><tr><td>.112</td><td>.113-.114</td><td>.115</td></tr><tr><td>.116</td><td>.117-.118</td><td>.119</td></tr><tr><td>.120</td><td>.121-.122</td><td>.123</td></tr><tr><td>.124</td><td>.125-.126</td><td>.127</td></tr><tr><td>.128</td><td>.129-.130</td><td>.131</td></tr><tr><td>.132</td><td>.133-.134</td><td>.135</td></tr><tr><td>.136</td><td>.137-.138</td><td>.139</td></tr><tr><td>.140</td><td>.141-.142</td><td>.143</td></tr><tr><td>.144</td><td>.145-.146</td><td>.147</td></tr><tr><td>.148</td><td>.149-.150</td><td>.151</td></tr><tr><td>.152</td><td>.153-.154</td><td>.155</td></tr><tr><td>.156</td><td>.157-.158</td><td>.159</td></tr><tr><td>.160</td><td>.161-.162</td><td>.163</td></tr><tr><td>.164</td><td>.165-.166</td><td>.167</td></tr><tr><td>.168</td><td>.169-.170</td><td>.171</td></tr><tr><td>.172</td><td>.173-.174</td><td>.175</td></tr><tr><td>.176</td><td>.177-.178</td><td>.179</td></tr><tr><td>.180</td><td>.181-.182</td><td>.183</td></tr><tr><td>.184</td><td>.185-.186</td><td>.187</td></tr><tr><td>.188</td><td>.189-.190</td><td>.191</td></tr><tr><td>.192</td><td>.193-.194</td><td>.195</td></tr><tr><td>.196</td><td>.197-.198</td><td>.199</td></tr><tr><td>.200</td><td>.201-.202</td><td>.203</td></tr><tr><td>.204</td><td>.205-.206</td><td>.207</td></tr><tr><td>.208</td><td>.209-.210</td><td>.211</td></tr><tr><td>.212</td><td>.213-.214</td><td>.215</td></tr><tr><td>.216</td><td>.217-.218</td><td>.219</td></tr><tr><td>.220</td><td>.221-.222</td><td>.223</td></tr><tr><td>.224</td><td>.225-.226</td><td>.227</td></tr><tr><td>.228</td><td>.229-.230</td><td>.231</td></tr><tr><td>.232</td><td>.233-.234</td><td>.235</td></tr><tr><td>.236</td><td>.237-.238</td><td>.239</td></tr><tr><td>.240</td><td>.241-.242</td><td>.243</td></tr><tr><td>.244</td><td>.245-.246</td><td>.247</td></tr><tr><td>.248</td><td>.249-.250</td><td>.251</td></tr><tr><td>.252</td><td>.253-.254</td><td>.255</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      IP段的可用IP以及其网络地址、广播地址对照表
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="IPv4" scheme="https://owomoe.net/tags/IPv4/"/>
+    
+      <category term="网络运维" scheme="https://owomoe.net/tags/%E7%BD%91%E7%BB%9C%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS7服务器安装SolusVM被控端硬盘分区方法</title>
+    <link href="https://owomoe.net/dev/180.html"/>
+    <id>https://owomoe.net/dev/180.html</id>
+    <published>2021-05-05T17:55:34.000Z</published>
+    <updated>2021-09-19T11:44:28.229Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文写作参考文章 <a href="https://www.hostarr.com/solusvm-partition-for-centos7/">https://www.hostarr.com/solusvm-partition-for-centos7/</a> ，遂按照自己的理解再写一份加深理解，并作为归档存储，以便日后查看。</p></blockquote><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>众所周知，安装SolusVM被控端(Slave)，在分区上的步骤非常繁琐，所以本教程采用在安装CentOS7时便使用安装过程的分区工具进行分区，这样方便且快捷。<br>本教程配合安装过程图文介绍，帮助您完成最终的安装。</p><h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p>先使用IPMI工具远程连接服务器，挂载镜像什么的不多赘述，进入CentOS7安装界面。<br>安装界面点击”安装位置” (INSTALLATION DESTINATION)来手动配置分区。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/1.jpg" alt><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/2.jpg" alt></p><p>选中要使用的硬盘，点击”我要配置分区” (I will configure partitioning)，然后点击左上角的”完成” (Done)进入分区设置。<br>选择”标准分区” (Standard Partition)，点击下方的+号开始创建分区。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/3.jpg" alt><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/4.jpg" alt></p><p>然后根据你的需求创建所需分区，这里我们先创建<code>/boot</code>,<code>/</code>,<code>swap</code>这几个分区为例，剩余空间创建VG以供虚拟机使用。只需要注意文件系统为ext4即可。以下是我创建的分区信息。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/5.jpg" alt="创建 /boot 分区"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/6.jpg" alt="创建 / 根目录分区"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/7.jpg" alt="创建 swap 分区"></p><p>接下来是创建VG分区<br>创建分区时不输入容量大小即为剩余容量。设备类型选择LVM，Volume Group选择”创建新volume group”<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/8.jpg" alt="创建VG分区"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/9.jpg" alt="创建新volume group"></p><p>设置妥当后保存更改，完成系统安装过程<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/10.jpg" alt><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/180/11.jpg" alt></p><h1 id="分区设置"><a href="#分区设置" class="headerlink" title="分区设置"></a>分区设置</h1><p>安装完毕后进入系统，设置分区。<br>用<code>df -hT</code>查看分区情况，找到我们的<code>/vg_solusvm</code>分区挂载点。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]# df -hT</span><br><span class="line">文件系统                          类型      容量  已用  可用 已用% 挂载点</span><br><span class="line">devtmpfs                          devtmpfs  877M     0  877M    0% &#x2F;dev</span><br><span class="line">tmpfs                             tmpfs     887M     0  887M    0% &#x2F;dev&#x2F;shm</span><br><span class="line">tmpfs                             tmpfs     887M  9.0M  878M    2% &#x2F;run</span><br><span class="line">tmpfs                             tmpfs     887M     0  887M    0% &#x2F;sys&#x2F;fs&#x2F;cgroup</span><br><span class="line">&#x2F;dev&#x2F;sda2                         ext4      118G  1.3G  111G    2% &#x2F;</span><br><span class="line">&#x2F;dev&#x2F;sda1                         ext4      740M  113M  574M   17% &#x2F;boot</span><br><span class="line">&#x2F;dev&#x2F;mapper&#x2F;vg_solusvm-vg_solusvm ext4      370G   69M  351G    1% &#x2F;vg_solusvm</span><br><span class="line">tmpfs                             tmpfs     178M     0  178M    0% &#x2F;run&#x2F;user&#x2F;0</span><br></pre></td></tr></table></figure><p>使用<code>umount</code>命令卸载挂载点</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">umount &#x2F;vg_solusvm</span><br></pre></td></tr></table></figure><p>编辑<code>/etc/fstab</code>文件删除<code>/vg_solusvm</code>所在行</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;fstab</span><br></pre></td></tr></table></figure><p>使用<code>vgdisplay</code>查看VG分区名称，我这里是<code>vg_solusvm</code></p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]# vgdisplay</span><br><span class="line">  --- Volume group ---</span><br><span class="line">  VG Name               vg_solusvm</span><br><span class="line">  System ID             </span><br><span class="line">  Format                lvm2</span><br><span class="line">  Metadata Areas        1</span><br><span class="line">  Metadata Sequence No  2</span><br><span class="line">  VG Access             read&#x2F;write</span><br><span class="line">  VG Status             resizable</span><br><span class="line">  MAX LV                0</span><br><span class="line">  Cur LV                1</span><br><span class="line">  Open LV               0</span><br><span class="line">  Max PV                0</span><br><span class="line">  Cur PV                1</span><br><span class="line">  Act PV                1</span><br><span class="line">  VG Size               &lt;375.25 GiB</span><br><span class="line">  PE Size               4.00 MiB</span><br><span class="line">  Total PE              96063</span><br><span class="line">  Alloc PE &#x2F; Size       96063 &#x2F; &lt;375.25 GiB</span><br><span class="line">  Free  PE &#x2F; Size       0 &#x2F; 0   </span><br><span class="line">  VG UUID               66564J-eFy1-mhdP-r3dm-ZbMg-Yiuy-VmRZEk</span><br></pre></td></tr></table></figure><p>使用<code>vgremove</code>删除分区</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]# vgremove vg_solusvm</span><br><span class="line">Do you really want to remove volume group &quot;vg_solusvm&quot; containing 1 logical volumes? [y&#x2F;n]: y</span><br><span class="line">Do you really want to remove active logical volume vg_solusvm&#x2F;vg_solusvm? [y&#x2F;n]: y</span><br><span class="line">  Logical volume &quot;vg_solusvm&quot; successfully removed</span><br><span class="line">  Volume group &quot;vg_solusvm&quot; successfully removed</span><br></pre></td></tr></table></figure><p>使用<code>fdisk -l</code>查看LVM分区设备名称，可以看到在<code>sda5</code>上</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]# fdisk -l</span><br><span class="line"></span><br><span class="line">   设备 Boot      Start         End      Blocks   Id  System</span><br><span class="line">&#x2F;dev&#x2F;sda1   *        2048     1574911      786432   83  Linux</span><br><span class="line">&#x2F;dev&#x2F;sda2         1574912   253233151   125829120   83  Linux</span><br><span class="line">&#x2F;dev&#x2F;sda3       253233152   286787583    16777216   82  Linux swap &#x2F; Solaris</span><br><span class="line">&#x2F;dev&#x2F;sda4       286787584  1073741823   393477120    5  Extended</span><br><span class="line">&#x2F;dev&#x2F;sda5       286789632  1073741823   393476096   8e  Linux LVM</span><br></pre></td></tr></table></figure><p>用<code>vgcreate</code>重新创建VG分区。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vgcreate -s 128M vg_solusvm &#x2F;dev&#x2F;sda5</span><br></pre></td></tr></table></figure><p>创建完成后查看VG分区情况，如下即可。</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[root@localhost ~]# vgdisplay</span><br><span class="line">  --- Volume group ---</span><br><span class="line">  VG Name               vg_solusvm</span><br><span class="line">  System ID             </span><br><span class="line">  Format                lvm2</span><br><span class="line">  Metadata Areas        1</span><br><span class="line">  Metadata Sequence No  1</span><br><span class="line">  VG Access             read&#x2F;write</span><br><span class="line">  VG Status             resizable</span><br><span class="line">  MAX LV                0</span><br><span class="line">  Cur LV                0</span><br><span class="line">  Open LV               0</span><br><span class="line">  Max PV                0</span><br><span class="line">  Cur PV                1</span><br><span class="line">  Act PV                1</span><br><span class="line">  VG Size               375.12 GiB</span><br><span class="line">  PE Size               128.00 MiB</span><br><span class="line">  Total PE              3001</span><br><span class="line">  Alloc PE &#x2F; Size       0 &#x2F; 0   </span><br><span class="line">  Free  PE &#x2F; Size       3001 &#x2F; 375.12 GiB</span><br><span class="line">  VG UUID               UmeAx2-iJFo-IJyH-eRn4-c9jw-l9Gd-IeWReH</span><br></pre></td></tr></table></figure><p>至此，硬盘分区工作已完成，可以开始安装部署SolusVM了。</p>]]></content>
+    
+    <summary type="html">
+    
+      众所周知，安装SolusVM被控端(Slave)，在分区上的步骤非常繁琐，所以本教程采用在安装CentOS7时便使用安装过程的分区工具进行分区，这样方便且快捷。本教程配合安装过程图文介绍，帮助您完成最终的安装。
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="SolusVM" scheme="https://owomoe.net/tags/SolusVM/"/>
+    
+      <category term="CentOS" scheme="https://owomoe.net/tags/CentOS/"/>
+    
+      <category term="分区" scheme="https://owomoe.net/tags/%E5%88%86%E5%8C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小魔法使之死</title>
+    <link href="https://owomoe.net/life/179.html"/>
+    <id>https://owomoe.net/life/179.html</id>
+    <published>2020-10-20T01:11:28.000Z</published>
+    <updated>2021-09-19T11:44:28.249Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文为转载文章<br>本文作者：<a href="https://www.zhihu.com/people/planetnine">硝酸铜</a><br>原文链接：<a href="https://zhuanlan.zhihu.com/p/266911513">https://zhuanlan.zhihu.com/p/266911513</a></p></blockquote><p>夜之魔法使西园寺星兰被带走的时候是一个微凉的初夏。她和那两个看守自己的巨人们再次大吵了一架，一个人在暮色里走下老旧的公寓楼房，一个人吹着安宁的晚风。不知不觉的她觉得冷了起来。衣服穿少了点，她想着，可是不想再上楼了。</p><p>小小的魔女于是抱着自己在阶梯前坐下，盯着浅蓝色夜空里若隐若现的星星。也就在这时，车轮打破了傍晚的寂静。一辆银白色的五菱宏光从街角钻了出来，几个身材高大的男人站到了星兰的面前，挡住了那片宁静的天空。</p><p>“你，跟我们走一趟。最好听话。”</p><p>星兰一动也没动。</p><p>啪。重重的一巴掌打在她的脸上，那自称的小魔女不敢置信的抬起脑袋，迎来的却又是沉重的一击，打的她柔弱的身躯头昏眼花。还没来得及反抗，那两个男人就把她轻松的架进了面包车里。手电筒的强光照着少女的眼睛，让她下意识的闭上双眼，却仍然控制不住的流出了眼泪。几分是因为光线的刺激，几分是因为恐惧，她已经说不清了。</p><p>有个人手里拿着黑色的电击器，紫色的电流在耳边滋滋作响，让她的皮肤感到麻麻的。银晃晃的手铐啪的一声扣上，低沉的声音在耳边仿佛沉重的鼓声一般不断回响。</p><p>“听话。你最好给我听话。”</p><p>在意识到自己的身世之前，星兰也许是个听话的好孩子。不过那时间太久，她着实已经有些记不清了。她从小就就拥有那种感觉，知道自己拥有不同寻常的力量。可惜的是，这个世界似乎惧怕她所拥有的伟大魔力将会毁掉光明与黑暗间得来不易的平衡，便让她降生在了监牢之中，由两位巨人看守。</p><p>在无法感知神秘力量的凡人看来，这巨人便是她所谓的父母。</p><p>那两位巨人拥有抗拒魔法的力量，他们不仅不承认星兰一天天觉醒的力量，甚至一直错误的把她当成男性……那怎么可能呢？</p><p>之所以会变成这样，只是诅咒的缘故罢了——</p><p>没错，小魔女被祝福着，携带着强大的魔法力量降生在世界上，可在同时，身上也附上了自从出生以来就一直携带着的诅咒。邪恶的诅咒让她变成了本来不属于她的样子，</p><p>——至少，星兰一直以来都是这么相信的。</p><p>可惜，那两座看守巨人是由害怕她力量的人们所创造出来的，唯一的目标就是限制星兰的魔法，用尽一切办法试图让她相信自己只是个平凡的男生——而这正是诅咒最终的目的。</p><p>小魔女知道，如果自己真的相信了那一套说辞，那就等同于自己屈服于诅咒，身上的神奇力量就会消退，最终她就真的会像是那些人希望的一样变得平凡，而不再拥有改变世界的魔法……她绝对不会接受那样的未来。</p><p>用着超空间信标——一种被凡人称作“手机”的神奇装置，星兰渐渐的认识了远在世界各地的其他魔女们。也许是在神圣连接（一般人将其称之为QQ）上面与其他拥有日本名字的魔女们交流的太多了，她不知道从哪里也想出了个日本名字，开始将自己唤作西园寺星兰。</p><p>于是她便成为了夜之魔法使，西园寺星兰。</p><p>这个夜幕降临了。小小的魔女坐在并不舒适的面包车里面，像是囚犯一样的双手被限制住，被两个沉默而恐怖的怪物控制着，驶向不知何方。</p><p>“咱……犯了什么事吗？”她深吸了口气，努力压下心里的恐惧，好像自称‘咱’真的能带给她力量一样，这种一直以来特别的说话方式就和她留着的及肩头发，外出大部分时候会带着的眼罩，以及奇怪的长长的名字一样，总是会给小魔女带来不大不小的麻烦。</p><p>面包车副驾驶座位上的男人叼着根烟，烟味熏得星兰想不住的咳嗽。他的身影在暗中仿佛高大而细长的恶魔，“哦，你可犯了大事了。听话。你最好给我听话。”</p><p>听话。又是这句话，听话。小魔女缩在角落里，听话的乖乖的。就像是那一天一样，就像那一天巨人掐着她的脖子红着脸大吼着“你怎么不给我听话！”之后一样。</p><p>那天本是一个普通的日子，直到上午第三节课的铃声响起的瞬间，一本《新华字典》从身旁飞来，砸的她晕头转向。扔字典的人是班上几个不好惹的男生。他们总是莫名其妙的看小魔女不爽，这天也一样——在尖叫和哭泣声中他们趁着课间将她拉到男厕所狠狠的揍了一遍。“看来小爷有必要治治你的脑子！”当扔字典的那人揪着她的头发，猛然的把她的脑袋往洗手间隔间的门上撞去，咚的一声，头晕目眩。小魔女只觉得整个世界都在天旋地转，世界在痛觉中化作疯狂的震荡。直到上课铃再度响起他们才整齐的一窝蜂散去，只留下对失败者尖锐刻薄的嘲讽：“活该，傻逼！”</p><p>不久之后，她和几个欺负了她的人被叫去了校长的办公室。有人从洗手间敞开的门里看见了正在进行的战斗，最后还是告诉了老师。可是那几个把她揍的遍体鳞伤的男生们早已对这种情况轻车熟路，他们口径一致的指责浑身湿漉漉脏兮兮的星兰才是先出手的那个，自己只是正当防卫而已。</p><p>一个巴掌拍不响，老师说。</p><p>你被打肯定是你做错了什么，校长说。</p><p>就算真是你被针对了，你怎么不想想为什么他们不找别人就找你呢？老师和校长一起说。</p><p>那几个男生们早早的回到了教室上课，只留下星兰一个人孤零零的站在走廊里，等着家长被叫来。</p><p>雄性巨人怒气冲冲的来了，他气愤无比，连一句话也没有过问，伸出手掐住了星兰的脖子，将小魔女柔弱的身躯吊在空中。“你怎么就不听话！”他用力的捏紧自己的双手，“你个逼崽子的，他妈的别真以为老子掐不死你！”</p><p>星兰哭不出来。圆睁的眼白里不知是茫然还是恐惧。</p><p>就像现在一样，星兰也哭不出来。</p><p>“你们要把咱……带去哪？”她小声的问着，“咱的……父母……会找到你们的……”</p><p>“哦，呵呵。我就实话实说了吧，就是你父母把你送来的。”抽烟的恶魔躲在影子里邪恶的笑着，“至于去哪，你一会就知道了。”</p><p>那天以后几个月的时间她都小心翼翼的做个听话的，不给人添麻烦的乖孩子。又被拖走然后挨揍的时候她不仅不会还手，还会带着哭腔请求所有看见的人不要报告老师。每天回家都躲起来争取不惹巨人们生气，可是喝醉的雄性巨人还是会无缘无故的一拳把她揍翻在地。星兰越来越不知道怎么办了。也许真的，在他们的眼里，自己的存在就是一种错误……</p><p>还好，这个世界对她而言，仍然存在着两件无比宝贵的，能够带来希望的东西：奇迹和魔法。</p><p>五菱宏光驶入黑暗之中，周遭的灯光越来越暗淡，随着天际最后一缕余光的消失，汽车彻底的在黑暗之中航行。星兰将周围想象成了宇宙，而自己正在一艘小小的飞船里航行。可就在这时，她突然发现自己口袋里的手机微微震动了一下。小魔女这才想起自己还带了手机，心中燃起了微微的希望之火——</p><p>她慢慢的挪动着被限制的双手，将『超空间信标』从口袋里拖了出来。锁屏界面上弹出了几条QQ消息，是来自一位同类的寻常的问候。</p><p>“晚上好。星兰酱今天怎么样？”</p><p>只要自己能有时间解锁手机，发出一个定位讯息，以及一句简短的“SOS”的话……可是来不及了。手机屏幕的光在黑暗中是如此的显目，几乎是第一时间就引起了那几个看守她的男人的注意。</p><p>“哟？还带了手机？”右边那个男人轻而易举的将超空间信标从星兰的手中抢走，像是炫耀战利品一般的举起来晃了晃，交给了副驾驶上的男人，“王教官，把这个收了哈。”</p><p>“……还给我。”星兰小声说。</p><p>“没门。这个我们先拿着，等你出去的时候再给你。”</p><p>“那……咱什么时候可以走？”</p><p>“看你表现。”王教官吐了一口烟雾，老神在在的说，“一年起步吧，等你家长什么时候看着满意了，愿意把你接走就还给你。”</p><p>星兰无力的瘫倒在座椅上，眼神空洞的望着头顶，像是接受了命运一样。自己是什么时候预感到这一切的来临的呢？她想着，是在网上看到被送进军事化管理学校的同伴们的时候么？是在电脑上看见“戒网瘾学校”的搜索记录的时候么？没关系了，她想，反正自己无能为力。</p><p>奇迹和魔法。在黑暗中，星兰慢慢的将自己被拷住的双手张开又握紧。奇迹和魔法。</p><p>这世界上很少有能够产生奇迹和魔法的东西，但她知道两样。一样是几种神奇的小药丸，黄色的，白色的，大小不一，有的苦涩，有的微微有些甜味。那是神奇的魔药，提供给小魔女希望和力量的源泉。自然的，那两座为了镇压她而被制造出来的巨人绝不会允许这样的叛逆。从头到尾她都将这些魔药当做自己最大的秘密，快递永远都是寄到小区外面的存放点，将药片从包装里拆开放进维生素C标识的小盒子里，然后藏在自己房间最隐秘的角落。买药的钱自然也是网上的好心人资助的。</p><p>另一件，在星兰眼中带有奇迹力量的魔法礼装，也同样是来自网络上那群好心的陌生人。去年生日的时候，她们给她集资买了一条连衣裙，绀色的占星猫op，一共花了六七百块钱——她从来没有收到过那么贵重的礼物。收到的那天，星兰抑制着雀跃的心情将快递盒子藏在床底下，一直到深夜，那两座巨人都已经入睡之后，才敢偷偷的打开，让充盈着魔力的长袍覆盖在小魔女的肌肤之上。</p><p>那天她第一次感到了前所未有的快乐和归属感。绀色的裙摆上画着可爱的玩偶图案，可对于星兰来说，那即是来自异世界的奥术符文。她想跳起来，想转圈圈，想打开窗户就这么飞走，夜之魔法使在那个深夜第一次尝到了奇迹与魔法的美妙。那一刻的雀跃让她越发确定了自己的与众不同。</p><p>面包车在黑暗的没有灯的道路上前进，外面慢慢传来了狗的叫声。司机一言不发的将车速放缓，头灯照射在了小路的尽头，那里矗立着一座红色的大门，两道沉重的铁栅栏将车子拦在门外。黑暗中，红色大门上龙飞凤舞的金色字样这么写着：株洲阳光教育学校。</p><p>时间是晚上十点，太阳早已落山，在这安静的空寂中看不见阳光。</p><p>生日之后的那一段时间在星兰的记忆里就像是梦境一样。虽然在学校的情况依然没有什么改观，虽然在家中那两座巨人依旧残暴蛮横又无理……可是，知道能够产生奇迹和魔法的东西就握在自己的手中，难以忍受的日子尽头，也仿佛拥有了希望的华彩。</p><p>神奇的魔药可以帮助自己一点点找回力量，华丽的礼装让她在深夜变成属于自己的样子。每一次她都会将绀色的华丽裙摆小心翼翼的折好，生怕一不小心弄坏了柔弱的布料。</p><p>可是，一切如同梦境般美好的时光，都会像是梦境一般迎来突兀的终点。</p><p>副驾驶上的“王教官”打了一个电话。很快，面前的沉重铁门缓缓滑开，面包车再次向前驶入深不见底的黑暗之中。铁门在身后轰的一声关上，如同锋利的巨大铡刀一般，将小魔女与外界的最后一丝联系也切断了。这里就是恶魔的巢穴了，她想，只有自己孤身一人，所有人都是敌人。</p><p>“下车！”</p><p>两个壮汉将她从座位上推下来，像是押送囚犯一样不耐烦的催促着她走过长长的，黑暗的走廊。这座楼已经有些年纪了，斑驳的墙壁上贴着学校的宣传标语：</p><p>“网瘾是可以治好的！”</p><p>“给我们一点时间，还您一个听话的乖孩子”</p><p>“阳光再教育学校：专治早恋、叛逆、抑郁症……”</p><p>她低着头走过那些红红绿绿的标语和宣传画，在长长的走廊尽头，小魔女被推进了一间阴暗狭窄的小房间。她用余光抬起头看了一眼，门口歪歪斜斜的牌子上写着三个小字：禁闭室。</p><p>一片脏兮兮的床垫，几个小盆子，墙上贴着的残破的《弟子规》节选，仿佛干涸的血迹一般的红色痕迹，旁边布满了似乎是指甲抠出的划痕。</p><p>“在这好好呆着。要是表现好，明天就把你放出来。”</p><p>教官冷淡的丢下这句话，砰的一声，门被关上了。</p><p>没有灯光，只有从装着铁栅栏的小窗外透进的冷冰冰的光芒。星兰靠着墙角坐下，在寒冷的夜里抱紧了自己。</p><p>哭了起来。</p><p>那段梦境般的时光破碎的时候，她也曾经这样流下眼泪。</p><p>从学校回来之后一个再普通不过的下午，回到家打开门的少女，却发现迎接自己的是两座愤怒的巨人。那个雄性的巨人手中拎着她漂亮的魔法礼装，雌性拿着贴着维生素C标签的小瓶子……空气仿佛凝固了，在他们毫无表情的脸上满溢着怒火、冷漠与失望，最后化为千钧的沉重一击。</p><p>小魔女砰的一声撞在墙壁上。</p><p>“这是什么？啊？这是什么？！”</p><p>歇斯底里的喊声像是要刺穿耳膜，楼板在震动。</p><p>“你就是存心跟我们对着干，就是想要我们丢脸是不是？！”</p><p>“老子辛辛苦苦把你养大，结果你就这么报答我？不男不女的当个人妖？！”</p><p>魔药已经被丢进厕所里冲进下水道，星兰在墙角缩成一团，拳打脚踢像是狂风骤雨一般落在脆弱的小身子上。她不知道怎么辩解，只是一个人低着头抹着眼泪。这缺乏男性气概的行为又进一步加剧了雄性巨人的愤怒，他站在魔女面前居高临下的盯着后者，揪着她的头发将她从地上拽了起来，狠狠的在她面前冷漠的撕碎了画着魔法符文的裙摆，其上繁复的花纹在一瞬间失去魔力，只剩下残破而悲伤的碎片轻飘飘的落在星兰的手心里，像是死去天使飘落的羽毛。</p><p>巨人的怒火像是消退了些。他带着冷淡而失望的眼神盯着小魔女，生硬的扔出了几个字：</p><p>“滚出去。从今以后当我没有你这个儿子！”</p><p>星兰没有动，她害怕的不敢挪动自己的身子。在那巨人强大的退魔力场边，小魔女引以为傲的魔力此刻失去了全部作用。这呆滞和怯懦又再次点燃了巨人心中的愤怒。</p><p>“你他妈耳朵聋了吗？！给我滚出去！现在就滚！”</p><p>小魔女咬着嘴唇直到痛到出血，她颤抖着慢慢悠悠的站起来，拿着书包一瘸一拐的消失在门外。还没有走出两步，防盗门就砰地一声在身后关上了。一种前所未有的孤独和空寂感在瞬间包裹了她。整个巨大、险恶、残酷的世界，在这一刻拨开表皮露出了残忍的微笑。那笑容让她不停的发抖。</p><p>星兰全身都在抖个不停，连走下楼的时候都要扶着台阶才能勉强挪动脚步。到了单元门口的时候，因为没能看清铁门前的门槛还被绊倒摔了一跤。她慢慢的爬起来，外面的太阳正在落下，赤色的霞光笼罩了这座位于洞庭之南的小城，很快夜晚就要来了。</p><p>夜色笼罩的时候她正在忙碌的街道上游荡。除了汽车之外，电瓶车、三轮和摩托也一样以一种混乱而霸道的姿态挤占着他们能够接触到的每一条车道，让每一次过马路都成为一次冒险。街道边上弥漫着烧烤的香味，下班回家的白领们在路边三两聚集而坐，就着啤酒和尾气享受着辣椒与油盐合成的交响。</p><p>一个人的星兰看上去像是这个世界里少有的异类，好像只有她一个人是黑白的，无法沾染上繁华的色彩。</p><p>在阴暗狭窄的小房间里，星兰抱着自己缩成一团，努力不让自己继续哭下去。眼泪这种东西象征着软弱，什么都改变不了……而强大的夜之魔法使才不会软弱，也什么都不怕，什么都能做到……毕竟她就是奇迹和魔法的化身呢。</p><p>可是夜晚真的好漫长好漫长，月光透过带着铁栅栏的小窗子洒落在地上。星兰不知道怎样度过这个寒冷而漫长的夜晚，这一次她是真正的孤单一人了。</p><p>不同于上一次，那时她虽然也是这样一个人的在黑夜里停留，可是小魔女知道远方有人在等待着她，像是仰头就能看见的北极星。城市的光污染和尘埃让天空变得漆黑一片，可是星兰知道，只要抬起头，穿越层层迷雾，那颗星星就在那里。一直和她在一起。</p><p>被赶出家门后的五个小时后，手机响了起来。</p><p>星兰正好也感觉自己走累了，在路边随便找了个地方坐下，屏幕上显示着的是一个熟悉的头像，以及一条关心的消息。</p><p>“小魔女还好么？”</p><p>发消息的人有着一个白色的女孩子头像，QQ昵称是“Polaris”——北极星。虽然看上去有时候会被当成同类，但星兰知道他其实只是一个没有魔力的凡人。一个经常和魔女们在一起玩的，但是很可爱很招人喜欢的普通男孩子。他总是会在星兰感到难过和悲伤的时候找上她来，作为温柔的大哥哥安慰和倾听。几十页几十页的聊天记录之后星兰已经完全信任了那个在另一座遥远的城市，清澈和柔和的如同温暖的水一般的男孩子。</p><p>她说了自己在学校的情况，说了家里那两座凶恶的巨人，说了自己的期待，说了那些神奇的奇迹和魔法——北极星都一并倾听。他不时还会附和着一起和星兰对巨人和其他欺负了她的人口诛笔伐，虽然不能真的抱到，可是那个人说着“抱抱魔女酱”来安慰她的时候，星兰还是能感觉到自己仿佛真的被抱住了一样的温暖——</p><p>她这一生还没有被那样温暖的抱住过呢。</p><p>西园寺星兰回复了一串省略号，“咱……咱不知道怎么说……”又伴随着一个小女孩哭泣的表情。</p><p>“没关系的，我在哦。”北极星这么回答着，“抱抱，我想帮助魔女酱呢。感到麻烦的话不说也没关系哦。”</p><p>星兰感觉到温热的泪水浮现在了眼眶里，所有的疲惫和委屈一下子从心底深处如潮水般涌上来，轻易的击垮了少女假装强大的外壳。她缩成一团，抽泣着，用颤抖的双手打字回复——“我被他们赶出来了……药扔掉了，裙子也被弄坏了……”</p><p>北极星很快的回复了。“抱抱……你身上有钱么？现在有什么可以去的地方么？”</p><p>“支付宝里面好像还有一点……现金没有了……”</p><p>星兰颓丧的坐在路边，“咱……没有地方可以去……不知道怎么办……”</p><p>“抱抱魔女酱，如果没有地方可以去的话……来找我，也不是不可以呢。”</p><p>“诶……？”流浪的小魔女呆了呆，“你在哪里？”</p><p>“在北京。我一个人住，所以你暂时过来一段时间也没关系。我给你路费好了，来之后我们再一起想办法……”</p><p>小魔女被突然的惊喜砸的有些说不出话来。她用颤抖着双手打字说着“谢谢……”</p><p>“其实……我一直以来都挺喜欢你的来着。”北极星的消息继续弹了出来，“是那种、想要在一起的喜欢哦……”</p><p>“所以说，要是想不到什么办法的话，就和我在一起吧。我愿意养你一辈子……对了，我还有加拿大国籍，等你成年了，就把你一起带去那边也是可以的哦。”</p><p>“诶……？！”</p><p>如果说刚才是突然的惊喜的话，现在星兰完全就是被天大的馅饼砸晕了脑袋，她的脑袋晕晕乎乎的，一下子完全的失去了思考的能力，好像漂流在一片温热的气泡里面，显得那么虚幻。小魔女赶忙擦了擦眼睛，来确定自己没有看错什么。</p><p>不是幻觉。</p><p>这、这算什么？她不敢相信自己的人生这么快的发生转变。她不敢相信真的有好运降临在自己身上——从小到大这个世界从来没有带给她过惊喜，有的似乎只是不断加深的悲伤。</p><p>眼睛再一次的模糊起来了。上一次感觉到这样的温暖和安心是什么时候？星兰记不清了。</p><p>从坐在幼儿园的车上想再出生一次以成为女孩子之后星兰的整个生命就是在与世界为敌。那两座巨人本应该保护她帮助她，最后却变成了每天都要与之战斗的敌人。在学校里被敌人环绕，在家里也一刻不能放下戒备，面对着想要否定夜之魔法使的整个世界，少女只有一次再一次的挥刀，可是再厉害的魔女也会累呀。她已经不想战斗了。</p><p>这一刻宁静的海湾向着她张开了双臂。那个素未谋面的少年向她许诺了一个梦幻一般的未来，如同浪漫的诗人一般面对着海鸟高声歌唱着——“来吧，那疲惫的残破的弱小的被遗弃的灵魂，来我身边吧，我举着金色的航灯将你相迎……”</p><p>“嗯、我……咱也喜欢你……”</p><p>前所未有的安心和甜意在心里绽放开来。小魔女迫不及待的打字回复，好像晚了一分一秒就会失去这根宝贵的救命稻草，再次掉落到不可见的深渊里面去了。</p><p>北极星真的给她转了钱，星兰直接在支付宝里面买了时间最近的一张去北京的卧铺火车票。K字头的普通快速——她还记得自己小时候曾经被父母带着乘坐红皮和蓝皮的火车去过许多地方。现在这高铁铺满全国的时代，老的卧铺车已经不再处于聚光灯之下。</p><p>她所在的地方离株洲火车站不远，走路半个小时就能到。株洲不是什么大城市，配不上始发和终到的待遇。将在晚上十点三十八分抵达株洲的K600次从广州开往包头，无论是株洲还是北京西都不过是它漫长旅途上经历的过客。</p><p>为了接下来长达近二十四小时的旅程做好准备，星兰找了家收支付宝的便利店买了点矿泉水和方便面，然后一个人走进了深夜的株洲站。在候车厅等着的时候，少女又一次收到了来自北极星的消息。</p><p>“我查了时刻表，明天晚上九点到，那时我去西站接你。”</p><p>“嗯。”星兰抽了抽鼻子，就算一个人，可是她却并不感到孤单。</p><p>“魔女酱害怕么？”</p><p>“有一点。”</p><p>“我一直都会陪着你哦。什么时候害怕了，就抬起头来看，我就在你的头顶。”</p><p>星兰抬起脑袋，视线穿透灰色的钢筋混凝土的穹顶，穿透覆盖城市的尘埃和弥漫的灯光，她仿佛看见了在干净的一尘不染的夜空之上，北极星正闪耀着。</p><p>漫长的夜晚里，星兰缩在列车晃动的卧铺上，映照着她的只有手机屏幕的光。北极星真的和他说的一样一直陪着少女直到深夜，直到小魔女慢慢的不知不觉的落入梦乡。</p><p>阴暗的小房间里，星兰终于还是睡着了。她缩在坚硬墙壁构成的角落里，闭上眼睛耷拉着脑袋，微凉的夏夜里月光化作银色的毯子盖在安详的女孩身上。梦境里面，她仿佛回到了那趟开往北京的列车上，安详的缩在柔软的被子里，手机屏幕上显示着北极星宽慰她的话，而夜行列车哐当哐当的摇晃着，仿佛将她放在摇篮里，一点一点航向不用再痛苦的彼方。</p><p>而将她从梦中叫醒的是一阵疼痛感。</p><p>一个穿着军绿色迷彩服的男子用力朝着睡梦中的星兰踹去，剧痛将她从让人安心的梦里坠落出来，又回到冰冷的现实里。</p><p>“起来！”</p><p>那人见星兰一动不动，作势又要抬脚，女孩只得摇摇晃晃的挪动着颤抖的身子，咬牙站起来。已经是早上了，铁窗外的太阳高照，即使是水泥地上的反射也明亮的让她的眼睛发痛。她被连踢带拽的赶出了房间，穿越过道，来到另一件稍微宽敞一点的屋子里。一个剃着寸头的健壮的中年男子正坐在桌子后面，迷彩服人把星兰推到坐着的那人面前，后退了一步，“带过来了，王教官。”</p><p>“好。”男人点了点头，像是鹰一般锋利的目光刺向星兰的双眼，“名字？”</p><p>“西园寺……星兰……”</p><p>啪。话音未落，那个套在迷彩服里的恶魔的一掌耳光就落在了小魔女的脸颊上。这一击扇的她头晕脑胀眼冒金星，摇摇晃晃险些没能站稳。“教官问你的名字！没让你搁这玩过家家装小日本！”吼声震得她耳膜发痛。</p><p>“我再给你一次机会。你的名字是？”王教官面无表情。</p><p>星兰感受到了一种超乎寻常的平静，好像全身上下的疼痛感一下子都全部消失的无影无踪，她感到神清气爽，无所畏惧，就算是面前的强大恶魔也没有什么好害怕的了——小魔女挺直了身子，说：“西园寺星兰。”</p><p>她被一脚踹到了地上。王姓教官从椅子上站起来，双手撑着桌子居高临下的盯着倒在地上的她。“张宇阳！我在问你的名字！”</p><p>星兰想笑，可是喉咙被堵住了，一点声音都发不出来。你不是你已经知道你想要的答案了么？她一边咧着嘴做出扭曲的表情一边想着，那只是答案而已，那不是我的名字。</p><p>抵达北京西站的时候已经是第二天的晚上了。星兰抑制着雀跃的心情走下火车，在出站口的地方，她见到了那个等待着她的人——举着大大写着“西园寺星兰”的牌子，让周围的行人纷纷侧目，想着这趟火车上原来还有个日本人？星兰没在意别人的目光，她找到那个举着写着自己名字的牌子的少年，扑在了他的怀里。</p><p>“好啦，好啦，已经没事了哦。”北极星轻柔的抚摸着小魔女的脑袋，将她抱在怀里安慰，“果然和之前照片上看到的一样可爱哦。”</p><p>小魔女什么也没有说，只是在他的怀里蹭来蹭去，哭个不停。</p><p>终于到了这一天了，她想着。</p><p>人生中第一次的，她开始期待起未来。</p><p>星兰越来越想笑了，她倒在冰冷的地板上，全身上下每一个部分都在呻吟作痛，可她还是止不住的想笑。教官大吼的让她起来，而她一点力气也没有。那个穿着迷彩服的只好架着她把她强行拖拽起来。</p><p>不就是你一脚把我踢到地上的吗？那么想让我在地上你就继续让我躺着啊？星兰一边笑一边想着。她原本有些不知道自己为什么在笑，而有一个瞬间她终于明白了。她在嘲笑自己的愚蠢。</p><p>北极星的小屋子不大又很乱，各种各样的书本、衣服、杂物散落在地板上。如果是个理性的人做出判断的话，这时应该已经开始质疑起了他先前所描绘出的加拿大国籍富家子弟的人设。可星兰没有想那么多，她满脑子都被甜甜的幸福所环绕着——终于离开了那两座巨人，终于和关心自己的人呆在一起了。不管未来如何，此时此刻，世界上再也没有比这更幸福的事情。</p><p>北极星给她买了魔药，让奔波了一天多的星兰先去睡了。梦里，她真的成为了厉害的魔女，挥舞着魔法杖，呼吸之间将天地重塑。</p><p>醒来的时候已经是中午了，窗外正下着淅淅沥沥的小雨，北极星正在笨拙的做饭给她吃，并不熟练的动作看的她心里微微泛起暖意。打开神圣连接向着其他的魔女报平安之后，北极星将菜端了上来，炒花菜和红烧肉，与星兰相对坐在窗边，听着窗外的小雨。星兰一边吃一边哭，时不时会噎着，北极星只好不时拍拍她的后背。</p><p>“小魔女帮我一个忙，好不好？”他突然说。</p><p>“嗯，是什么？”</p><p>“一会你就知道了。”</p><p>星兰没有在意。她整个人都被幸福的光晕环绕着，怎么可能有不好的事情发生呢？那一切都已经过去了。饭后她躺在北极星家的沙发上玩手机，指尖划动，雀跃的小猫显示着她此刻的心情。</p><p>真好啊。真好啊……</p><p>曾经读到小说里面，和在意的人一起住在不大的出租屋里，虽然没有很多钱，但是却一直互相关心着——这样的情节的时候，星兰都会忍不住想要哭出来。她一直以来不知道多么渴望这样的生活，能够不用再战斗，不用再害怕的一片安全的港湾。她再一次抱住了北极星，而后者温柔的摸了摸少女的脑袋。</p><p>“乖，该走了。”</p><p>他抽出一把雨伞，牵着星兰一起走向雨中。在雨里二人走过忙碌的人行道口，坐了两站地铁，来到附近一处繁忙的商业区。</p><p>北极星领着她走进了一家中上档次的酒店大堂里，星兰还没来得及疑惑为什么要来这里，就看见一个满脸痘痘，穿着动漫人物T恤的死宅青年从大堂的沙发上站起来，生硬的向着北极星打招呼。后者摆了摆手。</p><p>“说好的3000块，微信转给我就行。今天她就交给你了，还是这孩子的第一次哦。”说着，还眯了眯眼睛。</p><p>“你、你说什么？”</p><p>星兰的脑袋一下子被冻住了。一切的幸福、美好和安心都在这一刻被从天而降的巨大冰块冻在中央，她不敢置信的扭过头，透过寒冷彻骨的半透明的结晶望着自己跨越半个国家前来面见的拯救者。这一定是个玩笑吧？</p><p>北极星的面容慢慢的变得黑暗而扭曲，棕色的纯洁的眼睛变成了迷雾之中闪烁着的红光。他——它的头上长出恶魔的角，身体慢慢从瘦弱的少年变成纤细而瘦长如同武器般的怪物。“小魔女帮我一个忙哦。”那低沉、遥远而邪恶的声音从已经变成恶魔的生物的喉咙深处传来，伴随着来自地狱的黑雾吐息，“陪他一天时间，之后我们把钱对半分哦。只是吃喝玩乐，还有就是躺在床上而已，很轻松的，没关系吧？”</p><p>迎接蛊惑人心的恶魔的是小魔女的用力一击。</p><p>“你骗我！”她用尽全力一巴掌扇到那恶魔的脸上，后者没有躲开，没有还击，迷雾面具后瘦长的怪脸笑的更诡异了。</p><p>“我没有骗你。我收留你，把你接到北京来，要一点小小的帮助不过分吧？况且你也没有地方去，留下来做轻松钱还很多的工作，也比你和你那糟糕的家长呆在一起要好得多吧？”</p><p>星兰没有回答。她噙着眼眶里让世界模糊的泪水转身就跑。</p><p>“跑，让他去操场上跑五圈冷静一下再说。”教官面无表情的扔下了一句话，迷彩服立刻会意，推着星兰就出了门，在楼道的窗户边指了指外面的操场。</p><p>“听到了吗？你，去那跑五圈再回来！”</p><p>西园寺星兰一动不动，魔女的眼睛盯着窗外的天空。虽然天气又热太阳又大，可是头顶的云却一点没有散去的迹象，只有这闷热的夏日里灰蒙蒙的天空，仿佛笼罩着一切的大蒸笼的盖子。</p><p>“诶，你个懒鬼发什么呆呢？不动是吧？”迷彩服生气了，干脆揪着星兰的耳朵强硬的拽着她走出了这栋小楼，把她推进了闷热的大蒸笼下面。操场上已经有着一队穿着简朴的蓝色制服的学生，排成队列绕着圈跑着，几个人向着星兰投来麻木的目光，又很快的低下了头。</p><p>“还站着？！你他妈给老子跑啊！”又是一脚把少女踹倒在地上，下意识的伸手想要撑住身体，却只是让凹凸不平的塑胶跑道在手掌上划出了许多道血痕。眼看着疾风骤雨般的攻击又要降临，她只好踉跄着站起来，一瘸一拐的挪动着身子向前跑。</p><p>“快点！动！”</p><p>迷彩服喊了一句，然后退到遮阳伞下面，不知从哪掏出了一瓶可口可乐，一边喝着一边翘二郎腿，好像很满足于欣赏他人的痛苦。“再快点！歪歪扭扭的你他妈是瘸子吗？”</p><p>星兰不知道自己在往哪里跑。恍惚间她又回到了北京，那时她也不知道自己有哪里可以去，只是漫无目的的想要逃走。曾经名叫北极星的怪物一边在身后追赶一边大喊着让她停下来听它解释，小魔女只想捂住耳朵然后跑到一个安静的地方。那是个恶魔，是个怪物，她想，不是那个每天会温柔的安慰自己，会为自己想办法的清秀少年。</p><p>可是又有哪里可以去呢？</p><p>一圈。好渴……小魔女的脑袋晕晕乎乎的，干枯的喉咙渴求着水分。她自从昨天晚上之后就已经滴水未进了，而在如同蒸笼一般酷热的湖南的夏天之下，地面被高温扭曲成海市蜃楼一般的景象，汗水滴落在塑胶跑道上很快的蒸发。</p><p>星兰看了看自己血淋淋的手心，忍不住伸出舌头舔了舔伤口上的血迹。灰尘、之前手碰到的小石子和血液的咸腥味一起钻进口中，少女将它们艰难的吞咽下去。这是能够击退恶魔的血液呢，她想。</p><p>两圈。从那酒店的大堂跑出来，穿过繁忙的步行街，跑上百货大楼的移动扶梯，最后在五层一个咖啡馆的露台上，她被恶魔抓到了。浑身燃烧着黑红色火焰的存在尝试着想她伸出手，“听我的，好么？先冷静一下，会没事的……只是要你——”</p><p>三圈。星兰不想听。她一个字也不想再听，少女飞跃栏杆朝着五层之外的地面一跃而下，背上的骨头刺穿肌肤与衣衫然后在一次呼吸之间生长为巨大的白色翅膀。她一点力气也不剩下，再也跑不动了，失去力量的身体昏倒在了跑道上。</p><p>警笛、尖叫、疼痛。模糊的记忆隔着一层厚厚的雾气。为什么会这样呢？</p><p>明明才没过去多久呀。</p><p>西园寺星兰是被一桶冷水浇醒的。她凭借着本能舔舐着凉爽的甘霖，却还没回过神来就遭到了来自迷彩服的沉重一击。“啊？跑着跑着就睡着了？你这懒猪！”那人又一巴掌打在少女的脸上，让她的脑袋震的眼冒金星。</p><p>“你就在这站着吧！站到我让你走再说。反正你也走不了。”</p><p>扔下这句话他就消失了。太阳已上升到正午，其他的穿制服的所谓学员们排着队走进大概也许是食堂的地方里。星兰说不出那是什么地方，除了塑胶在太阳下灼烧的味道，自己手上的血腥味之外她什么也闻不出来。</p><p>她的双手被拷在一起，连着绳子拴在了这座操场边缘的电线杆上。没办法坐下，也没办法走开。身上的水随着时间的推移一点点的蒸发与干涸，与汗水混合在一起化作炽热的岩浆。时间一分一秒过去，如同地狱一般的炙烤却越发让人感到无法忍受。</p><p>星兰的脑袋昏昏沉沉的，她一会以为自己还在家里，一会以为自己在北极星的屋子中，一会以为自己已经躺在医院。少女说不清自己现在究竟在哪，也记不清楚刚刚发生了什么。</p><p>她感到将自己束缚住的电线杆变成了十字架，她被高高的挂在十字架之上，下方的人群点燃了火堆。</p><p>学校的同学和老师，迷彩服里的人和所谓的王教官，两个她必须当做父母对待的邪恶巨人，北极星变成的瘦长的恶魔，围着火堆一起手拉着手欢笑着庆祝着，跳起了胜利的舞蹈，脸上洋溢着猎杀女巫的残酷的喜悦。高耸的火苗跳动着，贪婪的吞食着她小小的身躯，在火焰和欢庆的中央，西园寺星兰一声不吭的静静的站在那里，死了。</p>]]></content>
+    
+    <summary type="html">
+    
+      夜之魔法使西园寺星兰被带走的时候是一个微凉的初夏。她和那两个看守自己的巨人们再次大吵了一架，一个人在暮色里走下老旧的公寓楼房，一个人吹着安宁的晚风。不知不觉的她觉得冷了起来。衣服穿少了点，她想着，可是不想再上楼了。
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://owomoe.net/categories/life/"/>
+    
+    
+      <category term="跨性别" scheme="https://owomoe.net/tags/%E8%B7%A8%E6%80%A7%E5%88%AB/"/>
+    
+      <category term="mtf" scheme="https://owomoe.net/tags/mtf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于我在华强北组了一台软路由设备及优化Wifi信号的那档事</title>
+    <link href="https://owomoe.net/dev/178.html"/>
+    <id>https://owomoe.net/dev/178.html</id>
+    <published>2020-08-12T16:42:53.000Z</published>
+    <updated>2021-09-19T11:44:28.241Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我的房间离路由器所在位置比较远，再加上墙的信号阻断，导致<strong>wifi信号差、网速速率低</strong>。<br>再此次改装之前，我家的网络设备只有一个运营商提供的光猫和华为路由器，宽带是300Mbps。但是到我的房间后，测速数据及其离谱，网络及其不稳定，可见无线信号的<strong>衰减</strong>程度。</p><p>所以我需要优化我房间内的网络信号，顺便打算整一台软路由设备，增加可玩性。既然。深圳电子第一街，华强北就在身边，不如<strong>直接去华强北购买配件</strong>，可以当场验货。<br>不过华强北水深也是真的，js多也是确实。所以，也充满了<strong>不确定性</strong>。此次之行，也被js坑了个遍。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="走线与光纤收发器"><a href="#走线与光纤收发器" class="headerlink" title="走线与光纤收发器"></a>走线与光纤收发器</h3><p>由于房屋装修问题，未考虑周全，弱电箱非常辣鸡，久年失修几乎处于无法使用状态，因此墙内网线走线也全部报废。修弱电箱以及墙内走线的成本过高，此次不考虑。<strong>因此，只能选择走明线。</strong><br>而网线无比粗大，墙外走明线过于碍眼，走<strong>光纤</strong>倒是极佳的方案。所以，需要<strong>光纤收发器</strong>将网络信号转换为光纤信号，接收端再将光纤信号转换为网络信号。<br>实际上，使用光纤收发器，最多可以传输<strong>20km</strong>的距离，所以我们家里用…实属有杀鸡牛刀的感觉233</p><h3 id="软路由设备"><a href="#软路由设备" class="headerlink" title="软路由设备"></a>软路由设备</h3><p>打算组一台软路由设备，增加可玩性，于是在华强北组了台小主机。<br>需求是基础性能与多网口，最好还能扩展SATA硬盘接口，方便日后可以拿闲置硬盘组nas之类的。</p><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="光纤收发器"><a href="#光纤收发器" class="headerlink" title="光纤收发器"></a>光纤收发器</h3><p>光纤收发器用于将光纤信号与网络信号互相转化，一整套设备由两个光纤收发器组成，分为A、B端，需配套使用。<br>A、B端用光纤线连接。A端将网络信号转化为光纤信号，为发送端；B端将光纤信号转化为网络信号，为接收端。<br>当信号灯每排至少亮起一个时，代表每一端的信号都正常。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/1.jpg" alt="光纤收发器A端"></p><h3 id="小主机软路由设备"><a href="#小主机软路由设备" class="headerlink" title="小主机软路由设备"></a>小主机软路由设备</h3><p>软路由直接找华强北商贩拿的整机方案，也找了挺久的。<br>因为这种小型主机需要定制的外壳以及定制的主板，很多东西是集成到主板里去的，局限性非常非常大，所以CPU也是焊死在主板中的。不过这是超小型的小主机软路由，有稍微大一点的软路由主机设备，可以自行更换CPU，也可以有散热风扇。<br>既然是做软路由，就只能找有很多个网口的，而且最低得是千兆吧。咱们选的这台就是4个千兆网口的。<br>在寻找的途中我们找到了一个专门做工控小主机的专柜，专门提供小主机定制方案、定制主板、定制外壳之类的，可惜这是工厂的专柜，人家说工厂只做批发单，我们只买一台这种零售不做。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/2.jpg" alt="赛格6楼6607，有需要的小伙伴可以康康"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/3.jpg" alt="工控小主机定制主板"></p><p>而这种超小的主机，焊死的CPU自然是功耗最低最廉价的赛扬处理器。下面是我的这台软路由的配置：<br>CPU：Intel(R) Celeron(R) CPU J3160 @ 1.60GHz<br>CPU规格：4核心/4线程<br>内存：2G DDR3<br>硬盘：64G SSD</p><p>放几张外观和内部图康康：<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/4.jpg" alt="外观"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/5.jpg" alt="内部"></p><h3 id="软路由系统"><a href="#软路由系统" class="headerlink" title="软路由系统"></a>软路由系统</h3><p>软路由系统咱选择的是OpenWrt(KoolShare)，因为相对成熟且上手简单方便，还是挺不错的。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/6.jpg" alt="OpenWrt"></p><h3 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h3><p>有了软路由，当然就还需要一个无线AP来发射信号，达到我们最初优化wifi信号的目的。<br>路由器选择的是TP-LINK的AC1200双频千兆无线路由器TL-WDR5620千兆版，也是在华强北商贩的手上拿的，价格还算实惠，比在网上买便宜一些，也满足我们的全部需求。<br>一开始我们的想法是，在软路由上插一个USB无线网卡来发射信号，最后发现不太行，远不如另外买一台无线AP。</p><h3 id="走线"><a href="#走线" class="headerlink" title="走线"></a>走线</h3><p>咱是使用墙钉进行墙外走线的，将线固定在墙上。<br>同样，如图中的线固定材料也是华强北买的。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/178/7.jpg" alt="固定材料"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote><p>小声逼逼：这篇文章咕了两个月终于写完了，从8月13日开始写，10月4日才抽空写完….</p></blockquote><p>整一套配下来，内存、电源是另外买的，感觉电源方面被小坑了一下以外，其实这个整机的价格我们拿到的，也不算太亏，属于正常范畴。现在用起来的感觉也挺不错的，虽然有一些小问题，但无伤大雅，带来的方便也是很多的。</p><style>.post-content img{    width:400px;}</style>]]></content>
+    
+    <summary type="html">
+    
+      由于我房间离路由器距离较远，wifi信号的衰减极其明显，网速很慢&lt;br&gt;为此，我增强了在房间的wifi信号，顺便组了台软路由设备增强功能，所有配件来自深圳华强北。
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="软路由" scheme="https://owomoe.net/tags/%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
+    
+      <category term="wifi" scheme="https://owomoe.net/tags/wifi/"/>
+    
+      <category term="宽带" scheme="https://owomoe.net/tags/%E5%AE%BD%E5%B8%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Giffgaff英国手机卡申请办理激活攻略</title>
+    <link href="https://owomoe.net/sim/177.html"/>
+    <id>https://owomoe.net/sim/177.html</id>
+    <published>2020-07-14T03:14:38.000Z</published>
+    <updated>2021-09-19T11:44:28.233Z</updated>
+    
+    <content type="html"><![CDATA[<p>不论是前往英国留学，还是仅在中国大陆接码使用，Giffgaff都是极佳的选择。<br>本文将讲述如何申请办理激活Giffgaff手机卡，在中国大陆也可以使用，让您多一个英国号码。<br>如果您想了解更多境外手机卡信息，可以看看我的这篇文章：<a href="https://owomoe.net/dev/175.html">https://owomoe.net/dev/175.html</a></p><h2 id="申请办理"><a href="#申请办理" class="headerlink" title="申请办理"></a>申请办理</h2><p><a href="https://www.giffgaff.com/orders/affiliate/seiri82_1587610982804">点击这里</a>申请办理手机卡，从这里办理激活后送5英镑。<br>然后在此页面填写详细的收件信息。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/sim/177/1.png" alt="申请SIM卡"></p><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol><li>寄送通过平邮的方式，跨国信件，所以收货地址必须精确到信箱。<strong>这不是普通快递，这是邮政信件</strong>，是直接投递到您的信箱。</li><li>由于是跨国信件所以时间会比较久，我大概是申请28天后才寄送到，所以千万<strong>不能着急</strong>。</li><li>地址只支持<strong>全英文</strong>，所以请您一定要<strong>翻译正确，格式正确</strong>，否则无法送达。</li><li>由于是跨国信件，还是免费申请，所以丢件率较高，建议您一次性<strong>多申请几张</strong>。</li></ol><h3 id="办理成功"><a href="#办理成功" class="headerlink" title="办理成功"></a>办理成功</h3><p>填写完毕后跳转到以下页面即代表办理成功<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/sim/177/2.png" alt="办理成功"><br>有可能会给您发邮件提示办理成功，接下来需要做的事情就是等待了。</p><h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><h3 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h3><p>前往<a href="https://www.giffgaff.com/activate">https://www.giffgaff.com/activate</a>完成激活<br>先填写您的SIM卡上的6位代码，然后填写邮箱和密码注册Giffgaff平台账号。</p><h3 id="选择套餐"><a href="#选择套餐" class="headerlink" title="选择套餐"></a>选择套餐</h3><p>如果您要去英国使用，可以选择一个套餐。但如果仅仅是在中国大陆接码使用，就<strong>不需要选择套餐</strong>了。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/sim/177/3.png" alt="不开通套餐"></p><h3 id="充值余额"><a href="#充值余额" class="headerlink" title="充值余额"></a>充值余额</h3><p>激活时<strong>必须充值</strong>，最低充值10英镑，支付方式<strong>仅支持国际银行卡</strong>（比如<strong>VISA/万事达的信用卡/借记卡</strong>）<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/sim/177/4.png" alt="选择充值"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/sim/177/5.png" alt="支付方式"></p><p>完成后便激活成功，系统会派发手机号到账号里。</p><h2 id="保号使用"><a href="#保号使用" class="headerlink" title="保号使用"></a>保号使用</h2><p>官方规定的保号规则是<strong>6个月</strong>内使用一次即可，包括但不限于打电话、发短信。<br>激活送的5英镑+最低充值10英镑可以保号很久了。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Giffgaff不论是去英国留学还是在中国大陆接码使用，都是极佳的选择。号码优质、回收号概率低、保号容易，优势明显。<br>当然劣势同样明显，<strong>寄送的时间长</strong>、<strong>丢件率高</strong>，<strong>激活只支持国际银行卡</strong>。<br>困难主要体现在<strong>申办寄送</strong>和<strong>激活支付门槛</strong>上。我自己申请giffgaff，一次就要耗时<strong>一个月+</strong>，且<strong>丢件率极高达75%</strong>。<br><strong>如果您想快速拿到卡，可以联系我（文章留言、邮件、微信、telegram），我目前在出售此卡，5元一张，可走闲鱼平台。同时提供代激活服务，具体请联系我。</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      不论是前往英国留学，还是仅在中国大陆接码使用，Giffgaff都是极佳的选择。&lt;br&gt;本文将讲述如何申请办理激活Giffgaff手机卡，在中国大陆也可以使用，让您多一个英国号码。&lt;br&gt;超级详细的办理攻略，附有图片。
+    
+    </summary>
+    
+    
+      <category term="sim" scheme="https://owomoe.net/categories/sim/"/>
+    
+    
+      <category term="Giffgaff" scheme="https://owomoe.net/tags/Giffgaff/"/>
+    
+      <category term="英国手机卡" scheme="https://owomoe.net/tags/%E8%8B%B1%E5%9B%BD%E6%89%8B%E6%9C%BA%E5%8D%A1/"/>
+    
+      <category term="实体手机卡" scheme="https://owomoe.net/tags/%E5%AE%9E%E4%BD%93%E6%89%8B%E6%9C%BA%E5%8D%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>天国初见</title>
+    <link href="https://owomoe.net/life/176.html"/>
+    <id>https://owomoe.net/life/176.html</id>
+    <published>2020-06-05T12:33:31.000Z</published>
+    <updated>2021-09-19T11:44:28.249Z</updated>
+    
+    <content type="html"><![CDATA[<p>谨以此文悼念逝去的跨性别女孩。</p><a id="more"></a><hr><p>再次睁开眼睛的时候，她首先感觉到的，是温暖。</p><p>像是被轻柔的放在热水里面，又或者被人抱着一般的感觉，全身都软乎乎的。</p><p>没有想象中的疼痛。没有鲜红的血，或者救护车尖锐的笛声，周围的喧嚣已经远去，只剩下这个安静的世界里躺着的她。</p><p>像是睡了很久很久一样，少女不情愿的慢慢睁开了眼睛。</p><p>失去意识之前最后的记忆，是自己闭上眼睛，从教学楼上一跃而下……从那个残酷的世界里逃走。</p><p>她自嘲的甩了甩头。</p><p>还活着啊，看来是没死成么？</p><p>不过，这是……哪里？</p><p>她发现自己躺在一片广阔的白色的大地上。像是一个辽阔而高远的，由白色填满的空间里，纯净的白色向着每一个方向延伸而去。</p><p>明明没有光，但是不知为何，天地之间却让人舒适的被点亮了起来。</p><p>少女不记得自己曾在任何地方见过这样的空间。她叹了口气，躺下，遥遥的朝着头顶伸出手。宽松的袖子剥落下来，露出纤细洁白的手臂，玉葱般的手指向着天空张开……</p><p>等等，这是自己的手？</p><p>她还没太反应过来，就听见原本一片寂静的天地间，渐渐的出现了声音。</p><p>少女们的交谈和欢笑，从遥远的寂静之中传来，一点点的变得更加真实、更加亲切起来。如同银铃一般清脆的声音里夹杂着各国的语言，她呆坐着，没有尝试去理解。</p><p>她慢慢的撑起自己的身体，从光滑的白色地板上坐起来。她骤然发现这片白色的空间正在逐渐剥落，从天空到大地，一望无尽延伸出去的白被蓝天、白云、树木和可爱的小房子取代。</p><p>她发现自己身处一个不大的广场上。这里似乎是一座不大的小村的正中央。</p><p>周围，从维多利亚时代的长裙，到汉服和日式水手服，各种打扮的少女们环绕着自己，睁大眼睛好奇的打量着。</p><p>“哇，是新的伙伴呢！”</p><p>“呜哇，咱也要看一眼——”</p><p>“好可爱——”</p><p>“那个那个，麻烦让一下，让我来……”</p><p>一个有着翡翠青色头发的女孩子从人群里钻了出来。面对着她。</p><p>对方微微的歪过了脑袋，眨了眨眼睛。</p><p>“唔……Hello? Bonjour? Willkommen?안녕하세요——“</p><p>“呜……”</p><p>她张了张嘴，还没来得及说出什么，就下意识的再次捂住了嘴。</p><p>她怕自己听错了。</p><p>刚才那像是小鸟一般清脆好听的声音……真的是自己？</p><p>青色头发的少女看着她呆滞的模样，也愣了一下。</p><p>随后，却是缓缓的抱了上来，将后者拥入怀中。</p><p>“没事了……已经没事了……来到这里的话，没有人会伤害你的。”</p><p>她呆滞的坐在原地，仍不太明白在自己的身上发生了什么……虽然，已经有了一个隐约的猜测。</p><p>青色的孩子拍了拍她的后背，将她从怀里松开，又不知从何处拿出来了一面镜子。</p><p>目光聚焦到那面镜子上的时候，映入眼帘的是有几分陌生的面庞。</p><p>小巧的脸蛋上点缀着精致的五官，柔和的眉毛下方是水灵灵的大眼睛，黑色的柔顺长发从耳边垂下。镜中的人儿微微张着樱桃小嘴，些许惊愕的神情倒映在瞳孔里，提醒着徐誉舒一件不可否认的事情：这就是她。</p><p>“我……这个……是我？”</p><p>少女的面孔并没有显得完全陌生，眉宇间仿佛还留着些许熟悉的痕迹。像是她只会在最好的美梦中见到的……如果自己生来便是女孩，大概，就会是这个样子吧。</p><p>她不敢相信的揉着眼睛，碰了碰白皙柔嫩的脸蛋，扯着头发在指尖转圈圈，无论做什么，镜中那个可爱的影子都一一对应。骤然涌来的情感如同海潮一般的冲过她的脑海。</p><p>没错。这就是我。我本来就应该是这个样子……</p><p>“嗯呐。”</p><p>青色头发的少女，也用最温柔的语气肯定了她的猜测。</p><p>“这里是天堂哦。没能被世界温柔对待的孩子呢……就会来到这里，以她们最心中最理想、最美好的样子，生活下去……”</p><p>“所以我……死掉了？”</p><p>无论多少次听见自己新的声音，都能让她的心里产生难以言明的雀跃感。她想要大声说话，想一个人静静的读一首小诗，想唱起从来都不敢唱的歌。</p><p>“是这样的哦。不过呢……你本来对原来的世界，也没有什么留恋了吧。”</p><p>她点了点头。</p><p>不想再去回忆了。</p><p>实在没有什么美好的东西值得留念的。</p><p>好吧，那就在这里开始自己的新生活。她这样想着，环顾着这个不大而宁静的村庄。可爱的少女们在街道和花园间追逐、嬉戏着，再也不用害怕，不用焦虑，不用悲伤……</p><p>“我带你四处走走吧。就当熟悉你的新家了哦。”青色头发的少女如此的伸出手，发出了邀请。</p><p>她懵懵懂懂的握住了。</p><p>下一刻，两人就已经并排走在了宁静而整洁的街道上。</p><p>“这里的大家都有着相似的经历哦，所以都会很愿意做朋友的……想要谈恋爱也可以哦。”</p><p>“如果喜欢男孩子的话，地平线的那一边也有座一模一样的村子，住着许多帅气的男孩子……”</p><p>“这栋房子的主人呢……生前是<a href="https://zhuanlan.zhihu.com/p/100993822">非常厉害的职业电竞选手</a>。想要打游戏变厉害的话可以找她去学哦。”</p><p>“这是一家蛋糕房哦。因为是天堂嘛……不吃东西也没事的，但是还是能尝到味道的。吃了也不会变胖哦……”</p><p>不大的小村子里，每一栋建筑都不一样。有的看上去方方正正，带着白色的墙面和大落地窗的现代主义风格——也许主人生前是建筑师？有的则看上去像是从童话里面走出来的屋子，整个由糖果所做成，散发着诱人的甜香味道。</p><p>两人最后停留在了一座可爱的白色圆屋子前。</p><p>“唔，这里的主人前段时间决定离开了……你就现在这里住下吧。如果觉得不满意，也可以自己建房子哦，很简单的——”</p><p>“离开了？”</p><p>她敏锐的捕捉到了对方话里的小小问题。“你不是之前说……这里就是天堂么？”</p><p>“是的，没错哦。只要你想，可以一直在这里生活下去。”</p><p>青色头发的少女微笑着。</p><p>“但是——对于那些选择再给生命一次机会的人……要做出那样的选择也是可以的。”</p><p>“只要跨过一道门就可以。要去看看么？”</p><p>她点了点头。</p><p>那道门坐落在街道的尽头。昏黄而柔软的光晕从其中温柔的渗透出来，和西斜的太阳一起，化作金黄的披肩洒在她小小的身躯上。她在路上摘了一朵花，别在头发上面。她面对着太阳眯起了眼睛，花朵面对着太阳耷拉着小脸。</p><p>“跨过这道门，就能……再活一次，是么？”</p><p>“嗯。就像居住在那个房子里的孩子……想念她在现世里的朋友了，说要回去看望她们。”</p><p>青色头发的女孩子歪了歪头，“这么快就想回去了么？明明还没有呆上多久……”</p><p>她深吸了一口气，默默的向着那道门走了一步。</p><p>“嗯呐。”</p><p>面对着漩涡一般涌动的光芒，从门中突然绽开的强风将她的黑发和裙摆一并吹起。</p><p>“就算经历了很不好的事情……”</p><p>少女歪着脑袋，转身回头。</p><p>“就算有过无比痛苦的时刻……”</p><p>过往的人生像是走马灯一般的闪过。</p><p>“但即便如此……我也想要再给那个世界一次机会。我相信，重来的话，我也许能够幸福……更重要的是，我也许还能带给其他同样需要帮助的孩子们幸福。”</p><p>她突然的笑了。</p><p>“这次不会再把我的性别搞错了吧？”</p><p>青色头发的少女咬着嘴唇，摇了摇头。</p><p>“——等一下！”</p><p>“怎么了？”</p><p>“我叫<a href="https://www.zhihu.com/people/gmjyxx">倉山静葉</a>！今天很高兴认识你……我可以知道一下……你的名字么？”</p><p>“当然了。”</p><p>在迈入那道门之前，她微笑着给出了肯定的应答。</p><p>“我叫<a href="https://www.zhihu.com/question/398873890">徐誉舒</a>……也很高兴认识你。”</p><hr><p>“诶，生了生了！是个女孩——”</p><p>“女孩好啊，好啊。”医院走廊里的男人用袖子擦了一把脸上的汗水，掩饰不住眉宇间的惊喜，“我可一直都想要个女儿的……”</p><p>他冲进产房，去迎接那个崭新的生命。</p><hr><blockquote><p>本文为转载文章<br>本文作者：<a href="https://www.zhihu.com/people/planetnine">硝酸铜</a><br>原文链接：<a href="https://zhuanlan.zhihu.com/p/145713538">https://zhuanlan.zhihu.com/p/145713538</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      谨以此文悼念逝去的跨性别女孩。
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://owomoe.net/categories/life/"/>
+    
+    
+      <category term="跨性别" scheme="https://owomoe.net/tags/%E8%B7%A8%E6%80%A7%E5%88%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[总结]可以在中国大陆境内使用的境外手机卡资料整理</title>
+    <link href="https://owomoe.net/dev/175.html"/>
+    <id>https://owomoe.net/dev/175.html</id>
+    <published>2020-04-23T06:02:01.000Z</published>
+    <updated>2021-09-19T11:44:28.249Z</updated>
+    
+    <content type="html"><![CDATA[<p>众所周知，中国大陆+86手机卡需要实名认证，因此造成许多奇奇怪怪的麻烦。<br>此文章总结了可以在中国大陆境内使用的境外实体手机卡，供大家参考。</p><a id="more"></a><p>如果您有文章未提及的资料，欢迎分享~<br>本文章纯内容分享，无任何推广内容！<br>本文章只注重用境外实体手机卡收短信，仅用于注册境外平台账号使用，所以介绍的侧重点主要是收短信方面，而不是流量漫游。</p><h2 id="香港移动万众卡-CMHK-852"><a href="#香港移动万众卡-CMHK-852" class="headerlink" title="香港移动万众卡(CMHK)(+852)"></a>香港移动万众卡(CMHK)(+852)</h2><p>介绍：香港移动万众卡，在大陆境内为中国移动的信号。<br>资费情况：48元内含48港币，服务费2港币，月租2港币。<br>保号条件：定期充值话费即可，会有有效期提示。<br>设备要求：需配备支持TDD-LTE制式和FDD-LTE制式的手机。<br>SIM卡型：三合一。<br>官网介绍地址：<a href="https://www.hk.chinamobile.com/tc/corporate_information/Prepaid_SIM/local_users/prepaid-services-4g3g-localtalk.html">https://www.hk.chinamobile.com/tc/corporate_information/Prepaid_SIM/local_users/prepaid-services-4g3g-localtalk.html</a><br>大陆信号：中国移动。<br>申办方式：某宝搜索即可，有不少。<br><strong>踩坑提醒：基本上都是回收号，号码被滥用过的可能性很大，比如我的号码已经被注册过微信、QQ、支付宝且账号处于封号冻结状态。</strong></p><h2 id="giffgaff英国卡-44-接码推荐"><a href="#giffgaff英国卡-44-接码推荐" class="headerlink" title="giffgaff英国卡(+44)(接码推荐)"></a>giffgaff英国卡(+44)(接码推荐)</h2><p>介绍：英国giffgaff卡，在大陆境内可以正常收短信。<br><strong>详细的申请办理激活攻略：<a href="https://owomoe.net/sim/177.html">https://owomoe.net/sim/177.html</a></strong><br>资费情况：激活时首充10英镑，无月租。<br>保号条件：6个月内使用一次即可保号。<br>大陆信号：中国移动。<br>申办方式：在官网申办，从英国直邮包邮寄送到大陆境内，可能需要较长时间。<br><a href="http://www.giffgaff.com/orders/affiliate/seiri82_1587610982804">申办地址</a>←从这里申办，激活后送5英镑余额。</p><h2 id="菲律宾Smart卡-63-接码推荐"><a href="#菲律宾Smart卡-63-接码推荐" class="headerlink" title="菲律宾Smart卡(+63)(接码推荐)"></a>菲律宾Smart卡(+63)(接码推荐)</h2><p>介绍：保号成本低，适合于接码。不适合电话或流量，费用很贵。需要在三个月内回菲律宾否则SIM卡作废。有人可以提供已经在菲律宾激活过的卡，可以在大陆一直正常使用。<br>资费情况：一年充值1.7人民币即可，某些微信公众号可以代充值。<br>大陆信号：中国移动。<br>官网：<a href="https://smart.com.ph/corporate">https://smart.com.ph/corporate</a></p><h2 id="缅甸MPT卡-95"><a href="#缅甸MPT卡-95" class="headerlink" title="缅甸MPT卡(+95)"></a>缅甸MPT卡(+95)</h2><p>介绍：保号成本低，适合用于接码。<br>有人提供已激活的卡，即插即用。<br>资费情况：一年充值1美元即可保号。<br>大陆信号：中国移动或中国联通。<br><strong>踩坑提醒：曾被广泛用于电信诈骗，所以滥用情况较严重，封禁较严重。很大概率是回收号，号码被滥用过的可能性很大。</strong></p><h2 id="knowroaming全球卡美国号-1"><a href="#knowroaming全球卡美国号-1" class="headerlink" title="knowroaming全球卡美国号(+1)"></a>knowroaming全球卡美国号(+1)</h2><p>资费情况：无月租。<br>保号条件：15个月登录过官方APP即可保号。<br>大陆信号：中国移动。<br>申办方式：官网<a href="https://www.knowroaming.com/">https://www.knowroaming.com/</a>，直邮寄送到国内。<br><strong>踩坑提醒：开出虚拟号段的可能性很大。如果是虚拟号段，在部分使用场景可能会有所限制。</strong></p><h2 id="菲律宾Globe卡-63-待完善"><a href="#菲律宾Globe卡-63-待完善" class="headerlink" title="菲律宾Globe卡(+63)(待完善)"></a>菲律宾Globe卡(+63)(待完善)</h2><p>介绍：不适合电话或流量，费用很贵。</p><h2 id="香港联通-CUNIQ-852-待完善"><a href="#香港联通-CUNIQ-852-待完善" class="headerlink" title="香港联通(CUNIQ)(+852)(待完善)"></a>香港联通(CUNIQ)(+852)(待完善)</h2><p>详细资料待补充。<br>官网：<a href="https://www.cuniq.com/global/">https://www.cuniq.com/global/</a></p><h2 id="中国移动英国卡-CMLinkUK-44-待完善"><a href="#中国移动英国卡-CMLinkUK-44-待完善" class="headerlink" title="中国移动英国卡(CMLinkUK)(+44)(待完善)"></a>中国移动英国卡(CMLinkUK)(+44)(待完善)</h2><p>介绍：目前申办需要提交护照。</p><h2 id="澳门电信1卡2号-853-86"><a href="#澳门电信1卡2号-853-86" class="headerlink" title="澳门电信1卡2号(+853,+86)"></a>澳门电信1卡2号(+853,+86)</h2><p><strong>2020.5.9更新：已经没车了</strong><br>介绍：一张卡可以申请两个号码，一个+853澳门卡，一个+86大陆卡，大陆号码可以不申请。大陆境内为中国电信的信号。<br>资费情况：85元内含100澳币，无月租。<br>保号条件：申请后10天内可以自由使用，10天后必须实名认证否则无法使用。澳门手机号需要sfz或通行证照片实名认证，大陆手机号需要人脸识别实名认证。<br>申办方式：某宝搜索即可，有不少。</p><h2 id="正在征集更多的资料"><a href="#正在征集更多的资料" class="headerlink" title="正在征集更多的资料"></a>正在征集更多的资料</h2><p>如果您有更多的资料，可以在评论区分享给大家~</p>]]></content>
+    
+    <summary type="html">
+    
+      众所周知，中国大陆+86手机卡需要实名认证，因此造成许多奇奇怪怪的麻烦。&lt;br&gt;此文章总结了可以在中国大陆境内使用的境外实体手机卡，供大家参考。
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="实体手机卡" scheme="https://owomoe.net/tags/%E5%AE%9E%E4%BD%93%E6%89%8B%E6%9C%BA%E5%8D%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[踩坑记录]国内纯IPv6服务器试玩+宝塔面板建站指南</title>
+    <link href="https://owomoe.net/dev/174.html"/>
+    <id>https://owomoe.net/dev/174.html</id>
+    <published>2020-04-19T14:23:00.000Z</published>
+    <updated>2021-09-19T11:44:28.269Z</updated>
+    
+    <content type="html"><![CDATA[<p>IPv6全面普及是个大趋势，现在国内支持IPv6的云服务器还很少，阿里云在内测。</p><p>今天试玩一下AkkoCloud的纯IPv6服务器。文中所用服务器为博主自行采购。</p><a id="more"></a><h2 id="服务器选购推荐"><a href="#服务器选购推荐" class="headerlink" title="服务器选购推荐"></a>服务器选购推荐</h2><p><strong>常州三线IPV6 VPS 套餐一</strong><br>vCPU：1<br>内存：1 GB DDR4<br>空间：20 GB NVME SSD<br>流量：500 GB / 月（10Mbps端口）<br>IPv6：1，默认联通，可工单申请电信/移动<br>15.2元/月<br>优惠码：2020BESTIPV6<br><a href="https://www.akkocloud.com/aff.php?aff=273&pid=77">购买地址</a></p><p><strong>常州三线IPV6 VPS 套餐二</strong><br>vCPU：2<br>内存：2 GB DDR4<br>空间：40 GB NVME SSD<br>流量：500 GB / 月（20Mbps端口）<br>IPv6：1，默认联通，可工单申请电信/移动<br>23.2元/月<br>优惠码：2020BESTIPV6<br><a href="https://www.akkocloud.com/aff.php?aff=273&pid=78">购买地址</a></p><p><strong>测试IP：</strong><br>电信：240E:978:309::1:3<br>移动：2409:8C20:3C41:11::1:3<br>联通：2408:873C:3201::1:3</p><p><strong>1、仅提供IPv6地址</strong><br><strong>2、建站需要备案域名过白</strong></p><p>博主之前买过他家的CN2 GIA服务器，算是国人商家中信誉不错的，不用太担心跑路。</p><h2 id="上手体验"><a href="#上手体验" class="headerlink" title="上手体验"></a>上手体验</h2><p>首先连接ssh可能就会拦住一部分MJJ，目前国内大多数家宽都给了IPv6，可以通过<a href="www.test-ipv6.com">www.test-ipv6.com</a>测试。如果不行，大概率是路由器或者是其他网络设备不支持。可以尝试用手机热点连接。手机热点也没有的，还是老老实实用VNC吧。</p><p>连上去以后，很多人习惯先跑个测速脚本，然而目前的测速脚本都是测不了纯IPv6的，大家还是先歇歇吧。</p><h3 id="延迟-电信-："><a href="#延迟-电信-：" class="headerlink" title="延迟(电信)："></a>延迟(电信)：</h3><p><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/174/1.png" alt="电信延迟"><br>国内的IPv6测速点比较少，骨干网建设也不太完善，这个结果还是不错的。</p><h3 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h3><p><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/174/2.png" alt="性能测试"><br>宣传是NVMe SSD，实测IO限制在200M左右。</p><h2 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h2><p>在安装前，首先要做几个工作：</p><h3 id="修改DNS为支持IPv6的DNS"><a href="#修改DNS为支持IPv6的DNS" class="headerlink" title="修改DNS为支持IPv6的DNS"></a>修改DNS为支持IPv6的DNS</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/resolv.conf</span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改内容为以下值</span></span><br><span class="line">nameserver 2400:3200::1</span><br><span class="line">nameserver 2400:3200:baba::1</span><br><span class="line"><span class="meta">#</span><span class="bash"> 保存退出</span></span><br></pre></td></tr></table></figure><h3 id="修改hosts以链接到宝塔IPv6下载节点"><a href="#修改hosts以链接到宝塔IPv6下载节点" class="headerlink" title="修改hosts以链接到宝塔IPv6下载节点"></a>修改hosts以链接到宝塔IPv6下载节点</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/hosts</span><br><span class="line"><span class="meta">#</span><span class="bash"> 在最后一行添加以下内容</span></span><br><span class="line">2001:19f0:7001:54fc:5400:2ff:fe9b:97f9 download.bt.cn</span><br><span class="line">240e:ff:9000:1100:0:3:0:35 dg1.bt.cn</span><br><span class="line">240e:ff:9000:1100:0:3:0:35 dg2.bt.cn</span><br><span class="line"><span class="meta">#</span><span class="bash"> 保存退出</span></span><br></pre></td></tr></table></figure><p>该IPv6值可能会变动，如果不可用，请自行更换新的IPv6地址。</p><h3 id="执行安装脚本-CentOS"><a href="#执行安装脚本-CentOS" class="headerlink" title="执行安装脚本(CentOS)"></a>执行安装脚本(CentOS)</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</span><br></pre></td></tr></table></figure><p>在等待安装的过程中，可以恰一杯茶，顺带关注一下作者的<a href="https://twitter.com/chenranjun">twitter</a></p><p>安装完成以后，宝塔默认是不监听IPv6的，需要执行命令</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">echo “True” &gt; /www/server/panel/data/ipv6.pl</span><br><span class="line">bt restart</span><br></pre></td></tr></table></figure><p>可以通过中括号包裹你的IPv6地址，加上端口号，在浏览器中打开。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/174/3.png" alt="安装完成"></p><h3 id="安装LNMP环境"><a href="#安装LNMP环境" class="headerlink" title="安装LNMP环境"></a>安装LNMP环境</h3><p>宝塔安装完以后会清除掉原有的hosts记录，请重复<a href="#修改hosts以链接到宝塔IPv6下载节点">这一步</a>。<br>选择极速安装即可，安装速度还是很快滴。</p><h3 id="给域名添加ipv6解析"><a href="#给域名添加ipv6解析" class="headerlink" title="给域名添加ipv6解析"></a>给域名添加ipv6解析</h3><p>对于IPv6地址，DNS解析选择AAAA记录类型记录，记录值为IPv6地址即可。</p><h3 id="友情提醒"><a href="#友情提醒" class="headerlink" title="友情提醒"></a>友情提醒</h3><p><strong>该服务商有备案墙，请先过白名单，否则无法正常访问网站。</strong></p><h2 id="网速测试"><a href="#网速测试" class="headerlink" title="网速测试"></a>网速测试</h2><p>为了给大家直观的展示一下实际带宽到底有多大，博主搭了个librespeed测试了一下，本地为移动200M家宽。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/174/4.png" alt="speedtest"><br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/174/5.png" alt="下载"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>各方面表现都算均衡的服务器，带宽也很充足。没有IPv4导致做一些事情可能会很困难，比如docker需要寻找支持ipv6的镜像等等。<br>可惜国内目前没有支持IPv6回源的cdn(博主试了阿里云、又拍云、百度云加速都不行，如果有可以的请反馈给我)，手上有备案域名的话，拿来建站是非常实惠的选择，小站长福音。AkkoCloud作为国内云服务商IPv6的先行军，还是值得表扬的，希望以后能推出更多的地域。</p><p>文：by 晨苒</p>]]></content>
+    
+    <summary type="html">
+    
+      IPv6全面普及是个大趋势，现在国内支持IPv6的云服务器还很少，阿里云在内测。&lt;br&gt;今天试玩一下AkkoCloud的纯IPv6服务器。文中所用服务器为博主自行采购。
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="VPS" scheme="https://owomoe.net/tags/VPS/"/>
+    
+      <category term="akkocloud" scheme="https://owomoe.net/tags/akkocloud/"/>
+    
+      <category term="IPv6" scheme="https://owomoe.net/tags/IPv6/"/>
+    
+      <category term="宝塔" scheme="https://owomoe.net/tags/%E5%AE%9D%E5%A1%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[踩坑记录]免备案使用国内CDN初次尝试</title>
+    <link href="https://owomoe.net/dev/173.html"/>
+    <id>https://owomoe.net/dev/173.html</id>
+    <published>2020-04-18T08:46:08.000Z</published>
+    <updated>2021-09-19T11:44:28.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>踩坑记录，初次尝试免备案使用国内CDN，当然结局是以失败告终，还受到了“惨痛”的教训，希望大家引以为戒，千万不要学我2333333</p><a id="more"></a><h2 id="实现方案"><a href="#实现方案" class="headerlink" title="实现方案"></a>实现方案</h2><h3 id="接入阿里云海外CDN"><a href="#接入阿里云海外CDN" class="headerlink" title="接入阿里云海外CDN"></a>接入阿里云海外CDN</h3><p>首先通过“全球（不包含中国大陆）”的方式接入阿里云CDN，不需要检查域名备案情况，但是会在阿里云CDN留有记录了。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/163/1.png" alt="接入阿里云海外CDN"></p><h3 id="修改域名解析到国内节点"><a href="#修改域名解析到国内节点" class="headerlink" title="修改域名解析到国内节点"></a>修改域名解析到国内节点</h3><p>虽然我们接入的是海外CDN，但是这时候将域名解析修改为国内阿里云CDN节点，也是完全没有问题的，可以正常访问。<br>因为CDN节点是不会检查域名备案情况的。通过接入海外CDN的方式接入阿里云CDN，<strong>完美实现免备案使用阿里云国内CDN</strong>。<br>至于如何解析到国内节点，将域名通过CNAME方式解析到”<strong>mirrors.aliyun.com.w.alikunlun.com</strong>“这个地址即可，代表阿里云CDN全部国内节点。</p><h3 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h3><p>体验是相当的爽啊，国内速度那么快，对于我这种纯静态博客而言就是秒开体验，而且还无需备案。</p><h2 id="翻车"><a href="#翻车" class="headerlink" title="翻车"></a>翻车</h2><p>在爽了半个月后，我收到了这样一封邮件。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/173/1.png" alt="被发现了！"></p><p>很明显，被发现了，并被停用掉了域名。<br>在阿里云CDN后台显示域名状态是“已停止”，启用时显示“<strong>非法操作</strong>”，无法启用。<br>即便删除域名再重新添加，也无法添加了，域名被拉入黑名单了。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/173/2.png" alt="GG"></p><h2 id="解封"><a href="#解封" class="headerlink" title="解封"></a>解封</h2><p>在与阿里云工单客服交涉后，得知被封原因：<strong>被运营商通报，域名有绑定到国内节点的情况。（客户端绑定的）</strong><br>工单客服告知“域名没有在工信部备案，也就是不能解析到国内的IP上，这个是<strong>违法</strong>的。”，并将我的域名<strong>拉入了阿里云CDN的黑名单</strong>。<br>而解封的方法是“域名到工信部进行备案后，产品侧才会重新评估解除黑名单”<br>也就是说，不解封，连阿里云海外CDN都用不了了。<br>最后终于同意帮我解封域名，并警告下次再犯，<strong>封号处理</strong>。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/173/3.png" alt="工单交涉记录"></p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这种绕过备案使用国内CDN的方法，虽然可以用，但是用不了多久且代价“惨重”，毕竟我还想继续使用阿里云海外CDN的。<br>这是本次尝试的踩坑经验，希望大家引以为戒，千万不要学我，切勿“<strong>以身试法</strong>”！</p>]]></content>
+    
+    <summary type="html">
+    
+      踩坑记录，初次尝试免备案使用国内CDN，当然结局是以失败告终，还受到了“惨痛”的教训，希望大家引以为戒，千万不要学我2333333
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="CDN" scheme="https://owomoe.net/tags/CDN/"/>
+    
+      <category term="备案" scheme="https://owomoe.net/tags/%E5%A4%87%E6%A1%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IP库之手机基站数据篇</title>
+    <link href="https://owomoe.net/dev/172.html"/>
+    <id>https://owomoe.net/dev/172.html</id>
+    <published>2020-04-18T07:33:38.000Z</published>
+    <updated>2021-09-19T11:44:28.237Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文作者由专业 IP 数据库的创始人高春辉亲自撰写，向大家披露移动互联网时代的 IP 数据库与手机基站的那些事。</p></blockquote><a id="more"></a><blockquote><p>本文转载自<a href="https://linux.cn/article-8277-1.html">https://linux.cn/article-8277-1.html</a><br>如果我们的工作有侵犯到您的权益，请及时联系我们。</p></blockquote><p>我们在当 IPIP 的客服的时候，除了地理位置这个事情外，一般都会有公司的人追问，你有没有这种数据，有没有那种数据，其中一个问题就是基站数据，当时我们也没有精力做，所以一概反馈以后再说吧。</p><p>还有一个场景就是在用户刚购买完用户刚投入使用的时候，会拿着统计数据来问，你们不是说国内到城市吗？为什么有这么多 IP 只标注到了省呢？我们看到数据反馈（现在不需要看，也能猜到大概情况了），都得一遍一遍的去解释这大部分都是用户在使用基站的情况，虽然也有其它情况，但是远少于基站的出现频率，毕竟手机用户越来越多了。</p><p>后来 2015 年第三季度的某一天，发现我们基于已有的数据可以做基站数据的识别了，其实之前也有，只是没想到可以这么用。于是就有了这个基站 IP 数据库。</p><p>这里说的基站 IP 数据，和基站 ID 对应的地理位置数据是两码事，后面这个以后再安利吧。</p><p>先说一下概念，大家在不使用 WIFI 网络的时候，使用手机通过运营商提供的网络进行上网的时候，目前都是在用户端使用私有IP，然后对外做 NAT 转换，这样的情况就导致大家统一使用一些 IP 段进行访问网站或者 APP。一般我们称这些相对固定的 IP 段为<strong>基站 IP</strong> ，这个不一定是运营商的说法，无论是 GGSN 还是什么，但是我们这些关注这块的人都这么叫，算是约定俗成吧。</p><p>这种方式对于运营商的好处坏处我们就不谈了，我们从互联网公司这边的影响来看：</p><h2 id="想通过-IP-定位到城市，难。"><a href="#想通过-IP-定位到城市，难。" class="headerlink" title="想通过 IP 定位到城市，难。"></a>想通过 IP 定位到城市，难。</h2><p>由于国内大部分的省都是以省级为单位划分基站对外访问 IP ，也就是说，同样一个出口 IP，后面的对应用户可能是跨多个城市的。</p><p>也有一部分省是按照市一级为单位划分的，但是位置偏远，你估计也不会关心。</p><p>还有一部分地区是一段 IP 给两三个城市同时使用，在我们的数据库依然没法准确到城市。</p><h2 id="对于反作弊或者反爬虫，麻烦。"><a href="#对于反作弊或者反爬虫，麻烦。" class="headerlink" title="对于反作弊或者反爬虫，麻烦。"></a>对于反作弊或者反爬虫，麻烦。</h2><p>由于是 NAT 方式，一个IP 后面必然是一大堆用户，那么从互联网公司的运维角度来看，明显会看出一个IP的访问过于频繁，那是否要进行特殊处理，比如封禁，就要基于 IP 本身的用途进行参考。</p><p>比如基站 IP， 所封禁的阈值，就要比家庭宽带的要高的多，而 IDC 的 IP ，在不考虑第三方出口的情况下，阈值可能就要相对低很多。不然你的封禁处理会可能导致影响到正常用户使用。</p><h2 id="漫游，巨麻烦。"><a href="#漫游，巨麻烦。" class="headerlink" title="漫游，巨麻烦。"></a>漫游，巨麻烦。</h2><p>往往大家在有些时候需要判断用户所在地理位置，那么在基站下，则是另外一个情况。</p><p>不但像第一点说的定位不到城市，而且还有可以连当时用户所在的省都是错的。</p><p>经过兜里揣三部手机出差到处看 IP 的 职业病习惯的历练 ，目前我们所知道的三家运营商的漫游情况是这样的，请大家务必牢记：</p><p>移动：漫游到当地网络。如果你的卡是北京的，如果去到上海，那么你会看到上海的 IP。<br>联通和电信：漫游回属地网络。如果你的卡是北京的，如果去到上海，你依然会看到北京的 IP。</p><p>提醒一点，这只是国内的情况，当你漫游到港澳台（我只去过台湾，但我相信港澳也是一样的）和国外（我只去过美国，但可以以此类推了）的时候，都是属地漫游方式。你经常看到有人抱怨说拿着移动联通或者电信的手机，在国外访问 GOOGLE 依然会被墙，因为你等于走了隧道回到国内再出去，当然会被墙啊，没什么可奇怪的了。这也是为啥有人要买国外的运营商手机卡拿到国内来用的原因吧。</p><p>不过能够明确知晓三家运营商的漫游情况，也能帮助你判断一些事情，比如用户是移动的 IP 就不用太担心了，一定是用户目前所在地，虽然不能到城市，但是也可以相信。联通和电信才麻烦。</p><p>不过我们有时也在想，毕竟长期漫游不是一般用户能干的事情，这种相对小概率事件其实可以忽略掉的。而且如果有其他数据来源， IP 库还是作为兜底方案为好。</p><p>我们的基站数据就是提供这样一个 IP 列表，告诉你哪些 IP 段是运营商用于基站的。目前大约有 36000 多个 C 段，含台湾的部分数据，包含一部分运营商 WIFI 数据 。</p><p>以上三个是比较都容易想到的情况，还有一个情况，是我和朋友聊天的时候，对于基站数据所发现的新用途。</p><p>典型场景是这样的，目前无论是何种手机系统，基本上都支持手机当热点，好坏不用说了。但是会有一个问题。</p><p>很多系统或者应用的场景，会基于 WIFI 环境下做背景下载或者图片的尺寸的优化，没错吧？比如很多应用商店的策略都是说 WIFI 下会自动更新。苹果手机也不例外。</p><p>问题来了，如果我的手机是连接的朋友手机的热点上的 WIFI，那么以上的 WIFI 场景判断都很有可能会导致流量大增，最后伤害到用户体验。</p><p>怎么破？貌似没听说哪个系统支持，即使有人说苹果可以检测，但是那应该是两个苹果设备之间的检测，如果我链接了一个安卓手机的热点呢？</p><p>嘿嘿，头大了吧？：-)</p><p>呵呵，我们做的基站 IP 数据能帮你忙。。。</p><p>只要在判断 WIFI 的场景下，再增加一个用户出口 IP 的判断，只要不在我们的数据库里，才能认为是真实可用的 WIFI 环境，就可以了，么么哒。</p><p>而且也可以用于用户当前上网方式的判断，如果你只能拿到 IP 的话 ，这个库就可以帮助你判断，用户目前的上网方式，拿来出数据报告也是有价值的。</p><p>如果你想数据进行测试，请用手机访问这个网页， <a href="https://www.ipip.net/ip.html">https://www.ipip.net/ip.html</a> 。</p><p>我们会在符合基站数据条件的的数据下面标注“ 该 IP 段由运营商应用在基站（含 WIFI）用途，此类用途 IP 一般为省级或者市级区域使用。”。</p><p>欢迎测试准确性，有错误，请反馈给我。</p>]]></content>
+    
+    <summary type="html">
+    
+      本文作者由专业 IP 数据库的创始人高春辉亲自撰写，向大家披露移动互联网时代的 IP 数据库与手机基站的那些事。
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="IP" scheme="https://owomoe.net/tags/IP/"/>
+    
+      <category term="网络" scheme="https://owomoe.net/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>追思逝者，致敬英魂</title>
+    <link href="https://owomoe.net/life/171.html"/>
+    <id>https://owomoe.net/life/171.html</id>
+    <published>2020-04-04T04:00:00.000Z</published>
+    <updated>2021-09-19T11:44:28.269Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="We-must-remember-that-these-are-people-not-number"><a href="#We-must-remember-that-these-are-people-not-number" class="headerlink" title="We must remember that these are people, not number."></a>We must remember that these are people, not number.</h1><p>博客挂灰一天，仅追思逝者，致敬英魂。</p><a id="more"></a><h2 id="追思逝者"><a href="#追思逝者" class="headerlink" title="追思逝者"></a>追思逝者</h2><blockquote><p>清明时节雨纷纷，路上行人欲断魂。</p></blockquote><p>又是一年清明节，但是今年格外不同。</p><p>2020年新型冠状病毒肺炎在全球彻底爆发。截止至写稿前，确诊人数达1033478人，死亡人数达54369人。<br>涉及全球181个国家或地区。</p><blockquote><p>We must remember that these are people, not number.</p></blockquote><p>这不是一个数字，而是一个个生命，一个个破碎的家庭。<br>是绝望与痛苦，是思念与别离。<br>愿逝者安息。</p><h2 id="致敬英魂"><a href="#致敬英魂" class="headerlink" title="致敬英魂"></a>致敬英魂</h2><p>无数的医护人员奋战在一线，毅然决然的选择与病毒抗争到底。<br>医疗资源的紧缺和超负荷的工作量是最大的问题。</p><p>而有的人没能扛过来。他们是烈士。<br>致敬英魂，名垂青史。</p><h2 id="展望未来"><a href="#展望未来" class="headerlink" title="展望未来"></a>展望未来</h2><blockquote><p>借问酒家何处有？牧童遥指杏花村。</p></blockquote><p>这几个月疫情爆发以来，感觉一切就像一场梦。<br>太不真实了，生活变化如此之大。<br>愿疫情早日结束，大家恢复正常的生活，过着无忧无虑的日子。</p>]]></content>
+    
+    <summary type="html">
+    
+      We must remember that these are people, not number.
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://owomoe.net/categories/life/"/>
+    
+    
+      <category term="致敬" scheme="https://owomoe.net/tags/%E8%87%B4%E6%95%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>萌娘邮件系统正式起航啦~</title>
+    <link href="https://owomoe.net/works/170.html"/>
+    <id>https://owomoe.net/works/170.html</id>
+    <published>2020-03-28T08:51:29.000Z</published>
+    <updated>2021-09-19T11:44:28.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>萌娘邮件系统首页!: <a href="https://moegirl.email">https://moegirl.email</a></p><a id="more"></a><p>如题，咱搞了个 萌娘邮件系统~<br>是基于Outlook的域名邮箱！<br>域名是moegirl.email，很萌叭qwq~<br>做了个介绍首页: <a href="https://moegirl.email">https://moegirl.email</a><br>是OMG哥哥帮咱弄的,咱只是提供了一个域名而已qwq~<br>专属登录页面: <a href="https://outlook.office365.com/moegirl.email">https://outlook.office365.com/moegirl.email</a></p><p>因为数量有限，目前仅限很熟很熟的朋友申请哦~<br>想要的小伙伴可以联系咱哦~</p>]]></content>
+    
+    <summary type="html">
+    
+      萌娘邮件系统首页!：&lt;a href=&quot;https://moegirl.email&quot;&gt;moegirl.email&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="works" scheme="https://owomoe.net/categories/works/"/>
+    
+    
+      <category term="邮件" scheme="https://owomoe.net/tags/%E9%82%AE%E4%BB%B6/"/>
+    
+      <category term="邮箱" scheme="https://owomoe.net/tags/%E9%82%AE%E7%AE%B1/"/>
+    
+      <category term="萌娘" scheme="https://owomoe.net/tags/%E8%90%8C%E5%A8%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新开设了两个个人站点QWQ</title>
+    <link href="https://owomoe.net/works/169.html"/>
+    <id>https://owomoe.net/works/169.html</id>
+    <published>2020-03-11T07:47:50.000Z</published>
+    <updated>2021-09-19T11:44:28.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近新开设了两个个人站点qwq~<br>日记站: <a href="https://moegirl.life">https://moegirl.life</a><br>Wiki站: <a href="https://wiki.qwq.best">https://wiki.qwq.best</a></p><a id="more"></a><p>日记站就是日常记录咯，大概是做不到天天写日记了，不过尽量叭qwq~</p><p>Wiki站就是整理些琐碎的知识点，目前大概是用不上，不过有总比没有好啦~</p><p>目前这两个站都没有开放评论区，Wiki站以后可能会开放，日记站就算了，如果对某篇日记想做评论，可以来这个博客站的留言板噢~</p><p>这两个站都是由Maverick驱动的，托管于Github Pages中。<br>Maverick还是挺不错的23333静态网站解决方案之一~</p>]]></content>
+    
+    <summary type="html">
+    
+      最近新开设了两个个人站点qwq~
+    
+    </summary>
+    
+    
+      <category term="works" scheme="https://owomoe.net/categories/works/"/>
+    
+    
+      <category term="网站" scheme="https://owomoe.net/tags/%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图种制作教程</title>
+    <link href="https://owomoe.net/dev/168.html"/>
+    <id>https://owomoe.net/dev/168.html</id>
+    <published>2020-03-08T03:55:34.000Z</published>
+    <updated>2021-09-19T11:44:28.249Z</updated>
+    
+    <content type="html"><![CDATA[<p>图种是一种采用特殊方式将jpg图片文件和rar压缩文件合并起来，一般打开来看只是正常的图片，修改扩展名为rar后解压，得到隐藏的文件。经常被用来绅士之间的一种隐蔽的传播文件种子的途径之一。</p><a id="more"></a><blockquote><p>本文转载于萌娘百科，原文地址: <a href="https://zh.moegirl.org/zh-hans/%E5%9B%BE%E7%A7%8D">https://zh.moegirl.org/zh-hans/%E5%9B%BE%E7%A7%8D</a><br>原文采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">CC BY-NC-SA 3.0</a></p></blockquote><h2 id="图种制作步骤"><a href="#图种制作步骤" class="headerlink" title="图种制作步骤"></a>图种制作步骤</h2><h3 id="WIN系统下图种的制作方法"><a href="#WIN系统下图种的制作方法" class="headerlink" title="WIN系统下图种的制作方法"></a>WIN系统下图种的制作方法</h3><h4 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h4><ol><li>把下载链接写在txt里或者保存为一个种子</li><li>用winrar创建你选择的图片和种子的压缩文件，【压缩方式】处选择【储存】（先图片，再种子，顺序不能错）</li></ol><ul><li>一些同学由于理解力或者技术上有困难无法排序，可以先“压缩”图片，然后再把种子文件拖入</li></ul><ol start="3"><li>把生成的文件后缀从rar改为先前图片对应的后缀名（jpg,gif,png…………）</li></ol><h4 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h4><ol><li>把一个“种子”或其他任何.avi或类型文件压缩成压缩包（取名为a.rar）放在D盘</li><li>把压缩包和一张你想显示的图片(取名为a.jpg)放到一起</li><li>新建一个文本文档(txt)在文档中输入<code>copy /b D:\a.jpg + D:\a.rar D:\b.jpg</code> (当然你可以直接用cmd) （此处是放在D盘所以地址写的是D）保存（这里注意一定要把图片放在前面，压缩文件放后面）<br>把新建的文本文档的扩展名改为.bat。双击新建的文本文档.bat。产生的b.jpg文件就是图种。</li></ol><ul><li>【或者可以直接进入cmd，在命令行上输入<code>copy/b D:\a.jpg + D:\a.rar D:\b.jpg</code>。然后回车执行】</li></ul><h4 id="方法3"><a href="#方法3" class="headerlink" title="方法3"></a>方法3</h4><ul><li>使用“渗透”软件。</li><li>原理：利用FLASH SWF、24bit BMP、JPG文件的冗余空间，把一批文件插入到这类文件中去，而不破坏原文件的结构和显示效果，以达到隐藏用户重要文件的目的。</li><li>优点：因为是利用冗余空间，所以生成文件的体积比上两种方法要小的多，更方便。</li></ul><h3 id="UNIX系统下图种的制作方法"><a href="#UNIX系统下图种的制作方法" class="headerlink" title="UNIX系统下图种的制作方法"></a>UNIX系统下图种的制作方法</h3><ol><li>准备好相关文件，假设“种子”文件为1.torrent，图片为1.jpg，均放在/home/目录下</li><li>打开终端，执行命令：<code>cd /home &amp;&amp; zip 1.zip 1.torrent &amp;&amp; cat 1.zip &gt;&gt; 1.jpg &amp;&amp; rm -f 1.zip</code></li><li>现在1.jpg就是一个图种了，可以拿去发布</li></ol><h3 id="安卓系统下制作方法"><a href="#安卓系统下制作方法" class="headerlink" title="安卓系统下制作方法"></a>安卓系统下制作方法</h3><p>下载 <a href="https://www.coolapk.com/apk/com.japl.file">https://www.coolapk.com/apk/com.japl.file</a> 并打开，第一个选择图片，第二个选择压缩包，然后点击合成即可。 （注意，此软件选择文件的功能存在bug，选择第二个文件时请注意选择的文件是否正确。）</p><h2 id="打开图种的方式"><a href="#打开图种的方式" class="headerlink" title="打开图种的方式"></a>打开图种的方式</h2><p>将图种的文件的扩展名改为“.rar”然后双击解压。</p><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>简单的说就是把图片与rar文件用二进制字节流的方式合并起来。</p><ul><li>大部分图片格式都是元数据格式文件，数据是按照特定格式的字节流（即：区块）来分区保存，图片解释程序只会处理符合格式的区块字节流读取和处理图像数据，不符合的会被视为损坏的区块处理。</li><li>Rar压缩文件以rar特有的魔术字节流（ASCII码为Rar!）作为其文件格式的读取开头，这个魔术字并不需要一定在文件字节流的起始。<br>所以：</li><li>如果以图片查看程序打开的话，只会处理和读取合并后整个文件前面图片部分，后面rar文件的字节流会被作为损坏的图片文件区块丢弃不处理。</li><li>如果以rar处理程序打开的话，会忽略处理前面的图像文件格式的字节流，直到读取到其文件格式读取头魔术字才开始作为rar文件格式的处理，识别为rar压缩文件。</li></ul><p>由于缩图会重新生成图片格式文件的数据流，包括后面“隐藏”的rar文件字节流，所以缩图文件的图种会没有了，因为rar的数据被破坏掉了。<br>同样，只能rar字节流放后面，否则图片解释程序会认为该图像损坏了。</p>]]></content>
+    
+    <summary type="html">
+    
+      图种是一种采用特殊方式将jpg图片文件和rar压缩文件合并起来，一般打开来看只是正常的图片，修改扩展名为rar后解压，得到隐藏的文件。经常被用来绅士之间的一种隐蔽的传播文件种子的途径之一。
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="技术" scheme="https://owomoe.net/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="图种" scheme="https://owomoe.net/tags/%E5%9B%BE%E7%A7%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于入手了MC正版~</title>
+    <link href="https://owomoe.net/life/167.html"/>
+    <id>https://owomoe.net/life/167.html</id>
+    <published>2020-03-07T16:11:38.000Z</published>
+    <updated>2021-09-19T11:44:28.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>玩MC玩了这么多年，终于入手了正版MC~<br>是Java版的!</p><a id="more"></a><p>一共￥165。咱使用的Paypal支付，是$26.95。<br>说实话，体验下来，正版和盗版真的没什么差距…<br>但玩MC玩了这么多年，买个正版算是对作者的支持，尽管早已被微软收购了…<br>从玩MC开始，能买正版一直是个梦想，今天终于实现了~</p><p><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/life/167/1.png" alt="订单收据"></p>]]></content>
+    
+    <summary type="html">
+    
+      玩MC玩了这么多年，终于入手了正版MC~
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://owomoe.net/categories/life/"/>
+    
+    
+      <category term="Minecraft" scheme="https://owomoe.net/tags/Minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>来Twitter找咱玩叭</title>
+    <link href="https://owomoe.net/life/166.html"/>
+    <id>https://owomoe.net/life/166.html</id>
+    <published>2020-03-03T15:40:52.000Z</published>
+    <updated>2021-09-19T11:44:28.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>如题，咱开始在推特上玩了~<br><a href="https://twitter.com/AyagawaSeirin">https://twitter.com/AyagawaSeirin</a></p><a id="more"></a><p>其实在推特已经有一个月左右的时间了，现在才来水文章233333<br>感觉推特这个平台挺好的，可以认识到许多新朋友，分享生活经历也十分的方便。<br>也遇到了许多大佬。</p><p>互fo就留言或私信咱噢~<br>平常也会在上面发些生活动态，比如自拍照啥的))</p>]]></content>
+    
+    <summary type="html">
+    
+      如题，咱开始在推特上玩了~
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://owomoe.net/categories/life/"/>
+    
+    
+      <category term="社交" scheme="https://owomoe.net/tags/%E7%A4%BE%E4%BA%A4/"/>
+    
+      <category term="推特" scheme="https://owomoe.net/tags/%E6%8E%A8%E7%89%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>慢慢的,就没有了,就像从未存在过</title>
+    <link href="https://owomoe.net/life/165.html"/>
+    <id>https://owomoe.net/life/165.html</id>
+    <published>2020-03-03T06:29:48.000Z</published>
+    <updated>2021-09-19T11:44:28.249Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文转载自<a href="https://weibo.com/p/1001603781133723654255">https://weibo.com/p/1001603781133723654255</a><br>文章作者: 小海</p></blockquote><blockquote><p>一盏一盏的灯，灭了。四面八方的光源，消失了。我们生活的五光十色的世界，变成了一片黑色。<br>天黑了，那么睡觉吧，但愿长醉不复醒，卧槽泥马勒戈壁。<br>最后，我们变成了一群做梦的人，这个梦的名字，叫根据相关法律法规，相关搜索结果不予显示梦。</p></blockquote><a id="more"></a><p>这堵「墙」，与其说是架在国际互联网出入口的墙，不如说是架在人们心里的、人们观念上的一堵墙。<br>它其实并不高，只能拦住那些随波逐流、自愿将就、按部就班的人，那些不愿追问、不愿深究、不愿反抗的人。<br>不幸的是，那些人，还不少。</p><hr><p>几年以前，我曾经嘲笑过某科技界大佬。当时他说：也许90后、95后会慢慢不知道谷歌是什么网站。<br>那一年，这对于我来说简直就是世界上最好笑的笑话。谷歌，全世界最卓越的互联网公司，活在互联网的一代中国人，会不知道他们的网站？<br>今天，我收回这句嘲笑。因为这件不可能的事，它慢慢变成了现实。<br>没有人再关注什么谷歌不谷歌。对他们来说，百度也蛮好用的，反正他们几乎没用过谷歌。没有谷歌又怎样？大家还是开心的刷微博，看微信，听歌，看娱乐节目。对于从来就不知道谷歌的人来说，少了谷歌又有什么影响？<br>多年前，我们也是可以登陆Facebook的。其实这个网站和校内一样，也挺蠢的。可在上面你能看到老外们的生活，可以轻易的跟一万公里以外的人互相拜访，可以看到很多根本不会开到校内上的主页。你用汉语回复，下面给你聊起来的可能是香港仔，可能是台湾人。你用英语回复，说不定有比你英语用的更蹩脚的寂寞的北欧人来跟你搭讪。你感觉地球真的变成了地球村，你还没拉门走出去，别人就推门走了进来。<br>然后，它就没有了。起初，它的失踪激起了很大的声音，后来，声音就消失了。<br>多年前，我们也是可以登陆Twitter的。其实这个网站和微博一样，也不过是些信息流，刷上一整天，也不见得有什么用处。但至少，你可以以最快速度获取你想知道的任何新事，你会真正了解什么事情在全世界是流行的，而不是经过各种截图、翻译、转发，甚至曲解、断章取义、黑白颠倒的东西。你知道的是真相，赤裸裸的，也许有点太短的真相。但至少中间不会有无数人的加工与再加工，偏激、片面，就在这个过程中产生了，不管后来者有意还是无意。<br>然后，它就没有了。首先是它的本体没有了，然后它的模仿者也没有了，模仿者的模仿者也没有了。只剩一个模仿者的模仿者的模仿者，现在你每天能在上面看到无数广告。<br>多年前，我们也是可以登陆YouTube的。对于有的人来说，这个网站就是个大型优酷，当年有人信誓旦旦的说，没有YouTube，我们中国人会很快让优酷超过YouTube。可这么多年过去了，视频还是那么卡，内容还是那么垃圾，原创还是那么容易被盗窃，视频丰富度还是那么的可怜。在YouTube上，你能看到全世界最棒的手艺人，最逗乐的笑话，最天马行空的创意，最激荡人心的音乐，最美好的完美瞬间，可在优酷上，你想看一分钟视频，请先看半分钟广告。<br>哦，对了。Instagram，有些人可能感觉它和QQ空间也差不多。可我在上面关注了六百多个摄影师，它们都是顶好顶好的影像记录者，每天看他们的作品，我感觉到很幸福，那种即使没有到那里去，也身临其境的幸福。我还在上面认识了一个日本的爱自拍的帅小伙，一个爱喝酒的韩国大叔，一个十年前到过中国今天会在每张我发的紫禁城照片下点赞的美国大爷，一个美丽无比的俄罗斯妹子，我和他们基本上都难以交流，语言是很大的障碍，但几个简单的单词，心意也就到了，这种感觉，有时候比多年老友相聚还兴奋。因为这是人类不同族群自由交流互相沟通的过程，这种过程很神奇，真的很神奇。<br>可现在，它没有了，它之所以没有就因为在某个特定的时间你在搜索特定的词汇时，会搜出来特定的照片。虽然这么搜的人并不多，虽然看到的人也不会大惊小怪，也不会觉得天黑了，天亮了，天要塌了，天要变了。可它就是没了，Instagram，就这么没了。谷歌也是这么没的，Twitter也是这么没的，Facebook也是这么没的。不知道是什么人，在什么场合，说了什么话，下了什么决定。就要有超过十亿人像陷于哥谭市的孤岛里一样，看着一座又一座桥梁被炸掉，又被炸掉，又被炸掉，然后，就什么都没了。<br>我时常觉得悲哀，真的好悲哀，一个我根本不认识也不知道是谁的人，也许是一个群体，在不断抢走我身边的东西，而我却无能为力。我抱怨一声，他听不到，任何人都听不到。我怒吼一句，身边的大多数人却像看疯子一样的看着我。我哀嚎一声，这声音被阻碍在黑黑的幕墙以里。我发出尖锐的嘶吼，这声音传不了多远，就和我那被抢走的东西一样，消失了，不见了，就像从来没存在过一样。<br>对于本来就没存在过的东西，有谁又会觉得在意呢？那些本来拥有又被掠夺的人的哀愁，后来的人又怎么懂呢？我曾经是拥有一切的，我曾经是拥有世界的，我站在这片土地上，呼吸的是自由的空气，饮下的是自由的琼浆玉液。就在长的无法计数的时间里，我自由生命的一部分又一部分就这么被杀死了，突然就杀死了。可我还始终觉得，它们还奄奄一息的活着，就像它们是慢慢的死去的一样。<br>可它们终归是死了，而且随着它们的死，愈来愈多的事情慢慢的发生了，很慢很慢，几乎不被人察觉，可还是发生了。<br>没有谷歌，我可以用百度呀。可某些结果被越挪越后，越挪越后，最后就不见了。就像本来就不该搜出这个结果一样。<br>没有Facebook，我可以用校内呀。可你想发只有在Facebook上能发的文章，很快在校内上就失踪了。接着，校内变成了人人，话题变成了人人都关心的话题。大家都在抢着看星座、明星、八卦、娱乐。没有人会关心什么消失了，反正它们本来也没多少存在感。<br>没有YouTube，我可以用优酷呀。可你却经常只能在优酷上看到抄袭别人的作品，而且还不署名，而且还洋洋得意，而且还自我陶醉，就好像那个idea本来属于他自己一样。你看了还要惊呼，他是如此的有创意！好一个抄袭的创意，可你却不知道，因为你不知道这个世界上有个网站叫YouTube。<br>没有Twitter，我还可以用微博呀。可你想知道最近发生了什么，你搜的越勤快，越能看到越明显的 “根据相关法律法规，相关搜索结果不予显示 ”。时间长了，你想，反正知道了也没什么用，不如不看了。<br>慢慢的，一扇又一扇的门关上了。今天你打开世界上最大的博客网站，发现它没了。明天你一看，世界上最好的设计师分享网站没了，一开始是刷新的很慢很慢，后来它就没了。过两天再一看，平常每天都会读两篇文章的媒体网站没了，那里的文章缤纷多彩，最后都变成了该页无法显示几个字。再过几个月，大学的网站不让上了，摄影师的网站不让上了，就连百度日本这种自家网站，也没了。<br>接着，漫画看不了了，接着，动画看不成了。接着，美剧英剧失踪了。下载美剧英剧的网站又又又又又失踪了。尊重正版，保护权益，行吧，然后字幕网站也没了。<br>游戏没了，你习惯性登陆的游戏网站，发现下载栏正在整治中。论坛关了，天天都在看的论坛，突然接到相关部门的电话，因为 “报备问题 ”不让办了。个人网站，私人博客，对不起，说没就没有，你在上面存了多少多年辛勤耕耘的东西都没用。<br>你关注的人，有一天你登陆微博，发现他怎么好久都没说话了，然后你搜索了一下，发现他的账号不存在了，而且你搜他的名字，他的名字未予显示。<br>一盏一盏的灯，灭了。四面八方的光源，消失了。我们生活的五光十色的世界，变成了一片黑色。<br>天黑了，那么睡觉吧，但愿长醉不复醒，卧槽泥马勒戈壁。<br>最后，我们变成了一群做梦的人，这个梦的名字，叫根据相关法律法规，相关搜索结果不予显示梦。</p>]]></content>
+    
+    <summary type="html">
+    
+      本文转载自微博
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://owomoe.net/categories/life/"/>
+    
+    
+      <category term="互联网" scheme="https://owomoe.net/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
+    
+      <category term="生活" scheme="https://owomoe.net/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typecho文章与评论数据迁移到Hexo脚本！</title>
+    <link href="https://owomoe.net/works/164.html"/>
+    <id>https://owomoe.net/works/164.html</id>
+    <published>2020-02-28T03:16:03.000Z</published>
+    <updated>2021-09-19T11:44:28.237Z</updated>
+    
+    <content type="html"><![CDATA[<p>将Typecho文章、评论数据转换到Hexo格式的PHP脚本。</p><p>代码中有详细的注释，你可以进行深度定制。</p><p>可以将文章从Typecho格式转换为Hexo格式，保留分类与标签，且可以处理图片。<br>会将原来Typecho的cid保存到文章内的pid参数，在设置文章链接时可以直接使用:pid来载入，方便保留原来Typecho文章URL格式，如果你原来在文章URL里使用到了cid。<br>如果图片是网络图片，也会下载下来存入相应的位置，且修改文章内的图片链接。</p><p>评论迁移是转换到ValineJS + leancloud评论系统方案的格式。</p><a id="more"></a><h1 id="TypechoToHexo"><a href="#TypechoToHexo" class="headerlink" title="TypechoToHexo"></a>TypechoToHexo</h1><p>项目地址: <a href="https://github.com/AyagawaSeirin/TypechoToHexo">https://github.com/AyagawaSeirin/TypechoToHexo</a></p><h2 id="环境版本"><a href="#环境版本" class="headerlink" title="环境版本"></a>环境版本</h2><p>phpmyadmin: 4.7.9<br>typecho: 1.1 (17.10.30)<br>mysql: 5.6<br>hexo: 4.2.0</p><p>以上是我的环境。并不是说不是这个环境版本就不能用本方案，而是不保证非此版本一定能正常使用本方案。</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="工作环境"><a href="#工作环境" class="headerlink" title="工作环境"></a>工作环境</h3><p>请确保已安装PHP并设置好环境变量。</p><blockquote><p>建议使用PHP7</p></blockquote><h3 id="导出数据库Json文件"><a href="#导出数据库Json文件" class="headerlink" title="导出数据库Json文件"></a>导出数据库Json文件</h3><p>进入phpmyadmin，选择typecho的数据库，依次将以下数据库表导出，格式为Json，放到脚本根目录。<br>数据库表前缀根据你的设置而异。如果你的数据库表前缀不是默认的”typecho_”，在导出到Json文件后请将文件重命名，将表前缀改为默认的”typecho_”方便脚本读取。</p><p>typecho_comments<br>typecho_contents<br>typecho_metas<br>typecho_relationships</p><h3 id="复制文件"><a href="#复制文件" class="headerlink" title="复制文件"></a>复制文件</h3><p>将你Typecho网站根目录的/usr文件夹复制到脚本根目录，目的是为了处理上传的文章附件。/usr下只需要uploads文件夹就够了。</p><h3 id="资源文件夹支持"><a href="#资源文件夹支持" class="headerlink" title="资源文件夹支持"></a>资源文件夹支持</h3><p>请设置Hexo配置文件<code>_config.yml</code>，将<code>post_asset_folder</code>的值设置为<code>true</code></p><h3 id="构建配置文件"><a href="#构建配置文件" class="headerlink" title="构建配置文件"></a>构建配置文件</h3><p>为方便接下来程序的处理，先要执行另一个程序构建一个pid、category、type关系表的Json文件。</p><p>在脚本根目录执行以下指令构建配置文件：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php -f &quot;.&#x2F;post_info.php&quot; </span><br></pre></td></tr></table></figure><p>执行完毕后即可。</p><h3 id="创建相关文件夹"><a href="#创建相关文件夹" class="headerlink" title="创建相关文件夹"></a>创建相关文件夹</h3><p>程序不会自动创建文件夹，所以需要手动创建<br>在脚本根目录创建<code>posts</code>,<code>draft</code>,<code>hidden</code>,<code>waiting</code>文件夹。<br>其中，posts储存普通文章，draft储存草稿文章，waiting储存待审核文章，hidden储存隐藏的文章。</p><p>至此，全部准备工作已经完成，目录下的文件结构应该如下图所示，缺一不可。</p><p><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/works/164/2.png" alt="目录结构"></p><h2 id="文章迁移"><a href="#文章迁移" class="headerlink" title="文章迁移"></a>文章迁移</h2><p>编辑<code>post.php</code>文件</p><p>找到第六行左右的<code>$repo</code>变量，将内容改为你的Github Pages仓库信息，格式为<code>user/repo@brunch</code>，分支为构建的静态文件分支。<br>可以参考默认值是如何填写的，比如我的是<code>AyagawaSeirin/Blog@gh-pages</code>。<br>用来将图片链接换为JsDelivr链接。<br>如果你不想使用JsDelivr，想直接从源站读取图片，请编辑<code>post.php</code>文件，找到第123~129行左右，将注释有”方案1”的代码解除注释，将注释有”方案2”的代码删除。</p><p>在脚本根目录执行以下指令执行文章迁移程序：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php -f &quot;.&#x2F;post.php&quot; </span><br></pre></td></tr></table></figure><p>迁移时可能会比较慢，是因为正在处理文章中的图片文件，请耐心等待。</p><p>若出现Notice报错，请无视。</p><p>迁移完毕后，根目录下posts储存普通文章，draft储存草稿文章，hidden储存隐藏的文章。<br>建议进行手动检查是否有出错的地方。</p><h2 id="独立页面迁移"><a href="#独立页面迁移" class="headerlink" title="独立页面迁移"></a>独立页面迁移</h2><p>鉴于独立页面较少，没有开发独立页面迁移的程序，建议手动迁移。</p><h2 id="文章评论迁移"><a href="#文章评论迁移" class="headerlink" title="文章评论迁移"></a>文章评论迁移</h2><p>评论迁移是转换到ValineJS + leancloud评论系统方案的格式。</p><p>在脚本根目录执行以下指令执行文章评论迁移程序：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php -f &quot;.&#x2F;comments_post.php&quot; </span><br></pre></td></tr></table></figure><p>迁移完毕后会将数据储存在根目录的<code>comments_post.json</code>文件内。</p><p>登录LeanCloud，进入控制台，选择你的应用，“存储”=》“导入导出”=》“数据导入”<br>Class名称填写<code>Comment</code>，然后“选择文件”，上传刚刚的<code>comments_post.json</code>文件，单击“导入”按钮即可导入数据。</p><h2 id="独立页面评论迁移"><a href="#独立页面评论迁移" class="headerlink" title="独立页面评论迁移"></a>独立页面评论迁移</h2><p>评论迁移是转换到ValineJS + leancloud评论系统方案的格式。</p><p>一次只能迁移一个独立页面，需要修改变量内容来决定当前迁移哪个独立页面。</p><p>编辑<code>comments_page.php</code>文件</p><p>找到第5~6行左右，<br>编辑<code>$url</code>变量内容，修改为你在Hexo的页面的相对链接（不需要斜杠\），<br>编辑<code>$cid</code>变量内容，修改为独立页面在Typecho的cid。<br>可以参考默认值是如何填写的。</p><p>在脚本根目录执行以下指令执行独立页面评论迁移程序：</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">php -f &quot;.&#x2F;comments_page.php&quot; </span><br></pre></td></tr></table></figure><p>迁移完毕后会将数据储存在根目录的<code>comments_page_页面名称.json</code>文件内。</p><p>登录LeanCloud，进入控制台，选择你的应用，“存储”=》“导入导出”=》“数据导入”<br>Class名称填写<code>Comment</code>，然后“选择文件”，上传刚刚生成的json文件，单击“导入”按钮即可导入数据。</p>]]></content>
+    
+    <summary type="html">
+    
+      将Typecho文章、评论数据转换到Hexo格式的PHP脚本。代码中有详细的注释，你可以进行深度定制。
+    
+    </summary>
+    
+    
+      <category term="works" scheme="https://owomoe.net/categories/works/"/>
+    
+    
+      <category term="Typecho" scheme="https://owomoe.net/tags/Typecho/"/>
+    
+      <category term="Hexo" scheme="https://owomoe.net/tags/Hexo/"/>
+    
+      <category term="数据迁移" scheme="https://owomoe.net/tags/%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教程向：提升你的外国服务器网站国内访问速度~</title>
+    <link href="https://owomoe.net/dev/163.html"/>
+    <id>https://owomoe.net/dev/163.html</id>
+    <published>2020-02-21T04:00:00.000Z</published>
+    <updated>2021-09-19T11:44:28.261Z</updated>
+    
+    <content type="html"><![CDATA[<p>加速你的国外服务器网站国内访问速度的方案~<br>效果还挺明显~</p><a id="more"></a><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于众所周知的原因，国内访问国外的服务器速度较慢。在没有特殊线路（直连、CN2GIA等）的加持下，路由线路左绕右绕，严重影响国内访问速度。<br>能使用国内服务器当然是最好的，但是高昂的流量&amp;带宽价格以及域名备案门槛让人劝退。所以，本文章提供的加速方案是针对线路一般的海外服务器网站访问速度慢的问题。<br>如果你的源站IP被墙了，此方案也可以让你的网站在国内正常访问~</p><p>如果你的源站服务器线路是CN2GIA级别等高级全程直连线路，那么直连你的源站就好了，完全没必要使用本文的方案，因为你的源站已经够快的了。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>先讲述实现思路，再介绍具体实现方案。<br>利用<strong>阿里云海外CDN</strong>，中国访客大部分会解析到亚太一区节点，而亚太一区CDN节点到中国大陆的线路大部分都经过了<strong>优化</strong>（香港节点和新加坡节点为<strong>三网GIA</strong>），而节点到源站服务器的线路又没有经过我国国际出口，没有GFW的审查所以速度本来就不会太慢。<br>这种方案对源站服务器到国内线路差的很友好，特别是已经被QoS的IP。<br>本站便采用了这个方案。本站托管于Github Pages，众所周知国内访问速度是很慢很慢的。</p><h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><p>1.建议使用区域DNS，仅仅是中国大陆解析到阿里云海外CDN，境外区域解析到CloudFlare或者直连都可以，避免产生更多的CDN流量。<br>2.建议将网站的静态文件资源放入公共CDN，比如JsDelivr（详情请<a href="/dev/113.html">点击这里</a>），以减少阿里云国际CDN流量的消耗。</p><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="开通阿里云CDN服务"><a href="#开通阿里云CDN服务" class="headerlink" title="开通阿里云CDN服务"></a>开通阿里云CDN服务</h3><p>进入阿里云官网，登录，进入CDN管理控制台，添加域名。这些步骤简单不再赘述。</p><p><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/163/1.png" alt="设置阿里云CDN"></p><p>加速域名填写你需要加速的域名，业务类型选择“图片小文件”，源站信息和端口根据你的需求填写，<strong>加速区域选择“全球（不包含中国大陆）”</strong><br>填写完毕后单击“下一步”。</p><p>完成后返回CDN管理控制台的“域名管理”，在列表中找到刚刚添加的域名对应的CNAME值，复制下来，下一步要用到。如果没有，请稍等片刻。</p><h3 id="设置域名解析"><a href="#设置域名解析" class="headerlink" title="设置域名解析"></a>设置域名解析</h3><p>在建议里已经提出了采用区域DNS方案，所以解析设置教程也按照这个方案来。<br>这里以阿里云DNS为例</p><p>先添加国内解析值<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/163/2.png" alt="阿里云DNS"><br>记录类型选择CNAME，主机记录按照你的需求填写，记录值填写刚刚复制的CNAME值，<strong>解析线路选择“默认”</strong></p><p>再添加国外解析值<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/163/3.png" alt="阿里云DNS"><br>记录类型、主机记录、记录值根据你的需求填写，比如源站信息，<strong>解析线路选择“境外”</strong></p><h3 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h3><p>等待解析生效后就可以使用了。其他设置比如缓存文件时间、SLL等就按照你的需求自行设置了。</p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>感受一下访问速度是不是大幅度提升啦~<br>可以购买个CDN流量资源包，亚太1区100G/1年/49.5元，价格还是相当不错的。</p><p>这里说下仍然存在的问题：<br>由于Anycast的玄学原因，国内访客可能会解析到美国的CDN节点，导致速度提升不大甚至负优化。如果仅购买了亚太1区的流量包，解析到其他地区节点，可能会造成额外费用。<br>阿里云官方明确了不能指定CDN节点，所以这个问题目前无解。<br>我曾尝试过PING出阿里云CDN的香港节点IP和新加坡节点IP进行解析，但问题频出，因为CDN节点的IP并不是固定的，会不定时变更。<br>如果有办法指定节点，选择香港和新加坡节点是最优的，三网GIA。<br>还需要大家再出谋划策~</p>]]></content>
+    
+    <summary type="html">
+    
+      加速你的国外服务器网站国内访问速度的方案~
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://owomoe.net/categories/dev/"/>
+    
+    
+      <category term="网站" scheme="https://owomoe.net/tags/%E7%BD%91%E7%AB%99/"/>
+    
+      <category term="CDN" scheme="https://owomoe.net/tags/CDN/"/>
+    
+      <category term="服务器" scheme="https://owomoe.net/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正式更换Hexo!</title>
+    <link href="https://owomoe.net/server/162.html"/>
+    <id>https://owomoe.net/server/162.html</id>
+    <published>2020-02-20T03:41:00.000Z</published>
+    <updated>2021-09-19T11:44:28.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>如题，正式更换Hexo~</p><a id="more"></a><h2 id="更换为Hexo"><a href="#更换为Hexo" class="headerlink" title="更换为Hexo"></a>更换为Hexo</h2><p>以前我使用的是Typecho，现在更换为Hexo。<br>Typecho是基于PHP的动态博客程序，而Hexo则截然相反。它是纯静态的，可以托管于gh pages。</p><h2 id="为什么更换Hexo"><a href="#为什么更换Hexo" class="headerlink" title="为什么更换Hexo"></a>为什么更换Hexo</h2><p>相比于Typecho，Hexo在配置博客时虽然更加麻烦，但在后期维护的成本大大降低。<br>不再需要云服务器或者虚拟主机之类的服务，因而成本降低了。<br>不仅仅是服务器成本，在维护成本上也大大降低。使用动态博客程序要兼顾到很多东西，比如服务器宕机了云云，需要有人维护。<br>静态博客就不需要了，扔到gh pages后基本就不用太过于操心。<br>我只是希望博客能在无人维护的情况下继续存在下去。静态博客的变数总比动态博客少。</p><h2 id="如何更换Hexo"><a href="#如何更换Hexo" class="headerlink" title="如何更换Hexo"></a>如何更换Hexo</h2><p>我写了个PHP脚本，可以很方便的将Typecho文章转换为Hexo文章格式文件。<br>然后又写了个脚本，将Typecho原文章评论转换到现在的评论系统。<br>目前代码比较乱，我会找时间整理整理然后发到github并附上教程之类的方便大家使用~</p><h2 id="使用到的服务"><a href="#使用到的服务" class="headerlink" title="使用到的服务"></a>使用到的服务</h2><p>博客程序：Hexo<br>博客主题：Melody<br>博客文件托管：Github Pages<br>评论系统：ValineJS + LeanCloud<br>静态文件加速：Github + JsDelivr<br>网站CDN加速：CloudFlare</p>]]></content>
+    
+    <summary type="html">
+    
+      如题，正式更换Hexo~
+    
+    </summary>
+    
+    
+      <category term="server" scheme="https://owomoe.net/categories/server/"/>
+    
+    
+      <category term="Hexo" scheme="https://owomoe.net/tags/Hexo/"/>
+    
+      <category term="博客" scheme="https://owomoe.net/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小魔法使之死 | 皮皮凛の小窝</title><meta name="description" content="夜之魔法使西园寺星兰被带走的时候是一个微凉的初夏。她和那两个看守自己的巨人们再次大吵了一架，一个人在暮色里走下老旧的公寓楼房，一个人吹着安宁的晚风。不知不觉的她觉得冷了起来。衣服穿少了点，她想着，可是不想再上楼了。"><meta name="keywords" content="跨性别,mtf"><meta name="author" content="绫川星凛"><meta name="copyright" content="绫川星凛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/favicon.webp"><link rel="canonical" href="https://owomoe.net/life/179.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="小魔法使之死"><meta property="og:url" content="https://owomoe.net/life/179.html"><meta property="og:site_name" content="皮皮凛の小窝"><meta property="og:description" content="夜之魔法使西园寺星兰被带走的时候是一个微凉的初夏。她和那两个看守自己的巨人们再次大吵了一架，一个人在暮色里走下老旧的公寓楼房，一个人吹着安宁的晚风。不知不觉的她觉得冷了起来。衣服穿少了点，她想着，可是不想再上楼了。"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><meta property="article:published_time" content="2020-10-20T01:11:28.000Z"><meta property="article:modified_time" content="2021-09-19T11:44:28.249Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '1'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-162013750-3"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162013750-3');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.0',
+  algolia: {"appId":"1WJL87ATUH","apiKey":"04ed05f9a001ea3a733c0fb3fa5a9666","indexName":"Blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#F79BBA","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-09-19 19:44:28'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/seirin.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/feed/index.xml" title="皮皮凛の小窝" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/logo.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">46</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">78</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/life/179/1.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">皮皮凛の小窝</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">小魔法使之死</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-20T01:11:28.000Z" title="发表于 2020-10-20 09:11:28">2020-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-19T11:44:28.249Z" title="更新于 2021-09-19 19:44:28">2021-09-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/life/">life</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">10.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>30分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><blockquote>
+<p>本文为转载文章<br>本文作者：<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/planetnine">硝酸铜</a><br>原文链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/266911513">https://zhuanlan.zhihu.com/p/266911513</a></p>
+</blockquote>
+<p>夜之魔法使西园寺星兰被带走的时候是一个微凉的初夏。她和那两个看守自己的巨人们再次大吵了一架，一个人在暮色里走下老旧的公寓楼房，一个人吹着安宁的晚风。不知不觉的她觉得冷了起来。衣服穿少了点，她想着，可是不想再上楼了。</p>
+<p>小小的魔女于是抱着自己在阶梯前坐下，盯着浅蓝色夜空里若隐若现的星星。也就在这时，车轮打破了傍晚的寂静。一辆银白色的五菱宏光从街角钻了出来，几个身材高大的男人站到了星兰的面前，挡住了那片宁静的天空。</p>
+<p>“你，跟我们走一趟。最好听话。”</p>
+<p>星兰一动也没动。</p>
+<p>啪。重重的一巴掌打在她的脸上，那自称的小魔女不敢置信的抬起脑袋，迎来的却又是沉重的一击，打的她柔弱的身躯头昏眼花。还没来得及反抗，那两个男人就把她轻松的架进了面包车里。手电筒的强光照着少女的眼睛，让她下意识的闭上双眼，却仍然控制不住的流出了眼泪。几分是因为光线的刺激，几分是因为恐惧，她已经说不清了。</p>
+<p>有个人手里拿着黑色的电击器，紫色的电流在耳边滋滋作响，让她的皮肤感到麻麻的。银晃晃的手铐啪的一声扣上，低沉的声音在耳边仿佛沉重的鼓声一般不断回响。</p>
+<p>“听话。你最好给我听话。”</p>
+<p>在意识到自己的身世之前，星兰也许是个听话的好孩子。不过那时间太久，她着实已经有些记不清了。她从小就就拥有那种感觉，知道自己拥有不同寻常的力量。可惜的是，这个世界似乎惧怕她所拥有的伟大魔力将会毁掉光明与黑暗间得来不易的平衡，便让她降生在了监牢之中，由两位巨人看守。</p>
+<p>在无法感知神秘力量的凡人看来，这巨人便是她所谓的父母。</p>
+<p>那两位巨人拥有抗拒魔法的力量，他们不仅不承认星兰一天天觉醒的力量，甚至一直错误的把她当成男性……那怎么可能呢？</p>
+<p>之所以会变成这样，只是诅咒的缘故罢了——</p>
+<p>没错，小魔女被祝福着，携带着强大的魔法力量降生在世界上，可在同时，身上也附上了自从出生以来就一直携带着的诅咒。邪恶的诅咒让她变成了本来不属于她的样子，</p>
+<p>——至少，星兰一直以来都是这么相信的。</p>
+<p>可惜，那两座看守巨人是由害怕她力量的人们所创造出来的，唯一的目标就是限制星兰的魔法，用尽一切办法试图让她相信自己只是个平凡的男生——而这正是诅咒最终的目的。</p>
+<p>小魔女知道，如果自己真的相信了那一套说辞，那就等同于自己屈服于诅咒，身上的神奇力量就会消退，最终她就真的会像是那些人希望的一样变得平凡，而不再拥有改变世界的魔法……她绝对不会接受那样的未来。</p>
+<p>用着超空间信标——一种被凡人称作“手机”的神奇装置，星兰渐渐的认识了远在世界各地的其他魔女们。也许是在神圣连接（一般人将其称之为QQ）上面与其他拥有日本名字的魔女们交流的太多了，她不知道从哪里也想出了个日本名字，开始将自己唤作西园寺星兰。</p>
+<p>于是她便成为了夜之魔法使，西园寺星兰。</p>
+<p>这个夜幕降临了。小小的魔女坐在并不舒适的面包车里面，像是囚犯一样的双手被限制住，被两个沉默而恐怖的怪物控制着，驶向不知何方。</p>
+<p>“咱……犯了什么事吗？”她深吸了口气，努力压下心里的恐惧，好像自称‘咱’真的能带给她力量一样，这种一直以来特别的说话方式就和她留着的及肩头发，外出大部分时候会带着的眼罩，以及奇怪的长长的名字一样，总是会给小魔女带来不大不小的麻烦。</p>
+<p>面包车副驾驶座位上的男人叼着根烟，烟味熏得星兰想不住的咳嗽。他的身影在暗中仿佛高大而细长的恶魔，“哦，你可犯了大事了。听话。你最好给我听话。”</p>
+<p>听话。又是这句话，听话。小魔女缩在角落里，听话的乖乖的。就像是那一天一样，就像那一天巨人掐着她的脖子红着脸大吼着“你怎么不给我听话！”之后一样。</p>
+<p>那天本是一个普通的日子，直到上午第三节课的铃声响起的瞬间，一本《新华字典》从身旁飞来，砸的她晕头转向。扔字典的人是班上几个不好惹的男生。他们总是莫名其妙的看小魔女不爽，这天也一样——在尖叫和哭泣声中他们趁着课间将她拉到男厕所狠狠的揍了一遍。“看来小爷有必要治治你的脑子！”当扔字典的那人揪着她的头发，猛然的把她的脑袋往洗手间隔间的门上撞去，咚的一声，头晕目眩。小魔女只觉得整个世界都在天旋地转，世界在痛觉中化作疯狂的震荡。直到上课铃再度响起他们才整齐的一窝蜂散去，只留下对失败者尖锐刻薄的嘲讽：“活该，傻逼！”</p>
+<p>不久之后，她和几个欺负了她的人被叫去了校长的办公室。有人从洗手间敞开的门里看见了正在进行的战斗，最后还是告诉了老师。可是那几个把她揍的遍体鳞伤的男生们早已对这种情况轻车熟路，他们口径一致的指责浑身湿漉漉脏兮兮的星兰才是先出手的那个，自己只是正当防卫而已。</p>
+<p>一个巴掌拍不响，老师说。</p>
+<p>你被打肯定是你做错了什么，校长说。</p>
+<p>就算真是你被针对了，你怎么不想想为什么他们不找别人就找你呢？老师和校长一起说。</p>
+<p>那几个男生们早早的回到了教室上课，只留下星兰一个人孤零零的站在走廊里，等着家长被叫来。</p>
+<p>雄性巨人怒气冲冲的来了，他气愤无比，连一句话也没有过问，伸出手掐住了星兰的脖子，将小魔女柔弱的身躯吊在空中。“你怎么就不听话！”他用力的捏紧自己的双手，“你个逼崽子的，他妈的别真以为老子掐不死你！”</p>
+<p>星兰哭不出来。圆睁的眼白里不知是茫然还是恐惧。</p>
+<p>就像现在一样，星兰也哭不出来。</p>
+<p>“你们要把咱……带去哪？”她小声的问着，“咱的……父母……会找到你们的……”</p>
+<p>“哦，呵呵。我就实话实说了吧，就是你父母把你送来的。”抽烟的恶魔躲在影子里邪恶的笑着，“至于去哪，你一会就知道了。”</p>
+<p>那天以后几个月的时间她都小心翼翼的做个听话的，不给人添麻烦的乖孩子。又被拖走然后挨揍的时候她不仅不会还手，还会带着哭腔请求所有看见的人不要报告老师。每天回家都躲起来争取不惹巨人们生气，可是喝醉的雄性巨人还是会无缘无故的一拳把她揍翻在地。星兰越来越不知道怎么办了。也许真的，在他们的眼里，自己的存在就是一种错误……</p>
+<p>还好，这个世界对她而言，仍然存在着两件无比宝贵的，能够带来希望的东西：奇迹和魔法。</p>
+<p>五菱宏光驶入黑暗之中，周遭的灯光越来越暗淡，随着天际最后一缕余光的消失，汽车彻底的在黑暗之中航行。星兰将周围想象成了宇宙，而自己正在一艘小小的飞船里航行。可就在这时，她突然发现自己口袋里的手机微微震动了一下。小魔女这才想起自己还带了手机，心中燃起了微微的希望之火——</p>
+<p>她慢慢的挪动着被限制的双手，将『超空间信标』从口袋里拖了出来。锁屏界面上弹出了几条QQ消息，是来自一位同类的寻常的问候。</p>
+<p>“晚上好。星兰酱今天怎么样？”</p>
+<p>只要自己能有时间解锁手机，发出一个定位讯息，以及一句简短的“SOS”的话……可是来不及了。手机屏幕的光在黑暗中是如此的显目，几乎是第一时间就引起了那几个看守她的男人的注意。</p>
+<p>“哟？还带了手机？”右边那个男人轻而易举的将超空间信标从星兰的手中抢走，像是炫耀战利品一般的举起来晃了晃，交给了副驾驶上的男人，“王教官，把这个收了哈。”</p>
+<p>“……还给我。”星兰小声说。</p>
+<p>“没门。这个我们先拿着，等你出去的时候再给你。”</p>
+<p>“那……咱什么时候可以走？”</p>
+<p>“看你表现。”王教官吐了一口烟雾，老神在在的说，“一年起步吧，等你家长什么时候看着满意了，愿意把你接走就还给你。”</p>
+<p>星兰无力的瘫倒在座椅上，眼神空洞的望着头顶，像是接受了命运一样。自己是什么时候预感到这一切的来临的呢？她想着，是在网上看到被送进军事化管理学校的同伴们的时候么？是在电脑上看见“戒网瘾学校”的搜索记录的时候么？没关系了，她想，反正自己无能为力。</p>
+<p>奇迹和魔法。在黑暗中，星兰慢慢的将自己被拷住的双手张开又握紧。奇迹和魔法。</p>
+<p>这世界上很少有能够产生奇迹和魔法的东西，但她知道两样。一样是几种神奇的小药丸，黄色的，白色的，大小不一，有的苦涩，有的微微有些甜味。那是神奇的魔药，提供给小魔女希望和力量的源泉。自然的，那两座为了镇压她而被制造出来的巨人绝不会允许这样的叛逆。从头到尾她都将这些魔药当做自己最大的秘密，快递永远都是寄到小区外面的存放点，将药片从包装里拆开放进维生素C标识的小盒子里，然后藏在自己房间最隐秘的角落。买药的钱自然也是网上的好心人资助的。</p>
+<p>另一件，在星兰眼中带有奇迹力量的魔法礼装，也同样是来自网络上那群好心的陌生人。去年生日的时候，她们给她集资买了一条连衣裙，绀色的占星猫op，一共花了六七百块钱——她从来没有收到过那么贵重的礼物。收到的那天，星兰抑制着雀跃的心情将快递盒子藏在床底下，一直到深夜，那两座巨人都已经入睡之后，才敢偷偷的打开，让充盈着魔力的长袍覆盖在小魔女的肌肤之上。</p>
+<p>那天她第一次感到了前所未有的快乐和归属感。绀色的裙摆上画着可爱的玩偶图案，可对于星兰来说，那即是来自异世界的奥术符文。她想跳起来，想转圈圈，想打开窗户就这么飞走，夜之魔法使在那个深夜第一次尝到了奇迹与魔法的美妙。那一刻的雀跃让她越发确定了自己的与众不同。</p>
+<p>面包车在黑暗的没有灯的道路上前进，外面慢慢传来了狗的叫声。司机一言不发的将车速放缓，头灯照射在了小路的尽头，那里矗立着一座红色的大门，两道沉重的铁栅栏将车子拦在门外。黑暗中，红色大门上龙飞凤舞的金色字样这么写着：株洲阳光教育学校。</p>
+<p>时间是晚上十点，太阳早已落山，在这安静的空寂中看不见阳光。</p>
+<p>生日之后的那一段时间在星兰的记忆里就像是梦境一样。虽然在学校的情况依然没有什么改观，虽然在家中那两座巨人依旧残暴蛮横又无理……可是，知道能够产生奇迹和魔法的东西就握在自己的手中，难以忍受的日子尽头，也仿佛拥有了希望的华彩。</p>
+<p>神奇的魔药可以帮助自己一点点找回力量，华丽的礼装让她在深夜变成属于自己的样子。每一次她都会将绀色的华丽裙摆小心翼翼的折好，生怕一不小心弄坏了柔弱的布料。</p>
+<p>可是，一切如同梦境般美好的时光，都会像是梦境一般迎来突兀的终点。</p>
+<p>副驾驶上的“王教官”打了一个电话。很快，面前的沉重铁门缓缓滑开，面包车再次向前驶入深不见底的黑暗之中。铁门在身后轰的一声关上，如同锋利的巨大铡刀一般，将小魔女与外界的最后一丝联系也切断了。这里就是恶魔的巢穴了，她想，只有自己孤身一人，所有人都是敌人。</p>
+<p>“下车！”</p>
+<p>两个壮汉将她从座位上推下来，像是押送囚犯一样不耐烦的催促着她走过长长的，黑暗的走廊。这座楼已经有些年纪了，斑驳的墙壁上贴着学校的宣传标语：</p>
+<p>“网瘾是可以治好的！”</p>
+<p>“给我们一点时间，还您一个听话的乖孩子”</p>
+<p>“阳光再教育学校：专治早恋、叛逆、抑郁症……”</p>
+<p>她低着头走过那些红红绿绿的标语和宣传画，在长长的走廊尽头，小魔女被推进了一间阴暗狭窄的小房间。她用余光抬起头看了一眼，门口歪歪斜斜的牌子上写着三个小字：禁闭室。</p>
+<p>一片脏兮兮的床垫，几个小盆子，墙上贴着的残破的《弟子规》节选，仿佛干涸的血迹一般的红色痕迹，旁边布满了似乎是指甲抠出的划痕。</p>
+<p>“在这好好呆着。要是表现好，明天就把你放出来。”</p>
+<p>教官冷淡的丢下这句话，砰的一声，门被关上了。</p>
+<p>没有灯光，只有从装着铁栅栏的小窗外透进的冷冰冰的光芒。星兰靠着墙角坐下，在寒冷的夜里抱紧了自己。</p>
+<p>哭了起来。</p>
+<p>那段梦境般的时光破碎的时候，她也曾经这样流下眼泪。</p>
+<p>从学校回来之后一个再普通不过的下午，回到家打开门的少女，却发现迎接自己的是两座愤怒的巨人。那个雄性的巨人手中拎着她漂亮的魔法礼装，雌性拿着贴着维生素C标签的小瓶子……空气仿佛凝固了，在他们毫无表情的脸上满溢着怒火、冷漠与失望，最后化为千钧的沉重一击。</p>
+<p>小魔女砰的一声撞在墙壁上。</p>
+<p>“这是什么？啊？这是什么？！”</p>
+<p>歇斯底里的喊声像是要刺穿耳膜，楼板在震动。</p>
+<p>“你就是存心跟我们对着干，就是想要我们丢脸是不是？！”</p>
+<p>“老子辛辛苦苦把你养大，结果你就这么报答我？不男不女的当个人妖？！”</p>
+<p>魔药已经被丢进厕所里冲进下水道，星兰在墙角缩成一团，拳打脚踢像是狂风骤雨一般落在脆弱的小身子上。她不知道怎么辩解，只是一个人低着头抹着眼泪。这缺乏男性气概的行为又进一步加剧了雄性巨人的愤怒，他站在魔女面前居高临下的盯着后者，揪着她的头发将她从地上拽了起来，狠狠的在她面前冷漠的撕碎了画着魔法符文的裙摆，其上繁复的花纹在一瞬间失去魔力，只剩下残破而悲伤的碎片轻飘飘的落在星兰的手心里，像是死去天使飘落的羽毛。</p>
+<p>巨人的怒火像是消退了些。他带着冷淡而失望的眼神盯着小魔女，生硬的扔出了几个字：</p>
+<p>“滚出去。从今以后当我没有你这个儿子！”</p>
+<p>星兰没有动，她害怕的不敢挪动自己的身子。在那巨人强大的退魔力场边，小魔女引以为傲的魔力此刻失去了全部作用。这呆滞和怯懦又再次点燃了巨人心中的愤怒。</p>
+<p>“你他妈耳朵聋了吗？！给我滚出去！现在就滚！”</p>
+<p>小魔女咬着嘴唇直到痛到出血，她颤抖着慢慢悠悠的站起来，拿着书包一瘸一拐的消失在门外。还没有走出两步，防盗门就砰地一声在身后关上了。一种前所未有的孤独和空寂感在瞬间包裹了她。整个巨大、险恶、残酷的世界，在这一刻拨开表皮露出了残忍的微笑。那笑容让她不停的发抖。</p>
+<p>星兰全身都在抖个不停，连走下楼的时候都要扶着台阶才能勉强挪动脚步。到了单元门口的时候，因为没能看清铁门前的门槛还被绊倒摔了一跤。她慢慢的爬起来，外面的太阳正在落下，赤色的霞光笼罩了这座位于洞庭之南的小城，很快夜晚就要来了。</p>
+<p>夜色笼罩的时候她正在忙碌的街道上游荡。除了汽车之外，电瓶车、三轮和摩托也一样以一种混乱而霸道的姿态挤占着他们能够接触到的每一条车道，让每一次过马路都成为一次冒险。街道边上弥漫着烧烤的香味，下班回家的白领们在路边三两聚集而坐，就着啤酒和尾气享受着辣椒与油盐合成的交响。</p>
+<p>一个人的星兰看上去像是这个世界里少有的异类，好像只有她一个人是黑白的，无法沾染上繁华的色彩。</p>
+<p>在阴暗狭窄的小房间里，星兰抱着自己缩成一团，努力不让自己继续哭下去。眼泪这种东西象征着软弱，什么都改变不了……而强大的夜之魔法使才不会软弱，也什么都不怕，什么都能做到……毕竟她就是奇迹和魔法的化身呢。</p>
+<p>可是夜晚真的好漫长好漫长，月光透过带着铁栅栏的小窗子洒落在地上。星兰不知道怎样度过这个寒冷而漫长的夜晚，这一次她是真正的孤单一人了。</p>
+<p>不同于上一次，那时她虽然也是这样一个人的在黑夜里停留，可是小魔女知道远方有人在等待着她，像是仰头就能看见的北极星。城市的光污染和尘埃让天空变得漆黑一片，可是星兰知道，只要抬起头，穿越层层迷雾，那颗星星就在那里。一直和她在一起。</p>
+<p>被赶出家门后的五个小时后，手机响了起来。</p>
+<p>星兰正好也感觉自己走累了，在路边随便找了个地方坐下，屏幕上显示着的是一个熟悉的头像，以及一条关心的消息。</p>
+<p>“小魔女还好么？”</p>
+<p>发消息的人有着一个白色的女孩子头像，QQ昵称是“Polaris”——北极星。虽然看上去有时候会被当成同类，但星兰知道他其实只是一个没有魔力的凡人。一个经常和魔女们在一起玩的，但是很可爱很招人喜欢的普通男孩子。他总是会在星兰感到难过和悲伤的时候找上她来，作为温柔的大哥哥安慰和倾听。几十页几十页的聊天记录之后星兰已经完全信任了那个在另一座遥远的城市，清澈和柔和的如同温暖的水一般的男孩子。</p>
+<p>她说了自己在学校的情况，说了家里那两座凶恶的巨人，说了自己的期待，说了那些神奇的奇迹和魔法——北极星都一并倾听。他不时还会附和着一起和星兰对巨人和其他欺负了她的人口诛笔伐，虽然不能真的抱到，可是那个人说着“抱抱魔女酱”来安慰她的时候，星兰还是能感觉到自己仿佛真的被抱住了一样的温暖——</p>
+<p>她这一生还没有被那样温暖的抱住过呢。</p>
+<p>西园寺星兰回复了一串省略号，“咱……咱不知道怎么说……”又伴随着一个小女孩哭泣的表情。</p>
+<p>“没关系的，我在哦。”北极星这么回答着，“抱抱，我想帮助魔女酱呢。感到麻烦的话不说也没关系哦。”</p>
+<p>星兰感觉到温热的泪水浮现在了眼眶里，所有的疲惫和委屈一下子从心底深处如潮水般涌上来，轻易的击垮了少女假装强大的外壳。她缩成一团，抽泣着，用颤抖的双手打字回复——“我被他们赶出来了……药扔掉了，裙子也被弄坏了……”</p>
+<p>北极星很快的回复了。“抱抱……你身上有钱么？现在有什么可以去的地方么？”</p>
+<p>“支付宝里面好像还有一点……现金没有了……”</p>
+<p>星兰颓丧的坐在路边，“咱……没有地方可以去……不知道怎么办……”</p>
+<p>“抱抱魔女酱，如果没有地方可以去的话……来找我，也不是不可以呢。”</p>
+<p>“诶……？”流浪的小魔女呆了呆，“你在哪里？”</p>
+<p>“在北京。我一个人住，所以你暂时过来一段时间也没关系。我给你路费好了，来之后我们再一起想办法……”</p>
+<p>小魔女被突然的惊喜砸的有些说不出话来。她用颤抖着双手打字说着“谢谢……”</p>
+<p>“其实……我一直以来都挺喜欢你的来着。”北极星的消息继续弹了出来，“是那种、想要在一起的喜欢哦……”</p>
+<p>“所以说，要是想不到什么办法的话，就和我在一起吧。我愿意养你一辈子……对了，我还有加拿大国籍，等你成年了，就把你一起带去那边也是可以的哦。”</p>
+<p>“诶……？！”</p>
+<p>如果说刚才是突然的惊喜的话，现在星兰完全就是被天大的馅饼砸晕了脑袋，她的脑袋晕晕乎乎的，一下子完全的失去了思考的能力，好像漂流在一片温热的气泡里面，显得那么虚幻。小魔女赶忙擦了擦眼睛，来确定自己没有看错什么。</p>
+<p>不是幻觉。</p>
+<p>这、这算什么？她不敢相信自己的人生这么快的发生转变。她不敢相信真的有好运降临在自己身上——从小到大这个世界从来没有带给她过惊喜，有的似乎只是不断加深的悲伤。</p>
+<p>眼睛再一次的模糊起来了。上一次感觉到这样的温暖和安心是什么时候？星兰记不清了。</p>
+<p>从坐在幼儿园的车上想再出生一次以成为女孩子之后星兰的整个生命就是在与世界为敌。那两座巨人本应该保护她帮助她，最后却变成了每天都要与之战斗的敌人。在学校里被敌人环绕，在家里也一刻不能放下戒备，面对着想要否定夜之魔法使的整个世界，少女只有一次再一次的挥刀，可是再厉害的魔女也会累呀。她已经不想战斗了。</p>
+<p>这一刻宁静的海湾向着她张开了双臂。那个素未谋面的少年向她许诺了一个梦幻一般的未来，如同浪漫的诗人一般面对着海鸟高声歌唱着——“来吧，那疲惫的残破的弱小的被遗弃的灵魂，来我身边吧，我举着金色的航灯将你相迎……”</p>
+<p>“嗯、我……咱也喜欢你……”</p>
+<p>前所未有的安心和甜意在心里绽放开来。小魔女迫不及待的打字回复，好像晚了一分一秒就会失去这根宝贵的救命稻草，再次掉落到不可见的深渊里面去了。</p>
+<p>北极星真的给她转了钱，星兰直接在支付宝里面买了时间最近的一张去北京的卧铺火车票。K字头的普通快速——她还记得自己小时候曾经被父母带着乘坐红皮和蓝皮的火车去过许多地方。现在这高铁铺满全国的时代，老的卧铺车已经不再处于聚光灯之下。</p>
+<p>她所在的地方离株洲火车站不远，走路半个小时就能到。株洲不是什么大城市，配不上始发和终到的待遇。将在晚上十点三十八分抵达株洲的K600次从广州开往包头，无论是株洲还是北京西都不过是它漫长旅途上经历的过客。</p>
+<p>为了接下来长达近二十四小时的旅程做好准备，星兰找了家收支付宝的便利店买了点矿泉水和方便面，然后一个人走进了深夜的株洲站。在候车厅等着的时候，少女又一次收到了来自北极星的消息。</p>
+<p>“我查了时刻表，明天晚上九点到，那时我去西站接你。”</p>
+<p>“嗯。”星兰抽了抽鼻子，就算一个人，可是她却并不感到孤单。</p>
+<p>“魔女酱害怕么？”</p>
+<p>“有一点。”</p>
+<p>“我一直都会陪着你哦。什么时候害怕了，就抬起头来看，我就在你的头顶。”</p>
+<p>星兰抬起脑袋，视线穿透灰色的钢筋混凝土的穹顶，穿透覆盖城市的尘埃和弥漫的灯光，她仿佛看见了在干净的一尘不染的夜空之上，北极星正闪耀着。</p>
+<p>漫长的夜晚里，星兰缩在列车晃动的卧铺上，映照着她的只有手机屏幕的光。北极星真的和他说的一样一直陪着少女直到深夜，直到小魔女慢慢的不知不觉的落入梦乡。</p>
+<p>阴暗的小房间里，星兰终于还是睡着了。她缩在坚硬墙壁构成的角落里，闭上眼睛耷拉着脑袋，微凉的夏夜里月光化作银色的毯子盖在安详的女孩身上。梦境里面，她仿佛回到了那趟开往北京的列车上，安详的缩在柔软的被子里，手机屏幕上显示着北极星宽慰她的话，而夜行列车哐当哐当的摇晃着，仿佛将她放在摇篮里，一点一点航向不用再痛苦的彼方。</p>
+<p>而将她从梦中叫醒的是一阵疼痛感。</p>
+<p>一个穿着军绿色迷彩服的男子用力朝着睡梦中的星兰踹去，剧痛将她从让人安心的梦里坠落出来，又回到冰冷的现实里。</p>
+<p>“起来！”</p>
+<p>那人见星兰一动不动，作势又要抬脚，女孩只得摇摇晃晃的挪动着颤抖的身子，咬牙站起来。已经是早上了，铁窗外的太阳高照，即使是水泥地上的反射也明亮的让她的眼睛发痛。她被连踢带拽的赶出了房间，穿越过道，来到另一件稍微宽敞一点的屋子里。一个剃着寸头的健壮的中年男子正坐在桌子后面，迷彩服人把星兰推到坐着的那人面前，后退了一步，“带过来了，王教官。”</p>
+<p>“好。”男人点了点头，像是鹰一般锋利的目光刺向星兰的双眼，“名字？”</p>
+<p>“西园寺……星兰……”</p>
+<p>啪。话音未落，那个套在迷彩服里的恶魔的一掌耳光就落在了小魔女的脸颊上。这一击扇的她头晕脑胀眼冒金星，摇摇晃晃险些没能站稳。“教官问你的名字！没让你搁这玩过家家装小日本！”吼声震得她耳膜发痛。</p>
+<p>“我再给你一次机会。你的名字是？”王教官面无表情。</p>
+<p>星兰感受到了一种超乎寻常的平静，好像全身上下的疼痛感一下子都全部消失的无影无踪，她感到神清气爽，无所畏惧，就算是面前的强大恶魔也没有什么好害怕的了——小魔女挺直了身子，说：“西园寺星兰。”</p>
+<p>她被一脚踹到了地上。王姓教官从椅子上站起来，双手撑着桌子居高临下的盯着倒在地上的她。“张宇阳！我在问你的名字！”</p>
+<p>星兰想笑，可是喉咙被堵住了，一点声音都发不出来。你不是你已经知道你想要的答案了么？她一边咧着嘴做出扭曲的表情一边想着，那只是答案而已，那不是我的名字。</p>
+<p>抵达北京西站的时候已经是第二天的晚上了。星兰抑制着雀跃的心情走下火车，在出站口的地方，她见到了那个等待着她的人——举着大大写着“西园寺星兰”的牌子，让周围的行人纷纷侧目，想着这趟火车上原来还有个日本人？星兰没在意别人的目光，她找到那个举着写着自己名字的牌子的少年，扑在了他的怀里。</p>
+<p>“好啦，好啦，已经没事了哦。”北极星轻柔的抚摸着小魔女的脑袋，将她抱在怀里安慰，“果然和之前照片上看到的一样可爱哦。”</p>
+<p>小魔女什么也没有说，只是在他的怀里蹭来蹭去，哭个不停。</p>
+<p>终于到了这一天了，她想着。</p>
+<p>人生中第一次的，她开始期待起未来。</p>
+<p>星兰越来越想笑了，她倒在冰冷的地板上，全身上下每一个部分都在呻吟作痛，可她还是止不住的想笑。教官大吼的让她起来，而她一点力气也没有。那个穿着迷彩服的只好架着她把她强行拖拽起来。</p>
+<p>不就是你一脚把我踢到地上的吗？那么想让我在地上你就继续让我躺着啊？星兰一边笑一边想着。她原本有些不知道自己为什么在笑，而有一个瞬间她终于明白了。她在嘲笑自己的愚蠢。</p>
+<p>北极星的小屋子不大又很乱，各种各样的书本、衣服、杂物散落在地板上。如果是个理性的人做出判断的话，这时应该已经开始质疑起了他先前所描绘出的加拿大国籍富家子弟的人设。可星兰没有想那么多，她满脑子都被甜甜的幸福所环绕着——终于离开了那两座巨人，终于和关心自己的人呆在一起了。不管未来如何，此时此刻，世界上再也没有比这更幸福的事情。</p>
+<p>北极星给她买了魔药，让奔波了一天多的星兰先去睡了。梦里，她真的成为了厉害的魔女，挥舞着魔法杖，呼吸之间将天地重塑。</p>
+<p>醒来的时候已经是中午了，窗外正下着淅淅沥沥的小雨，北极星正在笨拙的做饭给她吃，并不熟练的动作看的她心里微微泛起暖意。打开神圣连接向着其他的魔女报平安之后，北极星将菜端了上来，炒花菜和红烧肉，与星兰相对坐在窗边，听着窗外的小雨。星兰一边吃一边哭，时不时会噎着，北极星只好不时拍拍她的后背。</p>
+<p>“小魔女帮我一个忙，好不好？”他突然说。</p>
+<p>“嗯，是什么？”</p>
+<p>“一会你就知道了。”</p>
+<p>星兰没有在意。她整个人都被幸福的光晕环绕着，怎么可能有不好的事情发生呢？那一切都已经过去了。饭后她躺在北极星家的沙发上玩手机，指尖划动，雀跃的小猫显示着她此刻的心情。</p>
+<p>真好啊。真好啊……</p>
+<p>曾经读到小说里面，和在意的人一起住在不大的出租屋里，虽然没有很多钱，但是却一直互相关心着——这样的情节的时候，星兰都会忍不住想要哭出来。她一直以来不知道多么渴望这样的生活，能够不用再战斗，不用再害怕的一片安全的港湾。她再一次抱住了北极星，而后者温柔的摸了摸少女的脑袋。</p>
+<p>“乖，该走了。”</p>
+<p>他抽出一把雨伞，牵着星兰一起走向雨中。在雨里二人走过忙碌的人行道口，坐了两站地铁，来到附近一处繁忙的商业区。</p>
+<p>北极星领着她走进了一家中上档次的酒店大堂里，星兰还没来得及疑惑为什么要来这里，就看见一个满脸痘痘，穿着动漫人物T恤的死宅青年从大堂的沙发上站起来，生硬的向着北极星打招呼。后者摆了摆手。</p>
+<p>“说好的3000块，微信转给我就行。今天她就交给你了，还是这孩子的第一次哦。”说着，还眯了眯眼睛。</p>
+<p>“你、你说什么？”</p>
+<p>星兰的脑袋一下子被冻住了。一切的幸福、美好和安心都在这一刻被从天而降的巨大冰块冻在中央，她不敢置信的扭过头，透过寒冷彻骨的半透明的结晶望着自己跨越半个国家前来面见的拯救者。这一定是个玩笑吧？</p>
+<p>北极星的面容慢慢的变得黑暗而扭曲，棕色的纯洁的眼睛变成了迷雾之中闪烁着的红光。他——它的头上长出恶魔的角，身体慢慢从瘦弱的少年变成纤细而瘦长如同武器般的怪物。“小魔女帮我一个忙哦。”那低沉、遥远而邪恶的声音从已经变成恶魔的生物的喉咙深处传来，伴随着来自地狱的黑雾吐息，“陪他一天时间，之后我们把钱对半分哦。只是吃喝玩乐，还有就是躺在床上而已，很轻松的，没关系吧？”</p>
+<p>迎接蛊惑人心的恶魔的是小魔女的用力一击。</p>
+<p>“你骗我！”她用尽全力一巴掌扇到那恶魔的脸上，后者没有躲开，没有还击，迷雾面具后瘦长的怪脸笑的更诡异了。</p>
+<p>“我没有骗你。我收留你，把你接到北京来，要一点小小的帮助不过分吧？况且你也没有地方去，留下来做轻松钱还很多的工作，也比你和你那糟糕的家长呆在一起要好得多吧？”</p>
+<p>星兰没有回答。她噙着眼眶里让世界模糊的泪水转身就跑。</p>
+<p>“跑，让他去操场上跑五圈冷静一下再说。”教官面无表情的扔下了一句话，迷彩服立刻会意，推着星兰就出了门，在楼道的窗户边指了指外面的操场。</p>
+<p>“听到了吗？你，去那跑五圈再回来！”</p>
+<p>西园寺星兰一动不动，魔女的眼睛盯着窗外的天空。虽然天气又热太阳又大，可是头顶的云却一点没有散去的迹象，只有这闷热的夏日里灰蒙蒙的天空，仿佛笼罩着一切的大蒸笼的盖子。</p>
+<p>“诶，你个懒鬼发什么呆呢？不动是吧？”迷彩服生气了，干脆揪着星兰的耳朵强硬的拽着她走出了这栋小楼，把她推进了闷热的大蒸笼下面。操场上已经有着一队穿着简朴的蓝色制服的学生，排成队列绕着圈跑着，几个人向着星兰投来麻木的目光，又很快的低下了头。</p>
+<p>“还站着？！你他妈给老子跑啊！”又是一脚把少女踹倒在地上，下意识的伸手想要撑住身体，却只是让凹凸不平的塑胶跑道在手掌上划出了许多道血痕。眼看着疾风骤雨般的攻击又要降临，她只好踉跄着站起来，一瘸一拐的挪动着身子向前跑。</p>
+<p>“快点！动！”</p>
+<p>迷彩服喊了一句，然后退到遮阳伞下面，不知从哪掏出了一瓶可口可乐，一边喝着一边翘二郎腿，好像很满足于欣赏他人的痛苦。“再快点！歪歪扭扭的你他妈是瘸子吗？”</p>
+<p>星兰不知道自己在往哪里跑。恍惚间她又回到了北京，那时她也不知道自己有哪里可以去，只是漫无目的的想要逃走。曾经名叫北极星的怪物一边在身后追赶一边大喊着让她停下来听它解释，小魔女只想捂住耳朵然后跑到一个安静的地方。那是个恶魔，是个怪物，她想，不是那个每天会温柔的安慰自己，会为自己想办法的清秀少年。</p>
+<p>可是又有哪里可以去呢？</p>
+<p>一圈。好渴……小魔女的脑袋晕晕乎乎的，干枯的喉咙渴求着水分。她自从昨天晚上之后就已经滴水未进了，而在如同蒸笼一般酷热的湖南的夏天之下，地面被高温扭曲成海市蜃楼一般的景象，汗水滴落在塑胶跑道上很快的蒸发。</p>
+<p>星兰看了看自己血淋淋的手心，忍不住伸出舌头舔了舔伤口上的血迹。灰尘、之前手碰到的小石子和血液的咸腥味一起钻进口中，少女将它们艰难的吞咽下去。这是能够击退恶魔的血液呢，她想。</p>
+<p>两圈。从那酒店的大堂跑出来，穿过繁忙的步行街，跑上百货大楼的移动扶梯，最后在五层一个咖啡馆的露台上，她被恶魔抓到了。浑身燃烧着黑红色火焰的存在尝试着想她伸出手，“听我的，好么？先冷静一下，会没事的……只是要你——”</p>
+<p>三圈。星兰不想听。她一个字也不想再听，少女飞跃栏杆朝着五层之外的地面一跃而下，背上的骨头刺穿肌肤与衣衫然后在一次呼吸之间生长为巨大的白色翅膀。她一点力气也不剩下，再也跑不动了，失去力量的身体昏倒在了跑道上。</p>
+<p>警笛、尖叫、疼痛。模糊的记忆隔着一层厚厚的雾气。为什么会这样呢？</p>
+<p>明明才没过去多久呀。</p>
+<p>西园寺星兰是被一桶冷水浇醒的。她凭借着本能舔舐着凉爽的甘霖，却还没回过神来就遭到了来自迷彩服的沉重一击。“啊？跑着跑着就睡着了？你这懒猪！”那人又一巴掌打在少女的脸上，让她的脑袋震的眼冒金星。</p>
+<p>“你就在这站着吧！站到我让你走再说。反正你也走不了。”</p>
+<p>扔下这句话他就消失了。太阳已上升到正午，其他的穿制服的所谓学员们排着队走进大概也许是食堂的地方里。星兰说不出那是什么地方，除了塑胶在太阳下灼烧的味道，自己手上的血腥味之外她什么也闻不出来。</p>
+<p>她的双手被拷在一起，连着绳子拴在了这座操场边缘的电线杆上。没办法坐下，也没办法走开。身上的水随着时间的推移一点点的蒸发与干涸，与汗水混合在一起化作炽热的岩浆。时间一分一秒过去，如同地狱一般的炙烤却越发让人感到无法忍受。</p>
+<p>星兰的脑袋昏昏沉沉的，她一会以为自己还在家里，一会以为自己在北极星的屋子中，一会以为自己已经躺在医院。少女说不清自己现在究竟在哪，也记不清楚刚刚发生了什么。</p>
+<p>她感到将自己束缚住的电线杆变成了十字架，她被高高的挂在十字架之上，下方的人群点燃了火堆。</p>
+<p>学校的同学和老师，迷彩服里的人和所谓的王教官，两个她必须当做父母对待的邪恶巨人，北极星变成的瘦长的恶魔，围着火堆一起手拉着手欢笑着庆祝着，跳起了胜利的舞蹈，脸上洋溢着猎杀女巫的残酷的喜悦。高耸的火苗跳动着，贪婪的吞食着她小小的身躯，在火焰和欢庆的中央，西园寺星兰一声不吭的静静的站在那里，死了。</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">绫川星凛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://owomoe.net/life/179.html">https://owomoe.net/life/179.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明来自 <a href="https://owomoe.net" target="_blank">皮皮凛の小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%B7%A8%E6%80%A7%E5%88%AB/">跨性别</a><a class="post-meta__tags" href="/tags/mtf/">mtf</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://afdian.net/@seirin" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/afdian.webp" alt="爱发电：微信支付宝扫码"/></a><div class="post-qr-code-desc">爱发电：微信支付宝扫码</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/dev/180.html"><img class="prev-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CentOS7服务器安装SolusVM被控端硬盘分区方法</div></div></a></div><div class="next-post pull-right"><a href="/dev/178.html"><img class="next-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于我在华强北组了一台软路由设备及优化Wifi信号的那档事</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/life/176.html" title="天国初见"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-06-05</div><div class="relatedPosts_title">天国初见</div></div></a></div><div class="relatedPosts_item"><a href="/news/156.html" title="跨性别群体诸多权益应得到广泛关注"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-21</div><div class="relatedPosts_title">跨性别群体诸多权益应得到广泛关注</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/life/179/1.jpg)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2021 By 绫川星凛</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">你好，再见</div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><span>鲁ICP备20020678号</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/tw_cn.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'RimuW5sTDoBQq76cpqtFxS6a-gzGzoHsz',
+      appKey: 'VrDSkBwEiw7br1m6PPEEbwIs',
+      placeholder: '快来和大家一起讨论吧~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/@imaegoo/valine@1.4.1-4.1/valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/live2dw/lib/L2Dwidget.min.js"></script><script src="/js/seirin.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/click_heart.min.js" async="async"></script></div></body></html>

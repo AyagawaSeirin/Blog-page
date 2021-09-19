@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>让无力者有力，让悲观者前行。 | 皮皮凛の小窝</title><meta name="description" content="转载至南方周末1999年新年献词。"><meta name="keywords" content="文摘"><meta name="author" content="绫川星凛"><meta name="copyright" content="绫川星凛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/favicon.webp"><link rel="canonical" href="https://owomoe.net/other/95.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="让无力者有力，让悲观者前行。"><meta property="og:url" content="https://owomoe.net/other/95.html"><meta property="og:site_name" content="皮皮凛の小窝"><meta property="og:description" content="转载至南方周末1999年新年献词。"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><meta property="article:published_time" content="2019-09-08T03:35:00.000Z"><meta property="article:modified_time" content="2021-09-19T11:44:28.265Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '1'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-162013750-3"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162013750-3');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.0',
+  algolia: {"appId":"1WJL87ATUH","apiKey":"04ed05f9a001ea3a733c0fb3fa5a9666","indexName":"Blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#F79BBA","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2021-09-19 19:44:28'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/seirin.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/feed/index.xml" title="皮皮凛の小窝" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/logo.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">46</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">78</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">皮皮凛の小窝</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">让无力者有力，让悲观者前行。</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-09-08T03:35:00.000Z" title="发表于 2019-09-08 11:35:00">2019-09-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-19T11:44:28.265Z" title="更新于 2021-09-19 19:44:28">2021-09-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/other/">other</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">938</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><blockquote>
+<p>转载声明：转载至南方周末1999年新年献词</p>
+</blockquote>
+<p>这是新年的第一天。</p>
+<p>这是我们与你见面的第777次。</p>
+<p>祝愿阳光打在你的脸上。</p>
+<p>阳光打在你的脸上，温暖留在我们心里。这是冬季里平常的一天。北方的树叶已经落尽，南方的树叶还留在枝上，人们在大街上懒洋洋地走着，或者急匆匆地跑着，每个人都怀着希望，每个人都握紧自己的心事。</p>
+<p>本世纪最后的日历正在一页页减去，没有什么可以把人轻易打动，除了真实。人们有理想但也有幻象，人们得到过安慰也蒙受过羞辱，人们曾经不再相信别人也不再相信自己。好在岁月让我们深知”真”的宝贵——真实、真情、真理，它让我们离开凌空蹈虚的乌托邦险境，认清了虚伪和欺骗。尽管，真实有时让人难堪，但直面真实的民族是成熟的民族，直面真实的人群是成熟的人群。</p>
+<p>没有什么可以轻易把人打动，除了正义的号角。当你面对蒙冤无助的弱者，当你面对专横跋扈的恶人，当你面对足以影响人的一生的社会不公，你就明白正义需要多少代价，正义需要多少勇气。</p>
+<p>没有什么可以轻易把人打动，除了内心的爱。没有什么可以把人打动，除了前进的脚步……</p>
+<p>这是新年的第一天，就像平常一样，我们与你再次见面，为逝去的一年而感怀，为新来的一年做准备。祝愿阳光打在你的脸上。</p>
+<p>阳光打在你的脸上，温暖留在我们心里。有一种力量，正从你的指尖悄悄袭来，有一种关怀，正从你的眼中轻轻放出。在这个时刻，我们无言以对，唯有祝福：让无力者有力，让悲观者前行，让往前走的继续走，让幸福的人儿更幸福；而我们，则不停地为你加油。</p>
+<p>我们不停地为你加油。因为你的希望就是我们的希望，因为你的苦难就是我们的苦难。我们看着你举起锄头，我们看着你舞动镰刀，我们看着你挥汗如雨，我们看着你谷满粮仓。我们看着你流离失所，我们看着你痛哭流涕，我们看着你中流击水，我们看着你重建家园。我们看着你无奈下岗，我们看着你咬紧牙关，我们看着你风雨度过，我们看着你笑逐颜开……我们看着你，我们不停地为你加油，因为我们就是你们的一部分。</p>
+<p>总有一种力量它让我们泪流满面，总有一种力量它让我们精神抖擞，总有一种力量它驱使我们不断寻求”正义、爱心、良知”。这种力量来自于你，来自于你们中间的每一个人。</p>
+<p>所以，在这样的时候，在这新年的第一天，我们要向你、向你身边的每一个人，说一声：”新年好！”祝愿阳光打在你的脸上。</p>
+<p>因为有你，才有我们。</p>
+<p>阳光打在你的脸上，温暖留在我们心里。为什么我们总是眼含泪水，因为我们爱的深沉；为什么我们总是精神抖擞，因为我们爱的深沉；为什么我们总在不断寻求，因为我们爱的深沉。爱这个国家，还有她的人民，他们善良，他们正直，他们懂得相互关怀。</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">绫川星凛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://owomoe.net/other/95.html">https://owomoe.net/other/95.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明来自 <a href="https://owomoe.net" target="_blank">皮皮凛の小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E6%91%98/">文摘</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://afdian.net/@seirin" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/afdian.webp" alt="爱发电：微信支付宝扫码"/></a><div class="post-qr-code-desc">爱发电：微信支付宝扫码</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/other/98.html"><img class="prev-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">qwq.best！！又又又又又换域名啦！！！</div></div></a></div><div class="next-post pull-right"><a href="/dev/90.html"><img class="next-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">域名更换跳转页面！优质访客体验与SEO优化两不误~</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2021 By 绫川星凛</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">你好，再见</div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><span>鲁ICP备20020678号</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/tw_cn.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'RimuW5sTDoBQq76cpqtFxS6a-gzGzoHsz',
+      appKey: 'VrDSkBwEiw7br1m6PPEEbwIs',
+      placeholder: '快来和大家一起讨论吧~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/@imaegoo/valine@1.4.1-4.1/valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/live2dw/lib/L2Dwidget.min.js"></script><script src="/js/seirin.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/click_heart.min.js" async="async"></script></div></body></html>

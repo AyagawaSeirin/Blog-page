@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>[踩坑记录]免备案使用国内CDN初次尝试 | 皮皮凛の小窝</title><meta name="description" content="踩坑记录，初次尝试免备案使用国内CDN，当然结局是以失败告终，还受到了“惨痛”的教训，希望大家引以为戒，千万不要学我2333333"><meta name="keywords" content="CDN,备案"><meta name="author" content="绫川星凛"><meta name="copyright" content="绫川星凛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/favicon.webp"><link rel="canonical" href="https://owomoe.net/dev/173.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="[踩坑记录]免备案使用国内CDN初次尝试"><meta property="og:url" content="https://owomoe.net/dev/173.html"><meta property="og:site_name" content="皮皮凛の小窝"><meta property="og:description" content="踩坑记录，初次尝试免备案使用国内CDN，当然结局是以失败告终，还受到了“惨痛”的教训，希望大家引以为戒，千万不要学我2333333"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><meta property="article:published_time" content="2020-04-18T08:46:08.000Z"><meta property="article:modified_time" content="2021-09-19T11:44:28.265Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '1'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-162013750-3"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162013750-3');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.0',
+  algolia: {"appId":"1WJL87ATUH","apiKey":"04ed05f9a001ea3a733c0fb3fa5a9666","indexName":"Blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#F79BBA","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-09-19 19:44:28'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/seirin.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/feed/index.xml" title="皮皮凛の小窝" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/logo.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">46</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">78</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">实现方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E9%98%BF%E9%87%8C%E4%BA%91%E6%B5%B7%E5%A4%96CDN"><span class="toc-number">1.1.</span> <span class="toc-text">接入阿里云海外CDN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0%E5%9B%BD%E5%86%85%E8%8A%82%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">修改域名解析到国内节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%93%E9%AA%8C"><span class="toc-number">1.3.</span> <span class="toc-text">体验</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BF%BB%E8%BD%A6"><span class="toc-number">2.</span> <span class="toc-text">翻车</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%B0%81"><span class="toc-number">3.</span> <span class="toc-text">解封</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">最后</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">皮皮凛の小窝</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">[踩坑记录]免备案使用国内CDN初次尝试</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-04-18T08:46:08.000Z" title="发表于 2020-04-18 16:46:08">2020-04-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-19T11:44:28.265Z" title="更新于 2021-09-19 19:44:28">2021-09-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/dev/">dev</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">642</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>踩坑记录，初次尝试免备案使用国内CDN，当然结局是以失败告终，还受到了“惨痛”的教训，希望大家引以为戒，千万不要学我2333333</p>
+<a id="more"></a>
+
+<h2 id="实现方案"><a href="#实现方案" class="headerlink" title="实现方案"></a>实现方案</h2><h3 id="接入阿里云海外CDN"><a href="#接入阿里云海外CDN" class="headerlink" title="接入阿里云海外CDN"></a>接入阿里云海外CDN</h3><p>首先通过“全球（不包含中国大陆）”的方式接入阿里云CDN，不需要检查域名备案情况，但是会在阿里云CDN留有记录了。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/163/1.png" alt="接入阿里云海外CDN"></p>
+<h3 id="修改域名解析到国内节点"><a href="#修改域名解析到国内节点" class="headerlink" title="修改域名解析到国内节点"></a>修改域名解析到国内节点</h3><p>虽然我们接入的是海外CDN，但是这时候将域名解析修改为国内阿里云CDN节点，也是完全没有问题的，可以正常访问。<br>因为CDN节点是不会检查域名备案情况的。通过接入海外CDN的方式接入阿里云CDN，<strong>完美实现免备案使用阿里云国内CDN</strong>。<br>至于如何解析到国内节点，将域名通过CNAME方式解析到”<strong>mirrors.aliyun.com.w.alikunlun.com</strong>“这个地址即可，代表阿里云CDN全部国内节点。</p>
+<h3 id="体验"><a href="#体验" class="headerlink" title="体验"></a>体验</h3><p>体验是相当的爽啊，国内速度那么快，对于我这种纯静态博客而言就是秒开体验，而且还无需备案。</p>
+<h2 id="翻车"><a href="#翻车" class="headerlink" title="翻车"></a>翻车</h2><p>在爽了半个月后，我收到了这样一封邮件。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/173/1.png" alt="被发现了！"></p>
+<p>很明显，被发现了，并被停用掉了域名。<br>在阿里云CDN后台显示域名状态是“已停止”，启用时显示“<strong>非法操作</strong>”，无法启用。<br>即便删除域名再重新添加，也无法添加了，域名被拉入黑名单了。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/173/2.png" alt="GG"></p>
+<h2 id="解封"><a href="#解封" class="headerlink" title="解封"></a>解封</h2><p>在与阿里云工单客服交涉后，得知被封原因：<strong>被运营商通报，域名有绑定到国内节点的情况。（客户端绑定的）</strong><br>工单客服告知“域名没有在工信部备案，也就是不能解析到国内的IP上，这个是<strong>违法</strong>的。”，并将我的域名<strong>拉入了阿里云CDN的黑名单</strong>。<br>而解封的方法是“域名到工信部进行备案后，产品侧才会重新评估解除黑名单”<br>也就是说，不解封，连阿里云海外CDN都用不了了。<br>最后终于同意帮我解封域名，并警告下次再犯，<strong>封号处理</strong>。<br><img src= "https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/loading.webp" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/dev/173/3.png" alt="工单交涉记录"></p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这种绕过备案使用国内CDN的方法，虽然可以用，但是用不了多久且代价“惨重”，毕竟我还想继续使用阿里云海外CDN的。<br>这是本次尝试的踩坑经验，希望大家引以为戒，千万不要学我，切勿“<strong>以身试法</strong>”！</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">绫川星凛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://owomoe.net/dev/173.html">https://owomoe.net/dev/173.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明来自 <a href="https://owomoe.net" target="_blank">皮皮凛の小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CDN/">CDN</a><a class="post-meta__tags" href="/tags/%E5%A4%87%E6%A1%88/">备案</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://afdian.net/@seirin" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/afdian.webp" alt="爱发电：微信支付宝扫码"/></a><div class="post-qr-code-desc">爱发电：微信支付宝扫码</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/dev/174.html"><img class="prev-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">[踩坑记录]国内纯IPv6服务器试玩+宝塔面板建站指南</div></div></a></div><div class="next-post pull-right"><a href="/dev/172.html"><img class="next-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">IP库之手机基站数据篇</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/dev/163.html" title="教程向：提升你的外国服务器网站国内访问速度~"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-02-21</div><div class="relatedPosts_title">教程向：提升你的外国服务器网站国内访问速度~</div></div></a></div><div class="relatedPosts_item"><a href="/dev/113.html" title="利用jsDelivr白嫖全球超高速静态资源访问服务！"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-01-05</div><div class="relatedPosts_title">利用jsDelivr白嫖全球超高速静态资源访问服务！</div></div></a></div><div class="relatedPosts_item"><a href="/dev/96.html" title="全球超低延迟极速访问网站！地域DNS+多CDN实现~"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2019-11-10</div><div class="relatedPosts_title">全球超低延迟极速访问网站！地域DNS+多CDN实现~</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2021 By 绫川星凛</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">你好，再见</div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><span>鲁ICP备20020678号</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/tw_cn.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'RimuW5sTDoBQq76cpqtFxS6a-gzGzoHsz',
+      appKey: 'VrDSkBwEiw7br1m6PPEEbwIs',
+      placeholder: '快来和大家一起讨论吧~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/@imaegoo/valine@1.4.1-4.1/valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/live2dw/lib/L2Dwidget.min.js"></script><script src="/js/seirin.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/click_heart.min.js" async="async"></script></div></body></html>

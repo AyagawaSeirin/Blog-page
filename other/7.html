@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>关于本站~ | 皮皮凛の小窝</title><meta name="description" content="欢迎光临咱的小站~这里是关于本站的一些信息~"><meta name="keywords" content="关于"><meta name="author" content="绫川星凛"><meta name="copyright" content="绫川星凛"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/favicon.webp"><link rel="canonical" href="https://owomoe.net/other/7.html"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin="crossorigin"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="关于本站~"><meta property="og:url" content="https://owomoe.net/other/7.html"><meta property="og:site_name" content="皮皮凛の小窝"><meta property="og:description" content="欢迎光临咱的小站~这里是关于本站的一些信息~"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp"><meta property="article:published_time" content="2019-02-08T16:47:00.000Z"><meta property="article:modified_time" content="2021-09-19T11:44:28.245Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '1'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-162013750-3"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162013750-3');
+</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.0.0',
+  algolia: {"appId":"1WJL87ATUH","apiKey":"04ed05f9a001ea3a733c0fb3fa5a9666","indexName":"Blog","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#F79BBA","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2021-09-19 19:44:28'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/seirin.css"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/feed/index.xml" title="皮皮凛の小窝" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/logo.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">46</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">78</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">8</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div></div></div><div id="body-wrap"><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99"><span class="toc-number">1.</span> <span class="toc-text">关于本站</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%98%BB%E5%98%BB%EF%BC%8C%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%9C%AC%E7%AB%99"><span class="toc-number">1.1.</span> <span class="toc-text">嘻嘻，欢迎来到本站~</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%88%E4%BB%8B%E7%BB%8D%E4%B8%8B%E5%92%B1%E8%87%AA%E5%B7%B1%E2%80%A6"><span class="toc-number">1.2.</span> <span class="toc-text">先介绍下咱自己…</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%8D%E4%BB%8B%E7%BB%8D%E4%B8%8B%E5%92%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E2%80%A6"><span class="toc-number">1.3.</span> <span class="toc-text">再介绍下咱的博客…</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%95%99%E8%A8%80-amp-%E5%8F%8B%E9%93%BE"><span class="toc-number">1.4.</span> <span class="toc-text">留言&amp;友链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">联系方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%84%BF%E6%9C%9B%E6%B8%85%E5%8D%95"><span class="toc-number">1.6.</span> <span class="toc-text">愿望清单</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">1.7.</span> <span class="toc-text">最后</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">皮皮凛の小窝</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/msg"><i class="fa-fw far fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文章分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 文章标签</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://moegirl.life"><i class="fa-fw fa fa-book"></i><span> 日记本</span></a></div><div class="menus_item"><a class="site-page" href="/other/7.html"><i class="fa-fw fas fa-heart"></i><span> 关于本站</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">关于本站~</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-02-08T16:47:00.000Z" title="发表于 2019-02-09 00:47:00">2019-02-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-09-19T11:44:28.245Z" title="更新于 2021-09-19 19:44:28">2021-09-19</time></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">572</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>欢迎光临咱的小站~<br>这里是关于本站的一些信息~</p>
+<a id="more"></a>
+
+<h1 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h1><h2 id="嘻嘻，欢迎来到本站"><a href="#嘻嘻，欢迎来到本站" class="headerlink" title="嘻嘻，欢迎来到本站~"></a><strong>嘻嘻，欢迎来到本站~</strong></h2><p>这里是咱的博客噢~</p>
+<h2 id="先介绍下咱自己…"><a href="#先介绍下咱自己…" class="headerlink" title="先介绍下咱自己…"></a>先介绍下咱自己…</h2><p>咱有很多名字：皮皮凛、绫川星凛(AyagawaSeirin)<br>还有一些伙伴给咱的小名：小皮、皮皮、凛凛姬<br>这些都是咱哦~<br>至于为什么大部分都跟皮字有关，因为我很皮！233333</p>
+<p>坐标广东深圳南山区</p>
+<p>可爱的妹子一枚（（确信，非常可爱</p>
+<p>重度抑郁症，具体<a href="https://owomoe.net/life/108.html" title="请看这里">请看这里</a></p>
+<p>业余爱好：小提琴~</p>
+<p>咱对IT比较感兴趣，自学C语言、PHP、前端(HTML/CSS/JS)等，当然都是小白级的x</p>
+<h2 id="再介绍下咱的博客…"><a href="#再介绍下咱的博客…" class="headerlink" title="再介绍下咱的博客…"></a>再介绍下咱的博客…</h2><p>其实个人网站从2015年就开始做辽，中途换了好几个域名…<br>目前换成了owomoe.net<br>嘻嘻，很萌吧</p>
+<p>刚开始是个人主页，纪录一些自己的东西。17年开始做博客，19年从WordPress换到Typecho，然后20年换到了Hexo。<br>经历了无数次删库重来，以前的旧文章也没有保留下来。</p>
+<p>本博客主要记录一些技术文章，有转载也有原创，只是现在没有多少时间弄…</p>
+<h2 id="留言-amp-友链"><a href="#留言-amp-友链" class="headerlink" title="留言&amp;友链"></a>留言&amp;友链</h2><p>新开设了留言板和友链页面！<br>申请友链请<a href="https://owomoe.net/links" title="点击这里">点击这里</a>申请~<br>留言的话可以前往<a href="https://owomoe.net/msg" title="留言板">留言板</a>留言~<br>当然直接在本文回复也是可以滴~</p>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>为防止骚扰所以就不留QQ了~<br>需要联系咱可以在上面的留言板链接回复，或尝试以下联系方式：<br><a target="_blank" rel="noopener" href="https://t.me/AyagawaSeirin">Telegram</a><br>邮箱: AyagawaSeirin#outlook.com (将#换成@)</p>
+<h2 id="愿望清单"><a href="#愿望清单" class="headerlink" title="愿望清单"></a>愿望清单</h2><ul>
+<li><input checked disabled type="checkbox"> 拥有一个属于自己的博客</li>
+<li><input checked disabled type="checkbox"> 有一个男or女朋友</li>
+<li><input checked disabled type="checkbox"> 和最想面基的人面基</li>
+<li><input disabled type="checkbox"> 彻底摆脱抑郁症</li>
+<li><input disabled type="checkbox"> 完成SRS</li>
+<li><input disabled type="checkbox"> 自己制作一个博客主题</li>
+<li><input checked disabled type="checkbox"> 养一只可爱的猫</li>
+<li><input checked disabled type="checkbox"> 入手Minecraft正版</li>
+<li><input checked disabled type="checkbox"> 拥有一台自己的笔电</li>
+<li><input checked disabled type="checkbox"> 开一个Minecraft生存服和朋友一起玩</li>
+<li><input disabled type="checkbox"> 经济独立，拥有属于自己的生活</li>
+<li><input disabled type="checkbox"> 移民对LGBT友好的地方</li>
+<li><input disabled type="checkbox"> 继续学习小提琴考到十级（目前七级）</li>
+<li><input disabled type="checkbox"> 学习钢琴</li>
+<li><input checked disabled type="checkbox"> 开始自己的创业</li>
+<li><input disabled type="checkbox"> 将Transdaily.org做好</li>
+<li><input disabled type="checkbox"> 成为可以安慰别人的大姐姐</li>
+</ul>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>去上带学咯</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">绫川星凛</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://owomoe.net/other/7.html">https://owomoe.net/other/7.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明来自 <a href="https://owomoe.net" target="_blank">皮皮凛の小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%B3%E4%BA%8E/">关于</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://afdian.net/@seirin" target="_blank"><img class="post-qr-code-img" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/afdian.webp" alt="爱发电：微信支付宝扫码"/></a><div class="post-qr-code-desc">爱发电：微信支付宝扫码</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/dev/8.html"><img class="prev-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">站长入门指南~</div></div></a></div><div class="next-post pull-right"><a href="/dev/13.html"><img class="next-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">搬瓦工VPS选购推荐</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-image: url(https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/img/pic/7.webp)" data-type="photo"><div id="footer-wrap"><div class="copyright">&copy;2017 - 2021 By 绫川星凛</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">你好，再见</div><div class="icp"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn"><span>鲁ICP备20020678号</span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="algolia-search"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/tw_cn.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'RimuW5sTDoBQq76cpqtFxS6a-gzGzoHsz',
+      appKey: 'VrDSkBwEiw7br1m6PPEEbwIs',
+      placeholder: '快来和大家一起讨论吧~',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/@imaegoo/valine@1.4.1-4.1/valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/live2dw/lib/L2Dwidget.min.js"></script><script src="/js/seirin.js"></script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/Blog@gh-pages/js/third-party/click_heart.min.js" async="async"></script></div></body></html>
